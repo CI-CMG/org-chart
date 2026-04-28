@@ -7,22 +7,45 @@ import './App.css'
 
 const meta_graph = {
   "nodes": [
-    {"id": "Ship", "group": 1},
-    {"id": "Cruise", "group": 2},
-    {"id": "Instrument", "group": 3},
-    {"id": "Annotation", "group": 4},
-    {"id": "Project", "group": 5},
-    {"id": "Person", "group": 6},
-    {"id": "Classification", "group": 7}
+    {"id": "Jeffrey Duda", "group": 1},
+    {"id": "Elysia Lucas", "group": 1},
+    {"id": "Anne Sledd", "group": 1},
+    {"id": "Aleya Kaushik", "group": 1},
+    {"id": "Jianhao Zhang", "group": 1},
+    {"id": "Nathan Malarich", "group": 1},
+    {"id": "Aly Krimmer", "group": 1},
+    {"id": "Alison Post", "group": 1},
+    {"id": "Nels Bjarke", "group": 1},
+    {"id": "Scott Clingan", "group": 1},
+    {"id": "Mara Coe", "group": 1},
+    {"id": "Agnieszka Gautier", "group": 1},
+    {"id": "Guoqing Ge", "group": 1},
+    {"id": "Marty Heath", "group": 1},
+    {"id": "Rudy Klucik", "group": 1},
+    {"id": "Corey Krimmer", "group": 1},
+    {"id": "Scott Lewis", "group": 1},
+    {"id": "Kim Moreland", "group": 1},
+    {"id": "Adam Schneider", "group": 1},
+    //
+    {"id": "GSL", "group": 2},
+    {"id": "NCEI", "group": 2},
+    {"id": "PSL", "group": 2},
+    {"id": "GML", "group": 2},
+    {"id": "CSL", "group": 2},
+    {"id": "CIRES ADMIN", "group": 2},
+    {"id": "SEEC", "group": 2},
+    {"id": "Main Campus Research", "group": 2},
+    {"id": "CEEE", "group": 2},
+    {"id": "NSIDC", "group": 2},
+    {"id": "GSL", "group": 2},
+    {"id": "SWPC", "group": 2},
+    {"id": "CIRES Members Council", "group": 3},
   ],
   "links": [
-    {"source": "Cruise", "target": "Ship", "value": 3, "predicate": "COLLECTED_DATA_FOR"},
-    {"source": "Instrument", "target": "Cruise", "value": 3, "predicate": "COLLECTED_DATA_FOR"},
-    {"source": "Annotation", "target": "Cruise", "value": 3, "predicate": "COLLECTED_BY"},
-    {"source": "Annotation", "target": "Instrument", "value": 4, "predicate": "COLLECTED_BY"},
-    {"source": "Person", "target": "Project", "value": 2, "predicate": "ADVISOR_TO"},
-    {"source": "Person", "target": "Annotation", "value": 4, "predicate": "CREATED"},
-    {"source": "Classification", "target": "Annotation", "value": 4, "predicate": "DEFINES"}
+    {"source": "Rudy Klucik", "target": "NCEI", "value": 3, "predicate": "memberOf"},
+    {"source": "Rudy Klucik", "target": "CIRES Members Council", "value": 3, "predicate": "memberOf"},
+    {"source": "Jeffrey Duda", "target": "GSL", "value": 3, "predicate": "memberOf"},
+    {"source": "Jeffrey Duda", "target": "CIRES Members Council", "value": 3, "predicate": "memberOf"},
   ]
 };
 
@@ -39,8 +62,8 @@ function App() {
         <ForceGraph3D
           graphData={meta_graph}
           nodeThreeObjectExtend={true}
-          width={1000}
-          height={400}
+          width={800}
+          height={800}
           backgroundColor={"rgb(11,11,11)"}
           nodeColor={"pink"}
           nodeAutoColorBy="id"
@@ -56,7 +79,7 @@ function App() {
               (node) => {
               const sprite = new SpriteText(node.id);
               sprite.color = "white";
-              sprite.textHeight = 5;
+              sprite.textHeight = 15;
               return sprite;
             }
           }
