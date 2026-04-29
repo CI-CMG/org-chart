@@ -71,6 +71,21 @@ const meta_graph = {
     {"id": "NOAA", "group": 5},
     {"id": "OAR", "group": 5},
     {"id": "CU", "group": 5},
+    // groups for dev team
+    {"id": "Hazel", "group": 5},
+    {"id": "Gazetteer", "group": 5},
+    {"id": "EchoFish", "group": 5},
+    {"id": "Trackline", "group": 5},
+    {"id": "Mable", "group": 5},
+    {"id": "Crowbar", "group": 5},
+    {"id": "STP DPMF", "group": 5},
+    {"id": "FishFlicks", "group": 5},
+    {"id": "Pace", "group": 5},
+    {"id": "Tharp", "group": 5},
+    {"id": "WOD", "group": 5},
+    {"id": "TugBoat", "group": 5},
+    {"id": "Argonaut", "group": 5},
+    {"id": "OASIS", "group": 5},
   ],
   "links": [
     {"source": "Rudy Klucik", "target": "NCEI", "predicate": "memberOf"},
@@ -173,6 +188,7 @@ const meta_graph = {
     {"source": "NSIDC", "target": "CU", "predicate": "memberOf"},
     {"source": "CEEE", "target": "CU", "predicate": "memberOf"},
     {"source": "SEEC", "target": "CU", "predicate": "memberOf"},
+    {"source": "CIRES", "target": "CU", "predicate": "memberOf"},
   ]
 };
 
@@ -192,6 +208,7 @@ function App() {
           width={1100}
           height={800}
           backgroundColor={"rgb(11,11,11)"}
+          // backgroundColor={"white"}
           nodeColor={"pink"}
           nodeAutoColorBy="id"
           nodeLabel="id"
