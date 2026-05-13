@@ -1,5 +1,8 @@
 # React + TypeScript + Vite
 
+The Difference Between Organizational Structure and an Org Chart:
+https://organizationalphysics.com/2015/02/09/organizational-design-the-difference-between-organizational-structure-and-an-org-chart/
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
