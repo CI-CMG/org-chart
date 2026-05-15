@@ -67,10 +67,12 @@ const meta_graph = {
     //
     {"id": "GSB Dev Team", "group": 4},
     {"id": "CIRES", "group": 5},
-    {"id": "NESDIS", "group": 5},
+    {"id": "National Environmental Satellite, Data, and Information Service", "group": 5},
     {"id": "NOAA", "group": 5},
-    {"id": "OAR", "group": 5},
+    {"id": "Office of Ocean and Atmospheric Research", "group": 5},
     {"id": "CU", "group": 5},
+    {"id": "NCEP", "group": 5},
+    {"id": "US Air Force", "group": 5},
     // groups for dev team
     {"id": "Hazel", "group": 5},
     {"id": "Gazetteer", "group": 5},
@@ -175,38 +177,42 @@ const meta_graph = {
     {"source": "Vidhyadhari Gondle", "target": "CIRES", "predicate": "memberOf"},
     {"source": "Vidhyadhari Gondle", "target": "GSB Dev Team", "predicate": "memberOf"},
     {"source": "Vidhyadhari Gondle", "target": "NCEI", "predicate": "memberOf"},
+    {"source": "Vidhyadhari Gondle", "target": "NCEI", "predicate": "memberOf"},
     // admin
     // https://research.noaa.gov/about-us/
-    {"source": "NCEI", "target": "NESDIS", "predicate": "memberOf"},
-    {"source": "NESDIS", "target": "NOAA", "predicate": "memberOf"},
-    {"source": "CSL", "target": "OAR", "predicate": "memberOf"},
-    {"source": "GML", "target": "OAR", "predicate": "memberOf"},
-    {"source": "GSL", "target": "OAR", "predicate": "memberOf"},
-    {"source": "PSL", "target": "OAR", "predicate": "memberOf"},
-    {"source": "OAR", "target": "NOAA", "predicate": "memberOf"},
+    {"source": "NCEI", "target": "National Environmental Satellite, Data, and Information Service", "predicate": "memberOf"},
+    {"source": "National Environmental Satellite, Data, and Information Service", "target": "NOAA", "predicate": "memberOf"},
+    {"source": "CSL", "target": "Office of Ocean and Atmospheric Research", "predicate": "memberOf"},
+    {"source": "GML", "target": "Office of Ocean and Atmospheric Research", "predicate": "memberOf"},
+    {"source": "GSL", "target": "Office of Ocean and Atmospheric Research", "predicate": "memberOf"},
+    {"source": "PSL", "target": "Office of Ocean and Atmospheric Research", "predicate": "memberOf"},
+    {"source": "Office of Ocean and Atmospheric Research", "target": "NOAA", "predicate": "memberOf"},
     // cu
     {"source": "NSIDC", "target": "CU", "predicate": "memberOf"},
-    {"source": "CEEE", "target": "CU", "predicate": "memberOf"},
+    {"source": "CEEE", "target": "CIRES", "predicate": "memberOf"},
     {"source": "SEEC", "target": "CU", "predicate": "memberOf"},
     {"source": "CIRES", "target": "CU", "predicate": "memberOf"},
+    {"source": "SWPC", "target": "NCEP", "predicate": "memberOf"},
+    {"source": "SWPC", "target": "US Air Force", "predicate": "memberOf"},
+    {"source": "NCEP", "target": "NOAA", "predicate": "memberOf"},
   ]
 };
 
 function App() {
   const containerRef = useRef(null);
 
-  return (
-    <>
-      <section id="center">
-        <p>Organizational Chart for CIRES NCEI</p>
-      </section>
+  const parentDiv = document.getElementById("parentDiv");
+  const width = parentDiv?.clientWidth;
+  const height = parentDiv?.clientHeight;
 
-      <section ref={containerRef}>
+  return (
+    <div className="App" id="parentDiv">
+      <div ref={containerRef}>
         <ForceGraph3D
           graphData={meta_graph}
           nodeThreeObjectExtend={true}
-          width={1100}
-          height={800}
+          width={width}
+          height={height}
           backgroundColor={"rgb(11,11,11)"}
           // backgroundColor={"white"}
           nodeColor={"pink"}
@@ -237,10 +243,10 @@ function App() {
             return sprite;
           }}
         />
-      </section>
+      </div>
 
-      <section id="spacer"></section>
-    </>
+      {/* <section id="spacer"></section> */}
+    </div>
   )
 }
 
