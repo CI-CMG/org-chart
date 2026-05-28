@@ -3,6 +3,8 @@
 The Difference Between Organizational Structure and an Org Chart:
 https://organizationalphysics.com/2015/02/09/organizational-design-the-difference-between-organizational-structure-and-an-org-chart/
 
+https://www.stmweather.com/blog/profiles/what-is-noaa-and-what-is-its-mission
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
