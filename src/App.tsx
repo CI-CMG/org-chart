@@ -16,6 +16,10 @@ const meta_graph = {
     { id: "Rachel Peterson", group: 0 },
     { id: "Vidhyadhari Gondle", group: 0 },
     //
+    { id: "Alexander Hoelzemann", group: 44 },
+    { id: "Qin Lv", group: 44 },
+    { id: "Sonar AI", group: 44 },
+    //
     { id: "Carrie Wall Bell", group: 0 },
     { id: "Nic Arcos", group: 0 },
     { id: "Aaron Sweeny", group: 0 },
@@ -192,6 +196,7 @@ const meta_graph = {
       group: 5,
     },
     { id: "CU", longName: "University of Colorado Boulder", group: 5 },
+    { id: "Computer Science Department", group: 5 },
     {
       id: "NCEP",
       longName: "National Centers for Environmental Prediction (NCEP)",
@@ -237,10 +242,10 @@ const meta_graph = {
     { source: "Payton Cain", target: "Tharp", predicate: "worksOn" },
     { source: "Carrie Wall Bell", target: "EchoFish", predicate: "worksOn" },
     { source: "Carrie Wall Bell", target: "TugBoat", predicate: "worksOn" },
-    { source: "Quincy Cantu", target: "TugBoat", predicate: "worksOn", value: 5 },
-    { source: "Bryan Meyer", target: "Tharp", predicate: "worksOn", value: 3},
-    { source: "Bryan Meyer", target: "Trackline", predicate: "worksOn", value: 4},
-    { source: "Clinton Lohr", target: "TugBoat", predicate: "worksOn", value: 4},
+    { source: "Quincy Cantu", target: "TugBoat", predicate: "worksOn", value: 1 },
+    { source: "Bryan Meyer", target: "Tharp", predicate: "worksOn", value: 1 },
+    { source: "Bryan Meyer", target: "Trackline", predicate: "worksOn", value: 1 },
+    { source: "Clinton Lohr", target: "TugBoat", predicate: "worksOn", value: 1 },
     // {"source": "Rudy Klucik", "target": "", "predicate": "worksOn"},
     { source: "Rachel Peterson", target: "Trackline", predicate: "worksOn" },
     { source: "Jordan Schweizer", target: "Trackline", predicate: "worksOn" },
@@ -251,10 +256,10 @@ const meta_graph = {
     { source: "Rachel Peterson", target: "Tharp", predicate: "worksOn" },
     { source: "Max Smith", target: "Mable", predicate: "worksOn" },
     { source: "Clinton Campbell", target: "Crowbar", predicate: "worksOn" },
-    { source: "Jennifer Jencks", target: "Crowbar", predicate: "worksOn", value: 2 },
-    { source: "Jennifer Jencks", target: "Gazetteer", predicate: "worksOn", value: 2 },
-    { source: "Jennifer Jencks", target: "Mable", predicate: "worksOn", value: 2 },
-    { source: "Jennifer Jencks", target: "Crowbar", predicate: "worksOn", value: 2 },
+    { source: "Jennifer Jencks", target: "Crowbar", predicate: "worksOn", value: 1 },
+    { source: "Jennifer Jencks", target: "Gazetteer", predicate: "worksOn", value: 1 },
+    { source: "Jennifer Jencks", target: "Mable", predicate: "worksOn", value: 1 },
+    { source: "Jennifer Jencks", target: "Crowbar", predicate: "worksOn", value: 1 },
     {
       source: "Vidhyadhari Gondle",
       target: "FishFlicks",
@@ -279,171 +284,164 @@ const meta_graph = {
     { source: "Aleya Kaushik", target: "CMC", predicate: "memberOf", value: 1 },
     { source: "Aleya Kaushik", target: "GML", predicate: "memberOf", value: 1 },
     // {"source": "Jianhao Zhang", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Jianhao Zhang", target: "CMC", predicate: "memberOf" },
-    { source: "Jianhao Zhang", target: "CSL", predicate: "memberOf" },
+    { source: "Jianhao Zhang", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Jianhao Zhang", target: "CSL", predicate: "memberOf", value: 1  },
     // {"source": "Nathan Malarich", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Nathan Malarich", target: "CMC", predicate: "memberOf" },
-    { source: "Nathan Malarich", target: "CSL", predicate: "memberOf" },
+    { source: "Nathan Malarich", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Nathan Malarich", target: "CSL", predicate: "memberOf", value: 1  },
     // {"source": "Aly Krimmer", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Aly Krimmer", target: "CMC", predicate: "memberOf" },
-    { source: "Aly Krimmer", target: "CIRES ADMIN", predicate: "memberOf" },
+    { source: "Aly Krimmer", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Aly Krimmer", target: "CIRES ADMIN", predicate: "memberOf", value: 1  },
     // {"source": "Alison Post", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Alison Post", target: "CMC", predicate: "memberOf" },
-    { source: "Alison Post", target: "SEEC", predicate: "memberOf" },
+    { source: "Alison Post", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Alison Post", target: "SEEC", predicate: "memberOf", value: 1  },
+    { source: "Alison Post", target: "Earth Lab", predicate: "memberOf", value: 1 },
     // {"source": "Nels Bjarke", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Nels Bjarke", target: "CMC", predicate: "memberOf" },
+    { source: "Nels Bjarke", target: "CMC", predicate: "memberOf", value: 1  },
     {
       source: "Nels Bjarke",
       target: "Main Campus Research",
       predicate: "memberOf",
+      value: 1 
     },
     // {"source": "Scott Clingan", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Scott Clingan", target: "CMC", predicate: "memberOf" },
-    { source: "Scott Clingan", target: "GML", predicate: "memberOf" },
+    { source: "Scott Clingan", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Scott Clingan", target: "GML", predicate: "memberOf", value: 1  },
     // {"source": "Mara Coe", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Mara Coe", target: "CMC", predicate: "memberOf" },
-    { source: "Mara Coe", target: "CEEE", predicate: "memberOf" },
+    { source: "Mara Coe", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Mara Coe", target: "CEEE", predicate: "memberOf", value: 1  },
     // {"source": "Agnieszka Gautier", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Agnieszka Gautier", target: "CMC", predicate: "memberOf" },
-    { source: "Agnieszka Gautier", target: "NSIDC", predicate: "memberOf" },
+    { source: "Agnieszka Gautier", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Agnieszka Gautier", target: "NSIDC", predicate: "memberOf", value: 1  },
     // {"source": "Guoqing Ge", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Guoqing Ge", target: "CMC", predicate: "memberOf" },
-    { source: "Guoqing Ge", target: "GSL", predicate: "memberOf" },
+    { source: "Guoqing Ge", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Guoqing Ge", target: "GSL", predicate: "memberOf", value: 1  },
     // {"source": "Marty Heath", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Marty Heath", target: "CMC", predicate: "memberOf" },
-    { source: "Marty Heath", target: "NSIDC", predicate: "memberOf" },
+    { source: "Marty Heath", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Marty Heath", target: "NSIDC", predicate: "memberOf", value: 1  },
     // {"source": "Corey Krimmer", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Corey Krimmer", target: "CMC", predicate: "memberOf" },
-    { source: "Corey Krimmer", target: "CIRES ADMIN", predicate: "memberOf" },
+    { source: "Corey Krimmer", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Corey Krimmer", target: "CIRES ADMIN", predicate: "memberOf", value: 1  },
     // {"source": "Scott Lewis", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Scott Lewis", target: "CMC", predicate: "memberOf" },
-    { source: "Scott Lewis", target: "NSIDC", predicate: "memberOf" },
+    { source: "Scott Lewis", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Scott Lewis", target: "NSIDC", predicate: "memberOf", value: 1  },
     // {"source": "Kim Moreland", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Kim Moreland", target: "CMC", predicate: "memberOf" },
-    { source: "Kim Moreland", target: "SWPC", predicate: "memberOf" },
+    { source: "Kim Moreland", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Kim Moreland", target: "SWPC", predicate: "memberOf", value: 1  },
     // {"source": "Adam Schneider", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Adam Schneider", target: "CMC", predicate: "memberOf" },
-    { source: "Adam Schneider", target: "PSL", predicate: "memberOf" },
+    { source: "Adam Schneider", target: "CMC", predicate: "memberOf", value: 1  },
+    { source: "Adam Schneider", target: "PSL", predicate: "memberOf", value: 1  },
     // cires
     // {"source": "Chris Slater", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Chris Slater", target: "GSB Dev Team", predicate: "memberOf" },
-    { source: "Chris Slater", target: "NCEI", predicate: "memberOf" },
+    { source: "Chris Slater", target: "GSB Dev Team", predicate: "memberOf", value: 1  },
+    { source: "Chris Slater", target: "NCEI", predicate: "memberOf", value: 1  },
     // {"source": "Clinton Campbell", "target": "CIRES", "predicate": "memberOf"},
     {
       source: "Clinton Campbell",
       target: "GSB Dev Team",
       predicate: "memberOf",
+      value: 1 
     },
-    { source: "Clinton Campbell", target: "NCEI", predicate: "memberOf" },
+    { source: "Clinton Campbell", target: "NCEI", predicate: "memberOf", value: 1  },
     // {"source": "Clinton Lohr", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Clinton Lohr", target: "GSB Dev Team", predicate: "memberOf" },
-    { source: "Clinton Lohr", target: "NCEI", predicate: "memberOf" },
+    { source: "Clinton Lohr", target: "GSB Dev Team", predicate: "memberOf", value: 1  },
+    { source: "Clinton Lohr", target: "NCEI", predicate: "memberOf", value: 1  },
     // {"source": "Max Smith", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Max Smith", target: "GSB Dev Team", predicate: "memberOf" },
-    { source: "Max Smith", target: "NCEI", predicate: "memberOf" },
+    { source: "Max Smith", target: "GSB Dev Team", predicate: "memberOf", value: 1  },
+    { source: "Max Smith", target: "NCEI", predicate: "memberOf", value: 1  },
     // {"source": "Payton Cain", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Payton Cain", target: "GSB Dev Team", predicate: "memberOf" },
-    { source: "Payton Cain", target: "NCEI", predicate: "memberOf" },
+    { source: "Payton Cain", target: "GSB Dev Team", predicate: "memberOf", value: 1  },
+    { source: "Payton Cain", target: "NCEI", predicate: "memberOf", value: 1  },
     // {"source": "Peemin Chen", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Peemin Chen", target: "GSB Dev Team", predicate: "memberOf" },
-    { source: "Peemin Chen", target: "NCEI", predicate: "memberOf" },
+    { source: "Peemin Chen", target: "GSB Dev Team", predicate: "memberOf", value: 1  },
+    { source: "Peemin Chen", target: "NCEI", predicate: "memberOf", value: 1  },
     // {"source": "Quincy Cantu", "target": "CIRES", "predicate": "memberOf"},
-    { source: "Quincy Cantu", target: "GSB Dev Team", predicate: "memberOf" },
-    { source: "Quincy Cantu", target: "NCEI", predicate: "memberOf" },
+    { source: "Quincy Cantu", target: "GSB Dev Team", predicate: "memberOf", value: 1  },
+    { source: "Quincy Cantu", target: "NCEI", predicate: "memberOf", value: 1  },
     // {"source": "Rachel Peterson", "target": "CIRES", "predicate": "memberOf"},
     {
       source: "Rachel Peterson",
       target: "GSB Dev Team",
       predicate: "memberOf",
+      value: 1 
     },
-    { source: "Rachel Peterson", target: "NCEI", predicate: "memberOf" },
+    { source: "Rachel Peterson", target: "NCEI", predicate: "memberOf", value: 1  },
     // {"source": "Vidhyadhari Gondle", "target": "CIRES", "predicate": "memberOf"},
     {
       source: "Vidhyadhari Gondle",
       target: "GSB Dev Team",
       predicate: "memberOf",
+      value: 1 
     },
-    { source: "Vidhyadhari Gondle", target: "NCEI", predicate: "memberOf", value: 3 },
-    { source: "Vidhyadhari Gondle", target: "NCEI", predicate: "memberOf" },
+    { source: "Vidhyadhari Gondle", target: "NCEI", predicate: "memberOf", value: 1 },
+    { source: "Vidhyadhari Gondle", target: "NCEI", predicate: "memberOf", value: 1 },
     // admin
     // https://research.noaa.gov/about-us/
     {
       source: "NCEI",
       target: "National Environmental Satellite, Data, and Information Service",
       predicate: "memberOf",
+      value: 1 
     },
     {
       source: "National Environmental Satellite, Data, and Information Service",
       target: "NOAA",
       predicate: "memberOf",
+      value: 1
     },
     {
       source: "CSL",
       target: "Office of Ocean and Atmospheric Research",
       predicate: "memberOf",
+      value: 1 
     },
     {
       source: "GML",
       target: "Office of Ocean and Atmospheric Research",
       predicate: "memberOf",
+      value: 1 
     },
     {
       source: "GSL",
       target: "Office of Ocean and Atmospheric Research",
       predicate: "memberOf",
+      value: 1
     },
     {
       source: "PSL",
       target: "Office of Ocean and Atmospheric Research",
       predicate: "memberOf",
+      value: 1 
     },
     {
       source: "Office of Ocean and Atmospheric Research",
       target: "NOAA",
       predicate: "memberOf",
+      value: 1 
     },
     // cu
-    { source: "NSIDC", target: "CU", predicate: "memberOf" },
-    { source: "CEEE", target: "CIRES", predicate: "memberOf" },
-    { source: "SEEC", target: "CU", predicate: "memberOf" },
-    { source: "CIRES", target: "CU", predicate: "memberOf" },
-    { source: "SWPC", target: "NCEP", predicate: "memberOf" },
-    { source: "SWPC", target: "US Air Force", predicate: "memberOf" },
-    { source: "NCEP", target: "NOAA", predicate: "memberOf" },
-    { source: "Rob Redmon", target: "NCAI", predicate: "memberOf", value: 2 },
-    { source: "Stephanie Herring", target: "NCAI", predicate: "memberOf", value: 2 },
-    { source: "Bryan Meyer", target: "NCAI", predicate: "memberOf", value: 2 },
+    { source: "NSIDC", target: "CU", predicate: "memberOf", value: 1  },
+    { source: "CEEE", target: "CIRES", predicate: "memberOf", value: 1  },
+    { source: "SEEC", target: "CU", predicate: "memberOf", value: 1  },
+    { source: "CIRES", target: "CU", predicate: "memberOf", value: 1  },
+    { source: "SWPC", target: "NCEP", predicate: "memberOf", value: 1  },
+    { source: "SWPC", target: "US Air Force", predicate: "memberOf", value: 1  },
+    { source: "NCEP", target: "NOAA", predicate: "memberOf", value: 1  },
+    { source: "Rob Redmon", target: "NCAI", predicate: "memberOf", value: 1 },
+    { source: "Stephanie Herring", target: "NCAI", predicate: "memberOf", value: 1 },
+    { source: "Bryan Meyer", target: "NCAI", predicate: "memberOf", value: 1 },
     { source: "EchoFish", target: "NCAI", predicate: "contributesTo", value: 1 },
     { source: "TugBoat", target: "NCAI", predicate: "contributesTo", value: 1 },
+    //
+    { source: "Alexander Hoelzemann", target: "Sonar AI", predicate: "contributesTo", value: 2 },
+    { source: "Rudy Klucik", target: "Sonar AI", predicate: "contributesTo", value: 1 },
+    { source: "Qin Lv", target: "Sonar AI", predicate: "contributesTo", value: 1 },
+    { source: "Carrie Wall Bell", target: "Sonar AI", predicate: "contributesTo", value: 1 },
+    { source: "EchoFish", target: "Sonar AI", predicate: "contributesTo", value: 1 },
+    { source: "Computer Science Department", target: "CU", predicate: "contributesTo", value: 1 },
+    { source: "Qin Lv", target: "Computer Science Department", predicate: "contributesTo", value: 1 },
   ],
 };
-
-function nodePaint({ id, x, y }, color, ctx) {
-  ctx.fillStyle = color;
-  [
-    () => {
-      ctx.fillRect(x - 6, y - 4, 12, 8);
-    }, // rectangle
-    () => {
-      ctx.beginPath();
-      ctx.moveTo(x, y - 5);
-      ctx.lineTo(x - 5, y + 5);
-      ctx.lineTo(x + 5, y + 5);
-      ctx.fill();
-    }, // triangle
-    () => {
-      ctx.beginPath();
-      ctx.arc(x, y, 5, 0, 2 * Math.PI, false);
-      ctx.fill();
-    }, // circle
-    () => {
-      ctx.font = "10px Sans-Serif";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillText("Text", x, y);
-    }, // text
-  ][id % 4]();
-}
 
 function App() {
   const containerRef = useRef(null);
@@ -505,11 +503,11 @@ function App() {
             ); // some padding
 
             ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
-            ctx.fillRect(
-              node.x - bckgDimensions[0] / 2,
-              node.y - bckgDimensions[1] / 2,
-              ...bckgDimensions,
-            );
+            // ctx.fillRect(
+            //   node.x - bckgDimensions[0] / 2,
+            //   node.y - bckgDimensions[1] / 2,
+            //   ...bckgDimensions,
+            // );
 
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
@@ -519,16 +517,16 @@ function App() {
             node.__bckgDimensions = bckgDimensions; // to re-use in nodePointerAreaPaint
           }}
           //
-          nodePointerAreaPaint={(node, color, ctx) => {
-            ctx.fillStyle = color;
-            const bckgDimensions = node.__bckgDimensions;
-            bckgDimensions &&
-              ctx.fillRect(
-                node.x - bckgDimensions[0] / 2,
-                node.y - bckgDimensions[1] / 2,
-                ...bckgDimensions,
-              );
-          }}
+          // nodePointerAreaPaint={(node, color, ctx) => {
+          //   ctx.fillStyle = color;
+          //   const bckgDimensions = node.__bckgDimensions;
+          //   bckgDimensions &&
+          //     ctx.fillRect(
+          //       node.x - bckgDimensions[0] / 2,
+          //       node.y - bckgDimensions[1] / 2,
+          //       ...bckgDimensions,
+          //     );
+          // }}
         />
       </div>
 
