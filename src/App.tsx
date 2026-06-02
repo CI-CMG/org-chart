@@ -20,18 +20,20 @@ const meta_graph = {
     { id: "Qin Lv", group: 44 },
     { id: "Sonar AI", group: 44 },
     //
-    { id: "Carrie Wall Bell", group: 0 },
-    { id: "Nic Arcos", group: 0 },
+    { id: "Carrie Wall Bell", group: 2 },
+    { id: "Nic Arcos", group: 2 },
     { id: "Aaron Sweeny", group: 0 },
     { id: "Lindsey Wright", group: 0 },
-    { id: "Jennifer Jencks", group: 0 },
+    { id: "Jennifer Jencks", group: 2 },
     { id: "Bryan Meyer", group: 0 },
     { id: "Jordan Schweizer", group: 0 },
     { id: "Teodora Mitroi", group: 0 },
     { id: "Michael Richtsmeier", group: 33 },
+    { id: "Logan Ejupi", group: 33 },
+    { id: "Zoe Anderson", group: 33 },
     { id: "Luke Pitstick", group: 33 },
     { id: "Bary Eakins", group: 0 },
-    { id: "Rob Redmon", group: 10 },
+    { id: "Rob Redmon", group: 2 },
     // {"id": "", "group": 0},
     // {"id": "", "group": 0},
     // {"id": "", "group": 0},
@@ -140,6 +142,8 @@ const meta_graph = {
     { id: "Richard Baldwin", group: 0 },
     { id: "Ryan Berkheimer", group: 0 },
     { id: "Jesse Varner", group: 0 },
+    { id: "Jessica Nation", group: 0 },
+    { id: "Kevin Lally", group: 0 },
     //
     { id: "RMD", longName: "Resource Management Division (RMD)", group: 2 },
     { id: "Aric Whatley", group: 0 },
@@ -205,6 +209,7 @@ const meta_graph = {
     { id: "US Air Force", group: 5 },
     // groups for dev team
     { id: "Hazel", group: 5 },
+    { id: "Team Fish", group: 5 },
     { id: "Gazetteer", group: 5 },
     { id: "EchoFish", group: 5 },
     { id: "Trackline", group: 5 },
@@ -223,7 +228,7 @@ const meta_graph = {
     { source: "Rudy Klucik", target: "NCEI", predicate: "memberOf" },
     // {"source": "Rudy Klucik", "target": "CIRES", "predicate": "memberOf"},
     { source: "Rudy Klucik", target: "CMC", predicate: "memberOf" },
-    { source: "Rudy Klucik", target: "GSB Dev Team", predicate: "memberOf" },
+    { source: "Rudy Klucik", target: "GSB Dev Team", predicate: "memberOf", color: 'green' },
     { source: "Rudy Klucik", target: "Hazel", predicate: "worksOn" },
     { source: "Rudy Klucik", target: "Gazetteer", predicate: "worksOn" },
     { source: "Rudy Klucik", target: "EchoFish", predicate: "worksOn" },
@@ -242,6 +247,7 @@ const meta_graph = {
     { source: "Payton Cain", target: "Tharp", predicate: "worksOn" },
     { source: "Carrie Wall Bell", target: "EchoFish", predicate: "worksOn" },
     { source: "Carrie Wall Bell", target: "TugBoat", predicate: "worksOn" },
+    { source: "Carrie Wall Bell", target: "Team Fish", predicate: "worksOn" },
     { source: "Quincy Cantu", target: "TugBoat", predicate: "worksOn", value: 1 },
     { source: "Bryan Meyer", target: "Tharp", predicate: "worksOn", value: 1 },
     { source: "Bryan Meyer", target: "Trackline", predicate: "worksOn", value: 1 },
@@ -251,6 +257,8 @@ const meta_graph = {
     { source: "Jordan Schweizer", target: "Trackline", predicate: "worksOn" },
     { source: "Teodora Mitroi", target: "Trackline", predicate: "worksOn" },
     { source: "Michael Richtsmeier", target: "Trackline", predicate: "juniorDataManager" },
+    { source: "Logan Ejupi", target: "Team Fish", predicate: "juniorDataManager" },
+    { source: "Zoe Anderson", target: "Team Fish", predicate: "juniorDataManager" },
     // { source: "Luke Pitstick", target: "Team Fish", predicate: "juniorDataManager" },
     // { source: "", target: "Team Fish", predicate: "juniorDataManager" },
     { source: "Rachel Peterson", target: "Tharp", predicate: "worksOn" },
@@ -260,6 +268,8 @@ const meta_graph = {
     { source: "Jennifer Jencks", target: "Gazetteer", predicate: "worksOn", value: 1 },
     { source: "Jennifer Jencks", target: "Mable", predicate: "worksOn", value: 1 },
     { source: "Jennifer Jencks", target: "Crowbar", predicate: "worksOn", value: 1 },
+    { source: "Jessica Nation", target: "Mable", predicate: "worksOn", value: 1 },
+    { source: "Kevin Lally", target: "Mable", predicate: "worksOn", value: 1 },
     {
       source: "Vidhyadhari Gondle",
       target: "FishFlicks",
@@ -434,6 +444,10 @@ const meta_graph = {
     { source: "TugBoat", target: "NCAI", predicate: "contributesTo", value: 1 },
     //
     { source: "Alexander Hoelzemann", target: "Sonar AI", predicate: "contributesTo", value: 2 },
+    { source: "Alexander Hoelzemann", target: "Computer Science Department", predicate: "postdocFor", value: 2 },
+    { source: "Clinton Lohr", target: "Computer Science Department", predicate: "studentOf", value: 2 },
+    { source: "Rachel Peterson", target: "Computer Science Department", predicate: "studentOf", value: 2 },
+    { source: "Quincy Cantu", target: "Computer Science Department", predicate: "studentOf", value: 2 },
     { source: "Rudy Klucik", target: "Sonar AI", predicate: "contributesTo", value: 1 },
     { source: "Qin Lv", target: "Sonar AI", predicate: "contributesTo", value: 1 },
     { source: "Carrie Wall Bell", target: "Sonar AI", predicate: "contributesTo", value: 1 },
@@ -442,6 +456,14 @@ const meta_graph = {
     { source: "Qin Lv", target: "Computer Science Department", predicate: "contributesTo", value: 1 },
   ],
 };
+
+// TODO: add
+//  CIRES Fellows
+//  Student Relationships to CU
+//  Pathfinders project
+//  DOC/NOAA/NESDIS/NCEI(Deke & Joe)/COGS(Karen)/GSB(Stephanie)/MGG(Kelly)-STP(Laurel)/
+//  OMB
+//  NCAR/CISL
 
 function App() {
   const containerRef = useRef(null);
@@ -493,6 +515,12 @@ function App() {
           nodeAutoColorBy="group"
           linkDirectionalParticles="value"
           linkDirectionalParticleSpeed={d => d.value * 0.001}
+          linkColor={(node) => {
+            if( 'color' in node ) {
+              return node.color;
+            }
+            return 'lightGrey';
+          }}
           nodeCanvasObject={(node, ctx, globalScale) => {
             const label = node.id;
             const fontSize = 12 / globalScale;
@@ -516,17 +544,6 @@ function App() {
 
             node.__bckgDimensions = bckgDimensions; // to re-use in nodePointerAreaPaint
           }}
-          //
-          // nodePointerAreaPaint={(node, color, ctx) => {
-          //   ctx.fillStyle = color;
-          //   const bckgDimensions = node.__bckgDimensions;
-          //   bckgDimensions &&
-          //     ctx.fillRect(
-          //       node.x - bckgDimensions[0] / 2,
-          //       node.y - bckgDimensions[1] / 2,
-          //       ...bckgDimensions,
-          //     );
-          // }}
         />
       </div>
 
