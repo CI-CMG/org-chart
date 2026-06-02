@@ -1,8 +1,8 @@
 import { useRef } from "react";
 // import ForceGraph3D from "react-force-graph-3d";
 import ForceGraph2D from "react-force-graph-2d";
-import SpriteText from "three-spritetext";
-import "./App.css";
+// import SpriteText from "three-spritetext";
+// import "./App.css";
 
 const meta_graph = {
   nodes: [

@@ -1,6 +1,14 @@
 # React + TypeScript + Vite
 
-The Difference Between Organizational Structure and an Org Chart:
+## name ideas
+noaa constellation --> comparing constellations to graph format
+noaa atlas
+  constellation
+  map
+  gazetteer
+  subway
+
+## The Difference Between Organizational Structure and an Org Chart:
 https://organizationalphysics.com/2015/02/09/organizational-design-the-difference-between-organizational-structure-and-an-org-chart/
 
 https://www.stmweather.com/blog/profiles/what-is-noaa-and-what-is-its-mission
