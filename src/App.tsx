@@ -71,7 +71,7 @@ const meta_graph = {
       group: 2,
     },
     { id: "Earth Lab", longName: "Earth Lab", group: 2 },
-    { id: "Main Campus Research", longName: "", group: 2 },
+    { id: "Main Campus Research", longName: "CU Main Campus Research", group: 2 },
     {
       id: "CEEE",
       longName: "Center for Education, Engagement and Evaluation (CEEE)",
@@ -117,8 +117,8 @@ const meta_graph = {
       longName: "Coasts, Oceans, and Geophysics Science Division (COGS)",
       group: 2,
     },
-    { id: "STPS", longName: "", group: 2 },
-    { id: "MGGS", longName: "", group: 2 },
+    { id: "STPS", longName: "Solar Terrestrial Physics (STPS)", group: 3 },
+    { id: "MGGS", longName: "Marine Geology and Geophysics (MGGS)", group: 2 },
     { id: "OSB", longName: "Oceanographic Science Branch (OSB)", group: 2 },
     { id: "Patrick Hogan", group: 0 },
     { id: "Kirsten Larsen", group: 0 },
@@ -127,6 +127,7 @@ const meta_graph = {
     { id: "Karen Grissom", group: 2 },
     { id: "Kelly Stroker", group: 0 },
     { id: "Laurel Rachmeler", group: 0 },
+    { id: "Josh Riley", group: 0 },
     { id: "CSB", longName: "Coastal Science Branch (CSB)", group: 2 },
     { id: "Jennifer Bowers", group: 0 },
     //
@@ -177,6 +178,19 @@ const meta_graph = {
     { id: "Max Layer", group: 0 },
     { id: "Jefferson Ogata", group: 0 },
     { id: "Jason Symonds", group: 0 },
+    //
+    { id: "Caleb Dorsett", group: 0 },
+    { id: "Ernie Joynt", group: 0 },
+    { id: "Gary Osowski", group: 0 },
+    { id: "Issa Perry", group: 0 }, // DB Admin
+    { id: "Rontgen Isaac", group: 0 },
+    { id: "DB Admin", group: 0 },
+    { id: "Eric Porter", group: 0 },
+    { id: "James Pritchitt", group: 0 },
+    { id: "Joel Rodriguez Chacon", group: 0 },
+    { id: "Jesse Williams", group: 0 },
+    { id: "Linux System Administrators", group: 0 },
+    //
     { id: "LSB", longName: "Logistics Support Branch (LSB)", group: 2 },
     { id: "Shane Wise", group: 0 },
     { id: "Abraham Cabazos", group: 0 },
@@ -197,6 +211,25 @@ const meta_graph = {
       group: 5,
     },
     {
+      id: "NESDIS Common Cloud Framework",
+      longName: "NESDIS Common Cloud Framework (NCCF)",
+      description: "NCCF (NESDIS Common Cloud Framework) is the cloud-based data architecture and infrastructure built by NOAA to securely ingest, process, and distribute environmental satellite data.",
+      group: 5,
+    },
+    {
+      id: "Consolidated Storage Service",
+      longName: "Consolidated Storage Service (CSS)",
+      description: "",
+      group: 5,
+    },
+    // OISS (Open Information Stewardship Service)
+    {
+      id: "Open Information Stewardship Service",
+      longName: "Open Information Stewardship Service (OISS)",
+      description: "The OISS (Open Information Stewardship Service) is a semantic knowledge graph framework developed by the National Centers for Environmental Information (NCEI) within NOAA.",
+      group: 5,
+    },
+    {
       id: "NOAA",
       longName: "National Oceanic and Atmospheric Administration",
       group: 5,
@@ -204,6 +237,12 @@ const meta_graph = {
     {
       id: "Office of Ocean and Atmospheric Research",
       longName: "Office of Ocean and Atmospheric Research (OAR)",
+      group: 5,
+    },
+    {
+      id: "CIAO", // OAR -> CIAO -> CIRES
+      longName: "NOAA Cooperative Institute Administration Office (CIAO)",
+      description: "The NOAA Cooperative Institute Administration Office (CIAO) oversees NOAA's Cooperative Institute (CI) portfolio.",
       group: 5,
     },
     { id: "CU", longName: "University of Colorado Boulder", group: 5 },
@@ -216,6 +255,7 @@ const meta_graph = {
     { id: "US Air Force", group: 5 },
     // groups for dev team
     { id: "Hazel", group: 5 },
+    { id: "Marigrams", group: 5 },
     { id: "Team Fish", group: 5 },
     { id: "Gazetteer", group: 5 },
     { id: "EchoFish", group: 5 },
@@ -287,6 +327,8 @@ const meta_graph = {
     },
     { source: "Lindsey Wright", target: "Hazel", predicate: "worksOn" },
     { source: "Nic Arcos", target: "Hazel", predicate: "worksOn" },
+    { source: "Marigrams", target: "Hazel", predicate: "partOf" },
+    { source: "Aaron Sweeny", target: "Marigrams", predicate: "partOf" },
     // {"source": "Rudy Klucik", "target": "", "predicate": "worksOn"},
     // {"source": "Rudy Klucik", "target": "", "predicate": "worksOn"},
     // {"source": "Rudy Klucik", "target": "", "predicate": "worksOn"},
@@ -404,6 +446,12 @@ const meta_graph = {
       value: 1 
     },
     {
+      source: "NESDIS Common Cloud Framework",
+      target: "National Environmental Satellite, Data, and Information Service",
+      predicate: "memberOf",
+      value: 1 
+    },
+    {
       source: "National Environmental Satellite, Data, and Information Service",
       target: "NOAA",
       predicate: "memberOf",
@@ -478,9 +526,11 @@ const meta_graph = {
     { source: "COGS", target: "NCEI", predicate: "memberOf", value: 1 },
     { source: "STPS", target: "GSB", predicate: "memberOf", value: 1 },
     { source: "STP DPMF", target: "STPS", predicate: "memberOf", value: 1 },
+    { source: "Josh Riley", target: "STP DPMF", predicate: "memberOf", value: 1 },
+    { source: "Josh Riley", target: "STPS", predicate: "memberOf", value: 1 },
     { source: "MGGS", target: "GSB", predicate: "memberOf", value: 1 },
     { source: "CSB", target: "COGS", predicate: "memberOf", value: 1 },
-    { source: "OSB", target: "NCEI", predicate: "memberOf", value: 1 },
+    { source: "OSB", target: "COGS", predicate: "memberOf", value: 1 },
     { source: "Patrick Hogan", target: "OSB", predicate: "memberOf", value: 1 },
     { source: "Kirsten Larsen", target: "OSB", predicate: "memberOf", value: 1 },
     { source: "GSB", target: "COGS", predicate: "memberOf", value: 1 },
@@ -490,6 +540,7 @@ const meta_graph = {
     { source: "Kelly Stroker", target: "MGGS", predicate: "memberOf", value: 1 },
     { source: "GSB Dev Team", target: "MGGS", predicate: "memberOf", value: 1 },
     { source: "Laurel Rachmeler", target: "STPS", predicate: "memberOf", value: 1 },
+    // { source: "Josh Riley", target: "STPS", predicate: "memberOf", value: 1 },
     { source: "Jennifer Bowers", target: "CSB", predicate: "memberOf", value: 1 },
     { source: "DSD", target: "NCEI", predicate: "memberOf", value: 1 },
     { source: "Ken Casey", target: "DSD", predicate: "memberOf", value: 1 },
@@ -510,6 +561,7 @@ const meta_graph = {
     { source: "DAB", target: "DSD", predicate: "memberOf", value: 1 },
     { source: "Richard Baldwin", target: "DAB", predicate: "memberOf", value: 1 },
     { source: "Ryan Berkheimer", target: "DAB", predicate: "memberOf", value: 1 },
+    { source: "Ryan Berkheimer", target: "Open Information Stewardship Service", predicate: "memberOf", value: 1 },
     { source: "Jesse Varner", target: "DAB", predicate: "memberOf", value: 1 },
     { source: "RMD", target: "NCEI", predicate: "memberOf", value: 1 },
     { source: "Aric Whatley", target: "RMD", predicate: "memberOf", value: 1 },
@@ -527,19 +579,40 @@ const meta_graph = {
     { source: "Max Layer", target: "ITOB", predicate: "memberOf", value: 1 },
     { source: "Jefferson Ogata", target: "ITOB", predicate: "memberOf", value: 1 },
     { source: "Jason Symonds", target: "ITOB", predicate: "memberOf", value: 1 },
+
+    { source: "Caleb Dorsett", target: "ITOB", predicate: "memberOf", value: 1 },
+    { source: "Ernie Joynt", target: "ITOB", predicate: "memberOf", value: 1 },
+    { source: "Gary Osowski", target: "ITOB", predicate: "memberOf", value: 1 },
+    { source: "Issa Perry", target: "ITOB", predicate: "memberOf", value: 1 },
+    { source: "Rontgen Isaac", target: "ITOB", predicate: "memberOf", value: 1 },
+    { source: "Issa Perry", target: "DB Admin", predicate: "memberOf", value: 1 },
+    { source: "Rontgen Isaac", target: "DB Admin", predicate: "memberOf", value: 1 },
+    { source: "Eric Porter", target: "ITOB", predicate: "memberOf", value: 1 },
+    { source: "James Pritchitt", target: "ITOB", predicate: "memberOf", value: 1 },
+    { source: "Joel Rodriguez Chacon", target: "ITOB", predicate: "memberOf", value: 1 },
+    { source: "Jesse Williams", target: "ITOB", predicate: "memberOf", value: 1 },
+
+    { source: "Caleb Dorsett", target: "Linux System Administrators", predicate: "memberOf", value: 1 },    
+    { source: "Gary Osowski", target: "Linux System Administrators", predicate: "memberOf", value: 1 },
+    { source: "Joel Rodriguez Chacon", target: "Linux System Administrators", predicate: "memberOf", value: 1 },
+    { source: "Jesse Williams", target: "Linux System Administrators", predicate: "memberOf", value: 1 },
+
     { source: "LSB", target: "MSD", predicate: "memberOf", value: 1 },
     { source: "Abraham Cabazos", target: "LSB", predicate: "memberOf", value: 1 },
     { source: "Shane Wise", target: "LSB", predicate: "memberOf", value: 1 },
     // { source: "", target: "", predicate: "memberOf", value: 1 },
-    // //
-    // { id: "ITOB", longName: "IT Operations Branch (ITOB)", group: 2 },
-    // { id: "Preston Carter", group: 0 },
-    // { id: "David Hernandez", group: 0 },
-    // { id: "Max Layer", group: 0 },
-    // { id: "Jefferson Ogata", group: 0 },
-    // { id: "Jason Symonds", group: 0 },
-    // { id: "LSB", longName: "Logistics Support Branch (LSB)", group: 2 },
-    // { id: "Shane Wise", group: 0 },
+    //
+    { source: "Office of Ocean and Atmospheric Research", target: "CIAO", predicate: "memberOf", value: 1 },
+    { source: "CIAO", target: "CIRES", predicate: "memberOf", value: 1 },
+    // { source: "", target: "", predicate: "memberOf", value: 1 },
+    // TODO: NOAA CORE
+    // TODO: Mason & James
+    // TODO: NCCF
+    // TODO: AASI
+    // TODO: https://www.fisheries.noaa.gov/about-us/who-we-are
+    //
+
+    // TODO: for people, start-end dates, name, short name, email, fed/contractor/affiliate?
   ],
 };
 
@@ -547,7 +620,6 @@ const meta_graph = {
 //  CIRES Fellows
 //  Student Relationships to CU
 //  Pathfinders project
-//  DOC/NOAA/NESDIS/NCEI(Deke & Joe)/COGS(Karen)/GSB(Stephanie)/MGG(Kelly)-STP(Laurel)/
 //  OMB
 //  NCAR/CISL
 
@@ -608,27 +680,25 @@ function App() {
             return 'lightGrey';
           }}
           nodeCanvasObject={(node, ctx, globalScale) => {
-            const label = node.id;
+            let label = node.id;
+            if ('longName' in node) {
+              label = node.longName;
+            } else {
+              label = node.id;
+            }
             const fontSize = 12 / globalScale;
             ctx.font = `${fontSize}px Sans-Serif`;
             const textWidth = ctx.measureText(label).width;
             const bckgDimensions = [textWidth, fontSize].map(
               (n) => n + fontSize * 0.2,
-            ); // some padding
-
+            );
             ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
-            // ctx.fillRect(
-            //   node.x - bckgDimensions[0] / 2,
-            //   node.y - bckgDimensions[1] / 2,
-            //   ...bckgDimensions,
-            // );
-
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillStyle = node.color;
             ctx.fillText(label, node.x, node.y);
 
-            node.__bckgDimensions = bckgDimensions; // to re-use in nodePointerAreaPaint
+            // node.__bckgDimensions = bckgDimensions;
           }}
         />
       </div>
