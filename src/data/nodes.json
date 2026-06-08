@@ -1,0 +1,744 @@
+{
+   "nodes":[
+      {
+         "id":"Chris Slater",
+         "group":0
+      },
+      {
+         "id":"Clinton Campbell",
+         "group":0
+      },
+      {
+         "id":"Clinton Lohr",
+         "group":0
+      },
+      {
+         "id":"Max Smith",
+         "group":0
+      },
+      {
+         "id":"Payton Cain",
+         "group":0
+      },
+      {
+         "id":"Peemin Chen",
+         "group":0
+      },
+      {
+         "id":"Quincy Cantu",
+         "group":0
+      },
+      {
+         "id":"Rachel Peterson",
+         "group":0
+      },
+      {
+         "id":"Vidhyadhari Gondle",
+         "group":0
+      },
+      {
+         "id":"Alexander Hoelzemann",
+         "group":44
+      },
+      {
+         "id":"Qin Lv",
+         "group":44
+      },
+      {
+         "id":"Sonar AI",
+         "group":44
+      },
+      {
+         "id":"Carrie Wall Bell",
+         "group":2
+      },
+      {
+         "id":"Nic Arcos",
+         "group":2
+      },
+      {
+         "id":"Aaron Sweeny",
+         "group":0
+      },
+      {
+         "id":"Lindsey Wright",
+         "group":0
+      },
+      {
+         "id":"Jennifer Jencks",
+         "group":2
+      },
+      {
+         "id":"Bryan Meyer",
+         "group":0
+      },
+      {
+         "id":"Jordan Schweizer",
+         "group":0
+      },
+      {
+         "id":"Teodora Mitroi",
+         "group":0
+      },
+      {
+         "id":"Michael Richtsmeier",
+         "group":33
+      },
+      {
+         "id":"Logan Ejupi",
+         "group":33
+      },
+      {
+         "id":"Zoe Anderson",
+         "group":33
+      },
+      {
+         "id":"Luke Pitstick",
+         "group":33
+      },
+      {
+         "id":"Bary Eakins",
+         "group":0
+      },
+      {
+         "id":"Rob Redmon",
+         "group":2
+      },
+      {
+         "id":"",
+         "group":0
+      },
+      {
+         "id":"",
+         "group":0
+      },
+      {
+         "id":"",
+         "group":0
+      },
+      {
+         "id":"",
+         "group":0
+      },
+      {
+         "id":"Jeffrey Duda",
+         "group":1
+      },
+      {
+         "id":"Elysia Lucas",
+         "group":1
+      },
+      {
+         "id":"Anne Sledd",
+         "group":1
+      },
+      {
+         "id":"Aleya Kaushik",
+         "group":1
+      },
+      {
+         "id":"Jianhao Zhang",
+         "group":1
+      },
+      {
+         "id":"Nathan Malarich",
+         "group":1
+      },
+      {
+         "id":"Aly Krimmer",
+         "group":1
+      },
+      {
+         "id":"Alison Post",
+         "group":1
+      },
+      {
+         "id":"Nels Bjarke",
+         "group":1
+      },
+      {
+         "id":"Scott Clingan",
+         "group":1
+      },
+      {
+         "id":"Mara Coe",
+         "group":1
+      },
+      {
+         "id":"Agnieszka Gautier",
+         "group":1
+      },
+      {
+         "id":"Guoqing Ge",
+         "group":1
+      },
+      {
+         "id":"Marty Heath",
+         "group":1
+      },
+      {
+         "id":"Rudy Klucik",
+         "group":1
+      },
+      {
+         "id":"Corey Krimmer",
+         "group":1
+      },
+      {
+         "id":"Scott Lewis",
+         "group":1
+      },
+      {
+         "id":"Kim Moreland",
+         "group":1
+      },
+      {
+         "id":"Adam Schneider",
+         "group":1
+      },
+      {
+         "id":"NCAI",
+         "longName":"NOAA Center for AI",
+         "group":5
+      },
+      {
+         "id":"GSL",
+         "longName":"Global Systems Laboratory (GSL)",
+         "group":2
+      },
+      {
+         "id":"PSL",
+         "longName":"Physical Sciences Laboratory (PSL)",
+         "group":2
+      },
+      {
+         "id":"GML",
+         "longName":"Global Monitoring Laboratory (GML)",
+         "group":2
+      },
+      {
+         "id":"CSL",
+         "longName":"Chemical Sciences Laboratory (CSL)",
+         "group":2
+      },
+      {
+         "id":"CIRES ADMIN",
+         "group":2
+      },
+      {
+         "id":"SEEC",
+         "longName":"Sustainability, Energy and Environment Community (SEEC)",
+         "group":2
+      },
+      {
+         "id":"Earth Lab",
+         "longName":"Earth Lab",
+         "group":2
+      },
+      {
+         "id":"Main Campus Research",
+         "longName":"CU Main Campus Research",
+         "group":2
+      },
+      {
+         "id":"CEEE",
+         "longName":"Center for Education, Engagement and Evaluation (CEEE)",
+         "group":2
+      },
+      {
+         "id":"NSIDC",
+         "longName":"National Snow and Ice Data Center (NSIDC)",
+         "group":2
+      },
+      {
+         "id":"SWPC",
+         "longName":"Space Weather Prediction Center (SWPC)",
+         "group":2
+      },
+      {
+         "id":"CMC",
+         "longName":"CIRES Members Council (CMC)",
+         "group":3
+      },
+      ://docs.google.com/spreadsheets/d/1wYRAvP02BrueU2KhbVbleqBQgeNxy5PnJfb_F9uFX38/edit?gid=585617807#gid=585617807{
+         "id":"NCEI",
+         "group":2
+      },
+      {
+         "id":"Directors Office",
+         "longName":"NCEI Directors Office (DO)",
+         "group":2
+      },
+      {
+         "id":"Derek Arndt",
+         "group":0
+      },
+      {
+         "id":"Joseph Pica",
+         "group":0
+      },
+      {
+         "id":"CSSD",
+         "longName":"Climate Science and Services Division (CSSD)",
+         "group":2
+      },
+      {
+         "id":"CSB",
+         "longName":"Climate Science Branch (CSB)",
+         "group":2
+      },
+      {
+         "id":"CISB",
+         "longName":"Climate Information Services Branch (CISB)",
+         "group":2
+      },
+      {
+         "id":"MAB",
+         "longName":"Monitoring & Assessment Branch (MAB)",
+         "group":2
+      },
+      {
+         "id":"COGS",
+         "longName":"Coasts, Oceans, and Geophysics Science Division (COGS)",
+         "group":2
+      },
+      {
+         "id":"STPS",
+         "longName":"Solar Terrestrial Physics (STPS)",
+         "group":3
+      },
+      {
+         "id":"MGGS",
+         "longName":"Marine Geology and Geophysics (MGGS)",
+         "group":2
+      },
+      {
+         "id":"OSB",
+         "longName":"Oceanographic Science Branch (OSB)",
+         "group":2
+      },
+      {
+         "id":"Patrick Hogan",
+         "group":0
+      },
+      {
+         "id":"Kirsten Larsen",
+         "group":0
+      },
+      {
+         "id":"Tobey Kegley",
+         "group":0
+      },
+      {
+         "id":"Anna Lienesch",
+         "group":0
+      },
+      {
+         "id":"Kate Rose",
+         "group":0
+      },
+      {
+         "id":"Boyin Huang",
+         "group":0
+      },
+      {
+         "id":"GSB",
+         "longName":"Geophysical Science Branch (GSB)",
+         "group":2
+      },
+      {
+         "id":"Stephanie Herring",
+         "group":0
+      },
+      {
+         "id":"Karen Grissom",
+         "group":2
+      },
+      {
+         "id":"Kelly Stroker",
+         "group":0
+      },
+      {
+         "id":"Laurel Rachmeler",
+         "group":0
+      },
+      {
+         "id":"Josh Riley",
+         "group":0
+      },
+      {
+         "id":"CSB",
+         "longName":"Coastal Science Branch (CSB)",
+         "group":2
+      },
+      {
+         "id":"Jennifer Bowers",
+         "group":0
+      },
+      {
+         "id":"DSD",
+         "longName":"Data Stewardship Division (DSD)",
+         "group":2
+      },
+      {
+         "id":"Ken Casey",
+         "group":0
+      },
+      {
+         "id":"DOB",
+         "longName":"Data Operations Branch (DOB)",
+         "group":2
+      },
+      {
+         "id":"Steven Rutz",
+         "group":0
+      },
+      {
+         "id":"AB",
+         "longName":"Archive Branch (AB)",
+         "group":2
+      },
+      {
+         "id":"Nancy Ritchey",
+         "group":0
+      },
+      {
+         "id":"Sarah Menassian",
+         "group":0
+      },
+      {
+         "id":"CoMET",
+         "longName":"Collection Metadata Editing Tool (CoMET)",
+         "group":12
+      },
+      {
+         "id":"SDB",
+         "longName":"Software Development Branch (SDB)",
+         "group":2
+      },
+      {
+         "id":"Daniel Lloyd",
+         "group":0
+      },
+      {
+         "id":"James Primrose",
+         "group":0
+      },
+      {
+         "id":"Charles Burris",
+         "group":0
+      },
+      {
+         "id":"John Relph",
+         "group":0
+      },
+      {
+         "id":"Ken Tanaka",
+         "group":0
+      },
+      {
+         "id":"DAB",
+         "longName":"Data Access Branch (DAB)",
+         "group":2
+      },
+      {
+         "id":"Richard Baldwin",
+         "group":0
+      },
+      {
+         "id":"Ryan Berkheimer",
+         "group":0
+      },
+      {
+         "id":"Jesse Varner",
+         "group":0
+      },
+      {
+         "id":"Jessica Nation",
+         "group":0
+      },
+      {
+         "id":"Kevin Lally",
+         "group":0
+      },
+      {
+         "id":"RMD",
+         "longName":"Resource Management Division (RMD)",
+         "group":2
+      },
+      {
+         "id":"Aric Whatley",
+         "group":0
+      },
+      {
+         "id":"Jennifer Thatcher",
+         "group":0
+      },
+      {
+         "id":"FAB",
+         "longName":"Finance and Administrative Branch (FAB)",
+         "group":2
+      },
+      {
+         "id":"Ming-Wai Merschat",
+         "group":0
+      },
+      {
+         "id":"SEB",
+         "longName":"Standards and Evaluation Branch (SEB)",
+         "group":2
+      },
+      {
+         "id":"",
+         "group":0
+      },
+      {
+         "id":"COB",
+         "longName":"Communications and Outreach Branch (COB)",
+         "group":2
+      },
+      {
+         "id":"Jake Fortune",
+         "group":0
+      },
+      {
+         "id":"MSD",
+         "longName":"Mission Support Division (MSD)",
+         "group":2
+      },
+      {
+         "id":"Scott Hausman",
+         "group":0
+      },
+      {
+         "id":"ITOB",
+         "longName":"IT Operations Branch (ITOB)",
+         "group":2
+      },
+      {
+         "id":"Preston Carter",
+         "group":0
+      },
+      {
+         "id":"David Hernandez",
+         "group":0
+      },
+      {
+         "id":"Max Layer",
+         "group":0
+      },
+      {
+         "id":"Jefferson Ogata",
+         "group":0
+      },
+      {
+         "id":"Jason Symonds",
+         "group":0
+      },
+      {
+         "id":"Caleb Dorsett",
+         "group":0
+      },
+      {
+         "id":"Ernie Joynt",
+         "group":0
+      },
+      {
+         "id":"Gary Osowski",
+         "group":0
+      },
+      {
+         "id":"Issa Perry",
+         "group":0
+      },
+      {
+         "id":"Rontgen Isaac",
+         "group":0
+      },
+      {
+         "id":"DB Admin",
+         "group":0
+      },
+      {
+         "id":"Eric Porter",
+         "group":0
+      },
+      {
+         "id":"James Pritchitt",
+         "group":0
+      },
+      {
+         "id":"Joel Rodriguez Chacon",
+         "group":0
+      },
+      {
+         "id":"Jesse Williams",
+         "group":0
+      },
+      {
+         "id":"Linux System Administrators",
+         "group":0
+      },
+      {
+         "id":"LSB",
+         "longName":"Logistics Support Branch (LSB)",
+         "group":2
+      },
+      {
+         "id":"Shane Wise",
+         "group":0
+      },
+      {
+         "id":"Abraham Cabazos",
+         "group":0
+      },
+      {
+         "id":"",
+         "longName":"",
+         "group":2
+      },
+      {
+         "id":"",
+         "longName":"",
+         "group":2
+      },
+      {
+         "id":"GSB Dev Team",
+         "group":4
+      },
+      {
+         "id":"CIRES",
+         "longName":"Cooperative Institute for Research in Environmental Sciences",
+         "group":5
+      },
+      {
+         "id":"National Environmental Satellite, Data, and Information Service",
+         "longName":"National Environmental Satellite, Data, and Information Service (NESDIS)",
+         "group":5
+      },
+      {
+         "id":"NESDIS Common Cloud Framework",
+         "longName":"NESDIS Common Cloud Framework (NCCF)",
+         "description":"NCCF (NESDIS Common Cloud Framework) is the cloud-based data architecture and infrastructure built by NOAA to securely ingest, process, and distribute environmental satellite data.",
+         "group":5
+      },
+      {
+         "id":"Consolidated Storage Service",
+         "longName":"Consolidated Storage Service (CSS)",
+         "description":"",
+         "group":5
+      },
+      {
+         "id":"Open Information Stewardship Service",
+         "longName":"Open Information Stewardship Service (OISS)",
+         "description":"The OISS (Open Information Stewardship Service) is a semantic knowledge graph framework developed by the National Centers for Environmental Information (NCEI) within NOAA.",
+         "group":5
+      },
+      {
+         "id":"NOAA",
+         "longName":"National Oceanic and Atmospheric Administration",
+         "group":5
+      },
+      {
+         "id":"Office of Ocean and Atmospheric Research",
+         "longName":"Office of Ocean and Atmospheric Research (OAR)",
+         "group":5
+      },
+      {
+         "id":"CIAO",
+         :"NOAA Cooperative Institute Administration Office (CIAO)",
+         "description":"The NOAA Cooperative Institute Administration Office (CIAO) oversees NOAA's Cooperative Institute (CI) portfolio.",
+         "group":5
+      },
+      {
+         "id":"CU",
+         "longName":"University of Colorado Boulder",
+         "group":5
+      },
+      {
+         "id":"Computer Science Department",
+         "group":5
+      },
+      {
+         "id":"NCEP",
+         "longName":"National Centers for Environmental Prediction (NCEP)",
+         "group":5
+      },
+      {
+         "id":"US Air Force",
+         "group":5
+      },
+      {
+         "id":"Hazel",
+         "group":5
+      },
+      {
+         "id":"Marigrams",
+         "group":5
+      },
+      {
+         "id":"Team Fish",
+         "group":5
+      },
+      {
+         "id":"Gazetteer",
+         "group":5
+      },
+      {
+         "id":"EchoFish",
+         "group":5
+      },
+      {
+         "id":"Trackline",
+         "group":5
+      },
+      {
+         "id":"Mable",
+         "group":5
+      },
+      {
+         "id":"Crowbar",
+         "group":5
+      },
+      {
+         "id":"STP DPMF",
+         "group":5
+      },
+      {
+         "id":"FishFlicks",
+         "group":5
+      },
+      {
+         "id":"Pace",
+         "group":5
+      },
+      {
+         "id":"Tharp",
+         "group":5
+      },
+      {
+         "id":"WOD",
+         "group":5
+      },
+      {
+         "id":"TugBoat",
+         "group":5
+      },
+      {
+         "id":"Argonaut",
+         "group":5
+      },
+      {
+         "id":"OASIS",
+         "group":5
+      },
+      {
+         "id":"Environmental Data Science Innovation & Inclusion Lab",
+         "group":7
+      },
+      {
+         "id":"Ocean Acoustics Team",
+         "group":4
+      }
+   ]
+}
