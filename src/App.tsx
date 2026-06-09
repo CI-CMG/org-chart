@@ -18,6 +18,8 @@ const meta_graph = {
     //
     { id: "Alexander Hoelzemann", group: 44 },
     { id: "Qin Lv", group: 44 },
+    { id: "Esther Rolf", group: 44 },
+    { id: "VeeVee Cai", group: 44 },
     { id: "Sonar AI", group: 44 },
     //
     { id: "Carrie Wall Bell", group: 2 },
@@ -104,6 +106,7 @@ const meta_graph = {
       longName: "Climate Science and Services Division (CSSD)",
       group: 2,
     },
+    { id: "Jeffrey Privette", group: 1 },
     // { id: "CSB", longName: "Climate Science Branch (CSB)", group: 2 },
     {
       id: "CISB",
@@ -117,8 +120,8 @@ const meta_graph = {
       longName: "Coasts, Oceans, and Geophysics Science Division (COGS)",
       group: 2,
     },
-    { id: "STPS", longName: "Solar Terrestrial Physics (STPS)", group: 3 },
-    { id: "MGGS", longName: "Marine Geology and Geophysics (MGGS)", group: 2 },
+    { id: "STPS", longName: "Solar Terrestrial Physics Section (STPS)", group: 3 },
+    { id: "MGGS", longName: "Marine Geology and Geophysics Section (MGGS)", group: 2 },
     { id: "OSB", longName: "Oceanographic Science Branch (OSB)", group: 2 },
     { id: "Patrick Hogan", group: 0 },
     { id: "Kirsten Larsen", group: 0 },
@@ -155,6 +158,7 @@ const meta_graph = {
     { id: "Jesse Varner", group: 0 },
     { id: "Jessica Nation", group: 0 },
     { id: "Kevin Lally", group: 0 },
+    { id: "Daniel Alemayehu", group: 0 },
     //
     { id: "RMD", longName: "Resource Management Division (RMD)", group: 2 },
     { id: "Aric Whatley", group: 0 },
@@ -166,7 +170,8 @@ const meta_graph = {
     },
     { id: "Ming-Wai Merschat", group: 0 }, // Mindful NOAA
     { id: "SEB", longName: "Standards and Evaluation Branch (SEB)", group: 2 },
-    // {"id": "", "group": 0},
+    { id: "Jon Kidder", group: 1 },
+    { id: "Denise Sylvester", group: 1 },
     {
       id: "COB",
       longName: "Communications and Outreach Branch (COB)",
@@ -245,7 +250,7 @@ const meta_graph = {
     },
     {
       id: "CIAO", // OAR -> CIAO -> CIRES
-      longName: "NOAA Cooperative Institute Administration Office (CIAO)",
+      longName: "Cooperative Institute Administration Office (CIAO)",
       description: "The NOAA Cooperative Institute Administration Office (CIAO) oversees NOAA's Cooperative Institute (CI) portfolio.",
       group: 5,
     },
@@ -270,46 +275,56 @@ const meta_graph = {
     { id: "FishFlicks", group: 5 },
     { id: "Pace", group: 5 },
     { id: "Tharp", group: 5 },
-    { id: "WOD", group: 5 },
+    { id: "WOD", longName: "World Ocean Database (WOD)", group: 5 },
     { id: "TugBoat", group: 5 },
     { id: "Argonaut", group: 5 },
-    { id: "OASIS", group: 5 },
-    { id: "Environmental Data Science Innovation & Inclusion Lab", group: 7},
+    // { id: "OASIS", group: 5 },
+    {
+      id: "ESIIL",
+      longName: "Environmental Data Science Innovation & Impact Lab (ESIIL)",
+      description: "https://cires.colorado.edu/news/esiil-aims-foster-revolution-environmental-data-science",
+      group: 7,
+    },
     // { id: "Ocean Acoustics Team", group: 4 },
   ],
   links: [
     { source: "Rudy Klucik", target: "NCEI", predicate: "memberOf" },
     // {"source": "Rudy Klucik", "target": "CIRES", "predicate": "memberOf"},
     { source: "Rudy Klucik", target: "CMC", predicate: "memberOf" },
-    { source: "Rudy Klucik", target: "GSB Dev Team", predicate: "memberOf", color: 'green' },
+    { source: "Rudy Klucik", target: "GSB Dev Team", predicate: "memberOf", color: 'grey' },
     { source: "Rudy Klucik", target: "Hazel", predicate: "worksOn" },
-    { source: "Rudy Klucik", target: "Gazetteer", predicate: "worksOn" },
+    // { source: "Rudy Klucik", target: "Gazetteer", predicate: "worksOn" },
     { source: "Rudy Klucik", target: "EchoFish", predicate: "worksOn" },
-    { source: "Rudy Klucik", target: "Trackline", predicate: "worksOn" },
-    { source: "Rudy Klucik", target: "Mable", predicate: "worksOn" },
-    { source: "Rudy Klucik", target: "Crowbar", predicate: "worksOn" },
-    { source: "Rudy Klucik", target: "STP DPMF", predicate: "worksOn" },
-    { source: "Rudy Klucik", target: "Tharp", predicate: "worksOn" },
+    // { source: "Rudy Klucik", target: "Trackline", predicate: "worksOn" },
+    // { source: "Rudy Klucik", target: "Mable", predicate: "worksOn" },
+    // { source: "Rudy Klucik", target: "Crowbar", predicate: "worksOn" },
+    // { source: "Rudy Klucik", target: "STP DPMF", predicate: "worksOn" },
+    // { source: "Rudy Klucik", target: "Tharp", predicate: "worksOn" },
     { source: "Bary Eakins", target: "Tharp", predicate: "worksOn" },
     { source: "Peemin Chen", target: "Hazel", predicate: "worksOn" },
     { source: "Peemin Chen", target: "FishFlicks", predicate: "worksOn" },
-    { source: "Kelly Stroker", target: "Hazel", predicate: "worksOn" },
-    { source: "Payton Cain", target: "Gazetteer", predicate: "worksOn" },
-    { source: "Payton Cain", target: "Trackline", predicate: "worksOn" },
-    { source: "Payton Cain", target: "Mable", predicate: "worksOn" },
+    // { source: "Kelly Stroker", target: "Hazel", predicate: "worksOn" },
+    // { source: "Payton Cain", target: "Gazetteer", predicate: "worksOn" },
+    // { source: "Payton Cain", target: "Trackline", predicate: "worksOn" },
+    // { source: "Payton Cain", target: "Mable", predicate: "worksOn" },
     { source: "Payton Cain", target: "Crowbar", predicate: "worksOn" },
-    { source: "Payton Cain", target: "Tharp", predicate: "worksOn" },
+    { source: "Payton Cain", target: "TugBoat", predicate: "worksOn" },
+    // { source: "Payton Cain", target: "Tharp", predicate: "worksOn" },
     { source: "Carrie Wall Bell", target: "EchoFish", predicate: "worksOn" },
     { source: "Carrie Wall Bell", target: "TugBoat", predicate: "worksOn" },
     { source: "Carrie Wall Bell", target: "Team Fish", predicate: "worksOn" },
+    { source: "Carrie Wall Bell", target: "Pace", predicate: "worksOn" },
     { source: "Quincy Cantu", target: "TugBoat", predicate: "worksOn", value: 1 },
     { source: "Quincy Cantu", target: "Team Fish", predicate: "worksOn", value: 1 },
+    { source: "Quincy Cantu", target: "Pace", predicate: "worksOn", value: 1 },
     { source: "Bryan Meyer", target: "Tharp", predicate: "worksOn", value: 1 },
     { source: "Bryan Meyer", target: "Trackline", predicate: "worksOn", value: 1 },
     { source: "Clinton Lohr", target: "TugBoat", predicate: "worksOn", value: 1 },
     { source: "Clinton Lohr", target: "Team Fish", predicate: "worksOn", value: 1 },
+    { source: "Clinton Lohr", target: "Pace", predicate: "worksOn", value: 1 },
     // {"source": "Rudy Klucik", "target": "", "predicate": "worksOn"},
     { source: "Rachel Peterson", target: "Trackline", predicate: "worksOn" },
+    { source: "Rachel Peterson", target: "Open Information Stewardship Service", predicate: "worksOn" },
     { source: "Jordan Schweizer", target: "Trackline", predicate: "worksOn" },
     { source: "Teodora Mitroi", target: "Trackline", predicate: "worksOn" },
     { source: "Michael Richtsmeier", target: "Trackline", predicate: "juniorDataManager" },
@@ -319,6 +334,7 @@ const meta_graph = {
     // { source: "", target: "Team Fish", predicate: "juniorDataManager" },
     { source: "Rachel Peterson", target: "Tharp", predicate: "worksOn" },
     { source: "Max Smith", target: "Mable", predicate: "worksOn" },
+    { source: "Max Smith", target: "Open Information Stewardship Service", predicate: "worksOn" },
     { source: "Clinton Campbell", target: "Crowbar", predicate: "worksOn" },
     { source: "Jennifer Jencks", target: "Crowbar", predicate: "worksOn", value: 1 },
     { source: "Jennifer Jencks", target: "Gazetteer", predicate: "worksOn", value: 1 },
@@ -326,6 +342,7 @@ const meta_graph = {
     { source: "Jennifer Jencks", target: "Crowbar", predicate: "worksOn", value: 1 },
     { source: "Jessica Nation", target: "Mable", predicate: "worksOn", value: 1 },
     { source: "Kevin Lally", target: "Mable", predicate: "worksOn", value: 1 },
+    { source: "Daniel Alemayehu", target: "Mable", predicate: "worksOn", value: 1 },
     {
       source: "Vidhyadhari Gondle",
       target: "FishFlicks",
@@ -402,7 +419,9 @@ const meta_graph = {
     // cires
     // {"source": "Chris Slater", "target": "CIRES", "predicate": "memberOf"},
     { source: "Chris Slater", target: "GSB Dev Team", predicate: "memberOf", value: 1  },
-    // { source: "Chris Slater", target: "NCEI", predicate: "memberOf", value: 1  },
+    { source: "Chris Slater", target: "Gazetteer", predicate: "memberOf", value: 1  },
+    { source: "Chris Slater", target: "Argonaut", predicate: "memberOf", value: 1  },
+    { source: "Chris Slater", target: "WOD", predicate: "memberOf", value: 1  },
     // {"source": "Clinton Campbell", "target": "CIRES", "predicate": "memberOf"},
     {
       source: "Clinton Campbell",
@@ -457,6 +476,7 @@ const meta_graph = {
       predicate: "memberOf",
       value: 1 
     },
+    { source: "Consolidated Storage Service", target: "NESDIS Common Cloud Framework", predicate: "associatedWith" },
     {
       source: "National Environmental Satellite, Data, and Information Service",
       target: "NOAA",
@@ -497,6 +517,7 @@ const meta_graph = {
     { source: "NSIDC", target: "CU", predicate: "memberOf", value: 1  },
     { source: "CEEE", target: "CIRES", predicate: "memberOf", value: 1  },
     { source: "SEEC", target: "CU", predicate: "memberOf", value: 1  },
+    { source: "ESIIL", target: "CIRES", predicate: "memberOf", value: 1  },
     { source: "CIRES", target: "CU", predicate: "memberOf", value: 1  },
     { source: "SWPC", target: "NCEP", predicate: "memberOf", value: 1  },
     { source: "SWPC", target: "US Air Force", predicate: "memberOf", value: 1  },
@@ -512,12 +533,16 @@ const meta_graph = {
     { source: "Clinton Lohr", target: "Computer Science Department", predicate: "studentOf", value: 2 },
     { source: "Rachel Peterson", target: "Computer Science Department", predicate: "studentOf", value: 2 },
     { source: "Quincy Cantu", target: "Computer Science Department", predicate: "studentOf", value: 2 },
-    { source: "Rudy Klucik", target: "Sonar AI", predicate: "contributesTo", value: 1 },
+    // { source: "Rudy Klucik", target: "Sonar AI", predicate: "contributesTo", value: 1 },
     { source: "Qin Lv", target: "Sonar AI", predicate: "contributesTo", value: 1 },
+    { source: "Esther Rolf", target: "ESIIL", predicate: "contributesTo", value: 1 },
+    { source: "VeeVee Cai", target: "ESIIL", predicate: "contributesTo", value: 1 },
     { source: "Carrie Wall Bell", target: "Sonar AI", predicate: "contributesTo", value: 1 },
-    { source: "EchoFish", target: "Sonar AI", predicate: "contributesTo", value: 1 },
+    { source: "Sonar AI", target: "EchoFish", predicate: "contributesTo", value: 1 },
     { source: "Computer Science Department", target: "CU", predicate: "contributesTo", value: 1 },
     { source: "Qin Lv", target: "Computer Science Department", predicate: "contributesTo", value: 1 },
+    { source: "Esther Rolf", target: "Computer Science Department", predicate: "contributesTo", value: 1 },
+    { source: "VeeVee Cai", target: "Computer Science Department", predicate: "contributesTo", value: 1 },
     /////////////////////////////////
     // bigger org
     /////////////////////////////////
@@ -526,6 +551,7 @@ const meta_graph = {
     { source: "Joseph Pica", target: "Directors Office", predicate: "memberOf", value: 1 },
     //
     { source: "CSSD", target: "NCEI", predicate: "memberOf", value: 1 },
+    { source: "Jeffrey Privette", target: "CSSD", predicate: "memberOf" },
     // { source: "CSB", target: "NCEI", predicate: "memberOf", value: 1 },
     { source: "CISB", target: "NCEI", predicate: "memberOf", value: 1 },
     { source: "MAB", target: "NCEI", predicate: "memberOf", value: 1 },
@@ -546,12 +572,12 @@ const meta_graph = {
     { source: "Kate Rose", target: "OSB", predicate: "memberOf", value: 1 },
     { source: "Boyin Huang", target: "OSB", predicate: "memberOf", value: 1 },
     { source: "GSB", target: "COGS", predicate: "memberOf", value: 1 },
-    { source: "Karen Grissom", target: "COGS", predicate: "deputyDivisionChief", value: 3, color: 'green' },
-    { source: "Rob Redmon", target: "COGS", predicate: "memberOf", value: 1, color: 'green' },
-    { source: "Stephanie Herring", target: "GSB", predicate: "federalSupervisor", value: 3, color: 'blue' },
-    { source: "Kelly Stroker", target: "MGGS", predicate: "memberOf", value: 1 },
+    { source: "Karen Grissom", target: "COGS", predicate: "deputyDivisionChief", value: 3, color: 'black' },
+    { source: "Rob Redmon", target: "COGS", predicate: "memberOf", value: 1, color: 'black' },
+    { source: "Stephanie Herring", target: "GSB", predicate: "federalSupervisor", value: 3, color: 'black' },
+    { source: "Kelly Stroker", target: "MGGS", predicate: "memberOf", value: 1, color: 'black' },
     { source: "GSB Dev Team", target: "MGGS", predicate: "memberOf", value: 1 },
-    { source: "Laurel Rachmeler", target: "STPS", predicate: "memberOf", value: 1 },
+    { source: "Laurel Rachmeler", target: "STPS", predicate: "memberOf", value: 1, color: 'black' },
     // { source: "Josh Riley", target: "STPS", predicate: "memberOf", value: 1 },
     { source: "Jennifer Bowers", target: "CSB", predicate: "memberOf", value: 1 },
     { source: "DSD", target: "NCEI", predicate: "memberOf", value: 1 },
@@ -581,6 +607,8 @@ const meta_graph = {
     { source: "FAB", target: "RMD", predicate: "memberOf", value: 1 },
     { source: "Ming-Wai Merschat", target: "FAB", predicate: "memberOf", value: 1 },
     { source: "SEB", target: "RMD", predicate: "memberOf", value: 1 },
+    { source: "Jon Kidder", target: "SEB", predicate: "memberOf", value: 1 },
+    { source: "Denise Sylvester", target: "SEB", predicate: "memberOf", value: 1 },
     { source: "COB", target: "RMD", predicate: "memberOf", value: 1 },
     { source: "Jake Fortune", target: "COB", predicate: "memberOf", value: 1 },
     { source: "MSD", target: "NCEI", predicate: "memberOf", value: 1 },
@@ -644,6 +672,9 @@ function App() {
 
   return (
     <div className="App" id="parentDiv">
+      <div id="title">
+        <h1>NOAA MGGS & CIRES Organizational Structure</h1>
+      </div>
       <div ref={containerRef}>
         {/* <ForceGraph3D
           graphData={meta_graph}
@@ -683,12 +714,15 @@ function App() {
         <ForceGraph2D
           graphData={meta_graph}
           nodeAutoColorBy="group"
-          linkDirectionalParticles="value"
-          linkDirectionalParticleSpeed={d => d.value * 0.001}
+          // linkDirectionalParticles="value"
+          linkDirectionalParticles={2}
+          linkDirectionalParticleSpeed={() => {
+            return 1 * 0.0006;
+          }}
           linkColor={(node) => {
-            if( 'color' in node ) {
-              return node.color;
-            }
+            // if( 'color' in node ) {
+            //   return node.color;
+            // }
             return 'lightGrey';
           }}
           nodeCanvasObject={(node, ctx, globalScale) => {
