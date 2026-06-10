@@ -296,7 +296,7 @@ const meta_graph = {
     { id: "Trackline", group: 5 },
     { id: "Mable", group: 5 },
     { id: "Crowbar", group: 5 },
-    { id: "STP DPMF", group: 5 },
+    { id: "STP DPMF", longName: "Space Weather Portal (SPOT)", group: 5 },
     { id: "FishFlicks", group: 5 },
     { id: "Pace", group: 5 },
     { id: "Tharp", group: 5 },
@@ -1080,14 +1080,14 @@ const meta_graph = {
 function App() {
   const containerRef = useRef(null);
 
-  const parentDiv = document.getElementById("parentDiv");
-  const width = parentDiv?.clientWidth;
-  const height = parentDiv?.clientHeight;
+  // const parentDiv = document.getElementById("parentDiv");
+  // const width = parentDiv?.clientWidth;
+  // const height = parentDiv?.clientHeight;
 
   return (
     <div className="App" id="parentDiv">
       <div id="title">
-        <h1>NOAA MGGS & CIRES Organizational Structure</h1>
+        <h1>CIRES & NOAA Marine Geology & Geophysics Section Organizational Structure</h1>
       </div>
       <div ref={containerRef}>
         {/* <ForceGraph3D
