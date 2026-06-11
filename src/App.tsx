@@ -34,9 +34,10 @@ const meta_graph = {
     { id: "Logan Ejupi", group: 33 },
     { id: "Zoe Anderson", group: 33 },
     { id: "Luke Pitstick", group: 33 },
+    { id: "Rory OFlynn", group: 33 },
     { id: "Bary Eakins", group: 0 },
     { id: "Rob Redmon", group: 2 },
-    // {"id": "", "group": 0},
+    {"id": "Chuck Anderson", "group": 0},
     // {"id": "", "group": 0},
     // {"id": "", "group": 0},
     // {"id": "", "group": 0},
@@ -342,10 +343,10 @@ const meta_graph = {
     // echopype
     {
       id: "echopype",
-      group: 8,
+      group: 1,
     },
-    { id: "Lloyd Izard", group: 8 },
-    { id: "Wu-Jung Lee", group: 8 },
+    { id: "Lloyd Izard", group: 1 },
+    { id: "Wu-Jung Lee", group: 1 },
   ],
   links: [
     { source: "Rudy Klucik", target: "NCEI", predicate: "associatedWith" },
@@ -434,6 +435,16 @@ const meta_graph = {
       target: "Team Fish",
       predicate: "associatedWith",
     },
+    {
+      source: "Rory OFlynn",
+      target: "Team Fish",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Chuck Anderson",
+      target: "Team Fish",
+      predicate: "associatedWith",
+    },
     { source: "Rachel Peterson", target: "Tharp", predicate: "associatedWith" },
     { source: "Max Smith", target: "Mable", predicate: "associatedWith" },
     {
@@ -483,7 +494,7 @@ const meta_graph = {
       predicate: "associatedWith",
     },
     // cmc
-    { source: "Jeffrey Duda", target: "CIRES", predicate: "memberOf" },
+    // { source: "Jeffrey Duda", target: "CIRES", predicate: "memberOf" },
     { source: "Jeffrey Duda", target: "CMC", predicate: "memberOf" },
     { source: "Jeffrey Duda", target: "GSL", predicate: "memberOf" },
     { source: "Elysia Lucas", target: "CMC", predicate: "memberOf" },
@@ -1136,6 +1147,7 @@ const meta_graph = {
     // echopype
     { source: "Lloyd Izard", target: "echopype", predicate: "memberOf", value: 1 },
     { source: "Wu-Jung Lee", target: "echopype", predicate: "memberOf", value: 1 },
+    { source: "echopype", target: "EchoFish", predicate: "memberOf", value: 1 },
   ],
 };
 
