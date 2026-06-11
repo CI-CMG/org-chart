@@ -311,6 +311,41 @@ const meta_graph = {
         "https://cires.colorado.edu/news/esiil-aims-foster-revolution-environmental-data-science",
       group: 7,
     },
+    // Fisheries — https://www.fisheries.noaa.gov/about-us/who-we-are
+    { id: "NOAA Fisheries", longName: "NOAA Fisheries Science Center", group: 7 },
+    { id: "Alaska Fisheries Science Center", longName: "NOAA Alaska Fisheries Science Center", group: 7 },
+    { id: "Northeast Fisheries Science Center", longName: "NOAA Northeast Fisheries Science Center", group: 7 },
+    { id: "Pacific Islands Fisheries Science Center", longName: "NOAA Pacific Fisheries Science Center", group: 7 },
+    { id: "Southeast Fisheries Science Center", longName: "NOAA Southeast Fisheries Science Center", group: 7 },
+    { id: "Southwest Fisheries Science Center", longName: "NOAA Southwest Fisheries Science Center", group: 7 },
+    { id: "Northwest Fisheries Science Center", longName: "NOAA Northwest Fisheries Science Center", group: 7 },
+    // AA-SI
+    {
+      id: "AA-SI",
+      longName: "Active Acoustics Strategic Initiative",
+      description: "This initiative brings together the NOAA Fisheries with NCEI.",
+      group: 7,
+    },
+    { id: "Mike Jech", group: 1 },
+    { id: "Allison White", group: 1 },
+    { id: "Brett Layman", group: 1 },
+    { id: "Camilo Roa", group: 1 },
+    { id: "Josiah Renfree", group: 1 },
+    { id: "Derek Bolser", group: 1 },
+    { id: "Elias Capriles", group: 1 },
+    { id: "Dominic Bashford", group: 1 },
+    { id: "Michael Ryan", group: 1 },
+    { id: "Reka Domokos", group: 1 },
+    { id: "Nikki Dabaghchian", group: 1, location: "virginia" },
+    { id: "Dave Demer", group: 1 },
+    // { id: "", group: 0 },
+    // echopype
+    {
+      id: "echopype",
+      group: 8,
+    },
+    { id: "Lloyd Izard", group: 8 },
+    { id: "Wu-Jung Lee", group: 8 },
   ],
   links: [
     { source: "Rudy Klucik", target: "NCEI", predicate: "associatedWith" },
@@ -1065,8 +1100,42 @@ const meta_graph = {
     // TODO: AASI
     // TODO: https://www.fisheries.noaa.gov/about-us/who-we-are
     //
-
-    // TODO: for people, start-end dates, name, short name, email, fed/contractor/affiliate?
+    { source: "NOAA Fisheries", target: "NOAA", predicate: "memberOf", value: 1 },
+    { source: "Alaska Fisheries Science Center", target: "NOAA Fisheries", predicate: "memberOf", value: 1 },
+    { source: "Northeast Fisheries Science Center", target: "NOAA Fisheries", predicate: "memberOf", value: 1 },
+    { source: "Pacific Islands Fisheries Science Center", target: "NOAA Fisheries", predicate: "memberOf", value: 1 },
+    { source: "Southeast Fisheries Science Center", target: "NOAA Fisheries", predicate: "memberOf", value: 1 },
+    { source: "Southwest Fisheries Science Center", target: "NOAA Fisheries", predicate: "memberOf", value: 1 },
+    { source: "Northwest Fisheries Science Center", target: "NOAA Fisheries", predicate: "memberOf", value: 1 },
+    //
+    { source: "Carrie Wall Bell", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Rudy Klucik", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Mike Jech", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Mike Jech", target: "Northeast Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Allison White", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Allison White", target: "Southeast Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Brett Layman", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Camilo Roa", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Camilo Roa", target: "Southwest Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Josiah Renfree", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Josiah Renfree", target: "Southwest Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Derek Bolser", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Elias Capriles", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Elias Capriles", target: "Southwest Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Dominic Bashford", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Michael Ryan", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Michael Ryan", target: "Northeast Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Reka Domokos", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Reka Domokos", target: "Pacific Islands Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Nikki Dabaghchian", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Nikki Dabaghchian", target: "Northeast Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Dave Demer", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Dave Demer", target: "Southwest Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Lloyd Izard", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Wu-Jung Lee", target: "AA-SI", predicate: "memberOf", value: 1 },
+    // echopype
+    { source: "Lloyd Izard", target: "echopype", predicate: "memberOf", value: 1 },
+    { source: "Wu-Jung Lee", target: "echopype", predicate: "memberOf", value: 1 },
   ],
 };
 
