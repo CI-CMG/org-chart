@@ -249,6 +249,11 @@ const meta_graph = {
         "NCCF (NESDIS Common Cloud Framework) is the cloud-based data architecture and infrastructure built by NOAA to securely ingest, process, and distribute environmental satellite data.",
       group: 5,
     },
+    // Lift and shift
+// - Data Ingest, Migration IPT (Jason Cooper - lead) & Open Access IPT (Rich Baldwin): Brian Meyer or Kirsten Larsen
+// - Applications IPT (Jen Bowers - lead): Jen Bowers or Jen Webster
+// - Security IPT (Jason Symonds - lead) & Infrastructure IPT (Pura Perez): Stephanie Herring
+// - Workforce Readiness (Jared Rennie - lead): Jared Rennie
     {
       id: "Consolidated Storage Service",
       longName: "Consolidated Storage Service (CSS)",
@@ -320,6 +325,7 @@ const meta_graph = {
     { id: "Southeast Fisheries Science Center", longName: "NOAA Southeast Fisheries Science Center", group: 7 },
     { id: "Southwest Fisheries Science Center", longName: "NOAA Southwest Fisheries Science Center", group: 7 },
     { id: "Northwest Fisheries Science Center", longName: "NOAA Northwest Fisheries Science Center", group: 7 },
+    { id: "Office of Sustainable Fisheries", longName: "NOAA Office of Sustainable Fisheries", group: 7 },
     // AA-SI
     {
       id: "AA-SI",
@@ -339,15 +345,37 @@ const meta_graph = {
     { id: "Reka Domokos", group: 1 },
     { id: "Nikki Dabaghchian", group: 1, location: "virginia" },
     { id: "Dave Demer", group: 1 },
+    { id: "Elizabeth Phillips", group: 1 },
+    { id: "Rebecca Thomas", group: 1 },
+    // Office of Sustainable Fisheries
+    { id: "Tim Rowell", group: 1 },
+    { id: "Patrick Ressler", group: 1 },
+    { id: "Hannan Khan", group: 1 },
+    { id: "Robert Levine", group: 1 },
     // { id: "", group: 0 },
     // echopype
     {
       id: "echopype",
       group: 1,
     },
+    {
+      id: "pyEcholab",
+      group: 1,
+    },
     { id: "Lloyd Izard", group: 1 },
     { id: "Wu-Jung Lee", group: 1 },
+    // NCCF AWS
+    { id: "Chris Mattioli", group: 1 },
+    { id: "AWS", group: 1 },
+    { id: "AWS Solutions Architect", group: 1 },
+    { id: "CIRES AWS", group: 1 },
+    { id: "NIH AWS", group: 1 },
+    // NDC-PATHFINDERS
+    { id: "NDC-Pathfinders", group: 1 },
+    { id: "NCAR", longName: "National Center for Atmospheric Research (NCAR)", group: 1 },
+    // { id: "OSPool", longName: "Open Science Pool", group: 1 },
   ],
+  //////////////////////////////////////////////////////////////
   links: [
     { source: "Rudy Klucik", target: "NCEI", predicate: "associatedWith" },
     { source: "Rudy Klucik", target: "CMC", predicate: "associatedWith" },
@@ -631,14 +659,64 @@ const meta_graph = {
       value: 1,
     },
     {
+      source: "Tharp",
+      target: "NESDIS Common Cloud Framework",
+      predicate: "memberOf",
+    },
+    {
+      source: "Trackline",
+      target: "NESDIS Common Cloud Framework",
+      predicate: "memberOf",
+    },
+    {
       source: "NESDIS Common Cloud Framework",
       target: "National Environmental Satellite, Data, and Information Service",
       predicate: "memberOf",
       value: 1,
     },
     {
+      source: "NESDIS Common Cloud Framework",
+      target: "AWS",
+      predicate: "memberOf",
+    },
+    {
       source: "Consolidated Storage Service",
       target: "NESDIS Common Cloud Framework",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Chris Mattioli",
+      target: "Consolidated Storage Service",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Chris Mattioli",
+      target: "AWS Solutions Architect",
+      predicate: "associatedWith",
+    },
+    {
+      source: "AWS Solutions Architect",
+      target: "AWS",
+      predicate: "associatedWith",
+    },
+    {
+      source: "CIRES AWS",
+      target: "AWS",
+      predicate: "associatedWith",
+    },
+    {
+      source: "EchoFish",
+      target: "CIRES AWS",
+      predicate: "associatedWith",
+    },
+    {
+      source: "TugBoat",
+      target: "NIH AWS",
+      predicate: "associatedWith",
+    },
+    {
+      source: "NIH AWS",
+      target: "AWS",
       predicate: "associatedWith",
     },
     {
@@ -817,6 +895,7 @@ const meta_graph = {
     { source: "COGS", target: "NCEI", predicate: "memberOf", value: 1 },
     { source: "STPS", target: "GSB", predicate: "memberOf", value: 1 },
     { source: "STP DPMF", target: "STPS", predicate: "memberOf", value: 1 },
+    { source: "STP DPMF", target: "NESDIS Common Cloud Framework", predicate: "memberOf", value: 1 },
     {
       source: "Josh Riley",
       target: "STP DPMF",
@@ -1042,6 +1121,18 @@ const meta_graph = {
       predicate: "memberOf",
       value: 1,
     },
+    {
+      source: "Database Administrators",
+      target: "Mable",
+      predicate: "memberOf",
+      value: 1,
+    },
+    {
+      source: "Linux System Administrators",
+      target: "Mable",
+      predicate: "memberOf",
+      value: 1,
+    },
     { source: "Eric Porter", target: "ITOB", predicate: "memberOf", value: 1 },
     {
       source: "James Pritchitt",
@@ -1118,6 +1209,7 @@ const meta_graph = {
     { source: "Southeast Fisheries Science Center", target: "NOAA Fisheries", predicate: "memberOf", value: 1 },
     { source: "Southwest Fisheries Science Center", target: "NOAA Fisheries", predicate: "memberOf", value: 1 },
     { source: "Northwest Fisheries Science Center", target: "NOAA Fisheries", predicate: "memberOf", value: 1 },
+    { source: "Office of Sustainable Fisheries", target: "NOAA Fisheries", predicate: "memberOf", value: 1 },
     //
     { source: "Carrie Wall Bell", target: "AA-SI", predicate: "memberOf", value: 1 },
     { source: "Rudy Klucik", target: "AA-SI", predicate: "memberOf", value: 1 },
@@ -1125,9 +1217,16 @@ const meta_graph = {
     { source: "Mike Jech", target: "Northeast Fisheries Science Center", predicate: "memberOf", value: 1 },
     { source: "Allison White", target: "AA-SI", predicate: "memberOf", value: 1 },
     { source: "Allison White", target: "Southeast Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Tim Rowell", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Tim Rowell", target: "Southeast Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Patrick Ressler", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Patrick Ressler", target: "Alaska Fisheries Science Center", predicate: "memberOf", value: 1 },
     { source: "Brett Layman", target: "AA-SI", predicate: "memberOf", value: 1 },
     { source: "Camilo Roa", target: "AA-SI", predicate: "memberOf", value: 1 },
     { source: "Camilo Roa", target: "Southwest Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Elizabeth Phillips", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Elizabeth Phillips", target: "Northwest Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Rebecca Thomas", target: "Office of Sustainable Fisheries", predicate: "memberOf", value: 1 },
     { source: "Josiah Renfree", target: "AA-SI", predicate: "memberOf", value: 1 },
     { source: "Josiah Renfree", target: "Southwest Fisheries Science Center", predicate: "memberOf", value: 1 },
     { source: "Derek Bolser", target: "AA-SI", predicate: "memberOf", value: 1 },
@@ -1142,6 +1241,10 @@ const meta_graph = {
     { source: "Nikki Dabaghchian", target: "Northeast Fisheries Science Center", predicate: "memberOf", value: 1 },
     { source: "Dave Demer", target: "AA-SI", predicate: "memberOf", value: 1 },
     { source: "Dave Demer", target: "Southwest Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Hannan Khan", target: "AA-SI", predicate: "memberOf", value: 1 },
+    { source: "Robert Levine", target: "Alaska Fisheries Science Center", predicate: "memberOf", value: 1 },
+    { source: "Robert Levine", target: "pyEcholab", predicate: "memberOf", value: 1 },
+    //
     { source: "Lloyd Izard", target: "AA-SI", predicate: "memberOf", value: 1 },
     { source: "Wu-Jung Lee", target: "AA-SI", predicate: "memberOf", value: 1 },
     // echopype
