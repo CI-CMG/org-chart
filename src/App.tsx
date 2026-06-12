@@ -119,7 +119,7 @@ const meta_graph = {
     { id: "CMC", longName: "CIRES Members Council (CMC)", description: "The CMC is an information and policy conduit between CIRES' leadership and the institute's scientists and associates", group: 1 },
     ////////////////////////////////////////////
     // NOAA Line offices
-    { id: "NOS", longName: "National Ocean Serice (NOS)", group: 1 },
+    { id: "NOS", longName: "National Ocean Service (NOS)", group: 1 },
     { id: "NWS", longName: "National Weather Service (NWS)", group: 1 },
     { id: "OMAO", longName: "Office of Marine and Aviation Operations & NOAA Corps (OMAO)", group: 1 },
     //////////////////////////
@@ -347,8 +347,7 @@ const meta_graph = {
     {
       id: "ESIIL",
       longName: "Environmental Data Science Innovation & Impact Lab (ESIIL)",
-      description:
-        "https://cires.colorado.edu/news/esiil-aims-foster-revolution-environmental-data-science",
+      description: "The Environmental Data Science Innovation & Impact Lab (ESIIL) is a next-generation NSF data synthesis center that enables a global community of environmental data scientists to leverage emerging analytics to develop science-based solutions to pressing environmental challenges.",
       group: 1,
     },
     // Fisheries — https://www.fisheries.noaa.gov/about-us/who-we-are
