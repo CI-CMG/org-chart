@@ -40,18 +40,18 @@ const meta_graph = {
     { id: "Rob Redmon", group: 0 },
     { id: "Chuck Anderson", group: 0 },
     // NCEI
-    { id: "Arnaud Chulliat", group: 0 },
+    // { id: "Arnaud Chulliat", group: 0 },
     { id: "Emma Beretta", group: 0 },
     { id: "ONMS Soundscapes", longName: "Office of National Marine Sanctuaries Sound Monitoring (Soundscapes)", group: 2 },
-    { id: "Finn Dahl", group: 0 },
+    // { id: "Finn Dahl", group: 0 },
     // { id: "Janet Machol", group: 0 },
     { id: "John Cartwright", group: 0 },
-    { id: "Juan Rodriguez", group: 0 },
+    // { id: "Juan Rodriguez", group: 0 },
     { id: "Lee Shoemaker", group: 0 },
     // { id: "Li-yin Young", group: 0 },
     // { id: "Liam Kilcommons", group: 0 },
     // { id: "Manoj Nair", group: 0 },
-    { id: "Matthew Bochain", group: 0 },
+    // { id: "Matthew Bochain", group: 0 },
     // { id: "Nir Boneh", group: 0 },
     // { id: "Richard Saltus", group: 0 },
     // { id: "Samuel Califf", group: 0 },
@@ -403,9 +403,9 @@ const meta_graph = {
     { id: "Jessica Hung", group: 0 },
     { id: "Michael Royer", group: 0 }, // GAMA-1 Technologies, Greenbelt, United States
     { id: "Mason Carroll", group: 0 },
-    { id: "Ayesha Genz", group: 0 },
+    // { id: "Ayesha Genz", group: 0 },
     { id: "AWS", longName: "Amazon Web Services (AWS)", group: 1 },
-    { id: "AWS Solutions Architect", group: 1 },
+    { id: "AWS Solutions Architect", longName: "AWS Solutions Architects", group: 1 },
     { id: "CIRES AWS", group: 1 },
     { id: "NIH AWS", longName: "NESDIS Innovation Hub (NIH)", group: 1 },
     // NDC-PATHFINDERS
@@ -1103,6 +1103,16 @@ const meta_graph = {
       predicate: "associatedWith",
     },
     {
+      source: "NOS",
+      target: "NOAA",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Lee Shoemaker",
+      target: "NOS",
+      predicate: "associatedWith",
+    },
+    {
       source: "Rudy Klucik",
       target: "Mindful NOAA",
       predicate: "associatedWith",
@@ -1363,34 +1373,28 @@ function App() {
             return 1 * 0.0006;
           }}
           linkColor={(node) => {
-            // if( 'color' in node ) {
-            //   return node.color;
-            // }
-            return "lightGrey";
+            return "rgba(71, 165, 42, 0.18)";
           }}
           nodeCanvasObject={(node, ctx, globalScale) => {
             let label = node.id;
             if ("longName" in node) {
               label = node.longName;
-            } else {
-              label = node.id;
             }
-            const fontSize = 12 / globalScale;
+            const fontSize = 11 / globalScale;
             ctx.font = `${fontSize}px Sans-Serif`;
-            const textWidth = ctx.measureText(label).width;
-            const bckgDimensions = [textWidth, fontSize].map(
-              (n) => n + fontSize * 0.2,
-            );
-            // ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+            // const textWidth = ctx.measureText(label).width;
+            // const bckgDimensions = [textWidth, fontSize].map(
+            //   (n) => n + fontSize * 0.2,
+            // );
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
-            // ctx.fillStyle = node.color;
             if (node.group === 0){ // people
               ctx.fillStyle='RebeccaPurple';
+              ctx.fillStyle="YellowGreen";
             } else if (node.group === 1){ // groups
-              ctx.fillStyle='orchid';
+              ctx.fillStyle='ForestGreen';
             } else if (node.group === 2) { // projects
-              ctx.fillStyle='SkyBlue';
+              ctx.fillStyle='LightBlue';
             }
             ctx.fillText(label, node.x, node.y);
 
