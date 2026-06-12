@@ -84,6 +84,11 @@ const meta_graph = {
     { id: "Kim Moreland", group: 0 },
     { id: "Adam Schneider", group: 0 },
     //
+    { id: "", group: 0 },
+    // Waleed Abdalati
+    // Lornay Hansen
+    // Maggie Tolbert
+    //
     { id: "NCAI", longName: "NOAA Center for AI (NCAI)", group: 1 },
     { id: "GSL", longName: "Global Systems Laboratory (GSL)", group: 1 },
     { id: "PSL", longName: "Physical Sciences Laboratory (PSL)", group: 1 },
@@ -334,7 +339,7 @@ const meta_graph = {
     },
     { id: "US Air Force", group: 1 },
     // groups for dev team
-    { id: "Hazel", group: 2 },
+    { id: "Hazel", description: "NCEI archives and assimilates tsunami, earthquake, and volcano data to support research, planning, response, and mitigation.", group: 2 },
     { id: "Marigrams", group: 2 },
     { id: "Team Fish", group: 1 },
     { id: "Gazetteer", description: "The NOAA-supported GEBCO Undersea Feature Names Gazetteer provides a comprehensive, searchable database for the official names and geographic locations of features on the seafloor (e.g., seamounts, trenches, and ridges).", group: 2 },
@@ -347,8 +352,10 @@ const meta_graph = {
     { id: "Pace", group: 2 },
     { id: "Tharp", group: 2 },
     { id: "WOD", longName: "World Ocean Database (WOD)", group: 2 },
+    
     { id: "TugBoat", group: 2 },
     { id: "Argonaut", group: 2 },
+    { id: "Zhankun Wang", group: 0 },
     // { id: "OASIS", group: 1 },
     {
       id: "ESIIL",
@@ -841,7 +848,7 @@ const meta_graph = {
     { source: "SEEC", target: "CU", predicate: "associatedWith" },
     { source: "ESIIL", target: "CIRES", predicate: "associatedWith" },
     { source: "CIRES", target: "CU", predicate: "associatedWith" },
-    { source: "Arnaud Chulliat", target: "CIRES Fellows", predicate: "fellow" },
+    { source: "Arnaud Chulliat", target: "CIRES Fellows", predicate: "ciresFellow" },
     { source: "CIRES Fellows", target: "CIRES", predicate: "associatedWith" },
     { source: "SWPC", target: "NCEP", predicate: "associatedWith" },
     { source: "SWPC", target: "US Air Force", predicate: "associatedWith" },
@@ -973,6 +980,9 @@ const meta_graph = {
     { source: "MGGS", target: "GSB", predicate: "associatedWith" },
     { source: "CSB", target: "COGS", predicate: "associatedWith" },
     { source: "OSB", target: "COGS", predicate: "associatedWith" },
+    { source: "Zhankun Wang", target: "OSB", predicate: "associatedWith" },
+    { source: "Zhankun Wang", target: "WOD", predicate: "associatedWith" },
+    { source: "Zhankun Wang", target: "Argonaut", predicate: "associatedWith" },
     { source: "Patrick Hogan", target: "OSB", predicate: "associatedWith" },
     {
       source: "Kirsten Larsen",
@@ -1301,6 +1311,7 @@ const meta_graph = {
     { source: "Camilo Roa", target: "Southwest Fisheries Science Center", predicate: "associatedWith" },
     { source: "Elizabeth Phillips", target: "AA-SI", predicate: "associatedWith" },
     { source: "Elizabeth Phillips", target: "Northwest Fisheries Science Center", predicate: "associatedWith" },
+    { source: "Dominic Bashford", target: "Northwest Fisheries Science Center", predicate: "associatedWith" },
     { source: "Rebecca Thomas", target: "Office of Sustainable Fisheries", predicate: "associatedWith" },
     { source: "Josiah Renfree", target: "AA-SI", predicate: "associatedWith" },
     { source: "Josiah Renfree", target: "Southwest Fisheries Science Center", predicate: "associatedWith" },
@@ -1310,6 +1321,7 @@ const meta_graph = {
     { source: "Dominic Bashford", target: "AA-SI", predicate: "associatedWith" },
     { source: "Michael Ryan", target: "AA-SI", predicate: "associatedWith" },
     { source: "Michael Ryan", target: "Northeast Fisheries Science Center", predicate: "associatedWith" },
+    { source: "Hannan Khan", target: "Northeast Fisheries Science Center", predicate: "associatedWith" },
     { source: "Reka Domokos", target: "AA-SI", predicate: "associatedWith" },
     { source: "Reka Domokos", target: "Pacific Islands Fisheries Science Center", predicate: "associatedWith" },
     { source: "Nikki Dabaghchian", target: "AA-SI", predicate: "associatedWith" },
@@ -1346,7 +1358,7 @@ function App() {
   return (
     <div className="App" id="parentDiv">
       <div id="title">
-        <h1>Organizational Structure Knowledge Graph</h1>
+        <h1 className="bitcount-prop-single-custom">CIRES & NCEI Functional Graph</h1>
       </div>
       <div ref={containerRef}>
         {/* <ForceGraph3D
@@ -1390,14 +1402,17 @@ function App() {
           // linkDirectionalParticles="value"
           linkDirectionalParticles={2}
           linkDirectionalParticleSpeed={() => {
-            return 1 * 0.0008;
+            return 1 * 0.0005;
           }}
           linkDirectionalParticleWidth={2}
           linkCurvature={0.15}
-          linkColor={(node) => {
-            return "rgba(71, 165, 42, 0.18)";
+          linkLineDash={() => {
+            return [1, 1];
           }}
-          linkWidth={1}
+          linkColor={(node) => {
+            return "rgba(71, 165, 42, 0.3)";
+          }}
+          linkWidth={1.5}
           linkLabel={(link) => {
             return link.predicate;
           }}
@@ -1424,6 +1439,8 @@ function App() {
             } else if (node.group === 2) { // projects
               ctx.fillStyle='SkyBlue';
             }
+            // ctx.font='8px "Bitcount Prop Single"';
+            ctx.letterSpacing = "0.05em";
             ctx.fillText(label, node.x, node.y);
 
             // node.__bckgDimensions = bckgDimensions;
@@ -1434,6 +1451,11 @@ function App() {
             }
             return null;
           }}
+          d3VelocityDecay={0.25}
+          d3AlphaDecay={0.01}
+          // d3AlphaMin={0.001}
+          minZoom={0.5}
+          maxZoom={4}
         />
       </div>
 
