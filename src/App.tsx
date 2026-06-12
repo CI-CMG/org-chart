@@ -40,7 +40,7 @@ const meta_graph = {
     { id: "Rob Redmon", group: 0 },
     { id: "Chuck Anderson", group: 0 },
     // NCEI
-    // { id: "Arnaud Chulliat", group: 0 },
+    { id: "Arnaud Chulliat", group: 0 },
     { id: "Emma Beretta", group: 0 },
     { id: "ONMS Soundscapes", longName: "Office of National Marine Sanctuaries Sound Monitoring (Soundscapes)", group: 2 },
     // { id: "Finn Dahl", group: 0 },
@@ -265,8 +265,14 @@ const meta_graph = {
     { id: "GSB Dev Team", group: 1 },
     {
       id: "CIRES",
-      longName:
-        "Cooperative Institute for Research in Environmental Sciences (CIRES)",
+      longName: "Cooperative Institute for Research in Environmental Sciences (CIRES)",
+      description: "At CIRES, the Cooperative Institute for Research In Environmental Sciences, hundreds of scientists work to understand the dynamic Earth system, including people’s relationship with the planet.",
+      group: 1,
+    },
+    {
+      id: "CIRES Fellows",
+      longName: "CIRES Council of Fellows",
+      description: "CIRES Council of Fellows includes university faculty, researchers, and NOAA scientists who personify the institute’s cooperative spirit and guide the development of our cross-cutting research program.",
       group: 1,
     },
     {
@@ -331,7 +337,7 @@ const meta_graph = {
     { id: "Hazel", group: 2 },
     { id: "Marigrams", group: 2 },
     { id: "Team Fish", group: 1 },
-    { id: "Gazetteer", group: 2 },
+    { id: "Gazetteer", description: "The NOAA-supported GEBCO Undersea Feature Names Gazetteer provides a comprehensive, searchable database for the official names and geographic locations of features on the seafloor (e.g., seamounts, trenches, and ridges).", group: 2 },
     { id: "EchoFish", description: "Exploring Water Column Sonar Data", group: 2 },
     { id: "Trackline", group: 2 },
     { id: "Mable", group: 2 },
@@ -641,6 +647,11 @@ const meta_graph = {
       target: "CIRES ADMIN",
       predicate: "associatedWith",
     },
+    {
+      source: "CMC",
+      target: "CIRES",
+      predicate: "associatedWith",
+    },
     { source: "Scott Lewis", target: "CMC", predicate: "associatedWith" },
     { source: "Scott Lewis", target: "NSIDC", predicate: "associatedWith" },
     { source: "Kim Moreland", target: "CMC", predicate: "associatedWith" },
@@ -830,6 +841,8 @@ const meta_graph = {
     { source: "SEEC", target: "CU", predicate: "associatedWith" },
     { source: "ESIIL", target: "CIRES", predicate: "associatedWith" },
     { source: "CIRES", target: "CU", predicate: "associatedWith" },
+    { source: "Arnaud Chulliat", target: "CIRES Fellows", predicate: "fellow" },
+    { source: "CIRES Fellows", target: "CIRES", predicate: "associatedWith" },
     { source: "SWPC", target: "NCEP", predicate: "associatedWith" },
     { source: "SWPC", target: "US Air Force", predicate: "associatedWith" },
     { source: "NCEP", target: "NWS", predicate: "associatedWith" },
@@ -1333,7 +1346,7 @@ function App() {
   return (
     <div className="App" id="parentDiv">
       <div id="title">
-        <h1>CIRES & NOAA Organizational Structure</h1>
+        <h1>Organizational Structure Knowledge Graph</h1>
       </div>
       <div ref={containerRef}>
         {/* <ForceGraph3D
@@ -1379,24 +1392,17 @@ function App() {
           linkDirectionalParticleSpeed={() => {
             return 1 * 0.0008;
           }}
-          linkCurvature={0.025}
+          linkDirectionalParticleWidth={2}
+          linkCurvature={0.15}
           linkColor={(node) => {
             return "rgba(71, 165, 42, 0.18)";
           }}
-          // linkThreeObjectExtend={true}
-          // linkThreeObject={(link) => {
-          //   // extend link with text sprite
-          //   // const sprite = new SpriteText(`${link.source} > ${link.target}`);
-          //   const sprite = new SpriteText(`${link.predicate}`);
-          //   sprite.color = 'grey';
-          //   sprite.textHeight = 3;
-          //   // sprite.textHeight = 1.5;
-          //   return sprite;
-          // }}
+          linkWidth={1}
           linkLabel={(link) => {
             return link.predicate;
           }}
-          linkDirectionalParticleColor={() => "rgba(71, 165, 42, 0.10)"}
+          // linkDirectionalParticleColor={() => "rgba(71, 165, 42, 0.10)"}
+          linkDirectionalParticleColor={() => "rgba(0,206,209, 0.25)"}
           nodeCanvasObject={(node, ctx, globalScale) => {
             let label = node.id;
             if ("longName" in node) {
@@ -1416,7 +1422,7 @@ function App() {
             } else if (node.group === 1){ // groups
               ctx.fillStyle='ForestGreen';
             } else if (node.group === 2) { // projects
-              ctx.fillStyle='LightBlue';
+              ctx.fillStyle='SkyBlue';
             }
             ctx.fillText(label, node.x, node.y);
 
