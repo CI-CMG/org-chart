@@ -44,18 +44,18 @@ const meta_graph = {
     { id: "Emma Beretta", group: 0 },
     { id: "ONMS Soundscapes", longName: "Office of National Marine Sanctuaries Sound Monitoring (Soundscapes)", group: 2 },
     { id: "Finn Dahl", group: 0 },
-    { id: "Janet Machol", group: 0 },
+    // { id: "Janet Machol", group: 0 },
     { id: "John Cartwright", group: 0 },
     { id: "Juan Rodriguez", group: 0 },
     { id: "Lee Shoemaker", group: 0 },
-    { id: "Li-yin Young", group: 0 },
-    { id: "Liam Kilcommons", group: 0 },
-    { id: "Manoj Nair", group: 0 },
+    // { id: "Li-yin Young", group: 0 },
+    // { id: "Liam Kilcommons", group: 0 },
+    // { id: "Manoj Nair", group: 0 },
     { id: "Matthew Bochain", group: 0 },
-    { id: "Nir Boneh", group: 0 },
-    { id: "Richard Saltus", group: 0 },
-    { id: "Samuel Califf", group: 0 },
-    { id: "Trevor Leonard", group: 0 },
+    // { id: "Nir Boneh", group: 0 },
+    // { id: "Richard Saltus", group: 0 },
+    // { id: "Samuel Califf", group: 0 },
+    // { id: "Trevor Leonard", group: 0 },
     // DEM Team
     { id: "DEM Team", longName: "Coastal Digital Elevation Models (DEMs)", group: 1 },
     { id: "Kelly Carignan", group: 0 },
@@ -121,7 +121,7 @@ const meta_graph = {
     // NOAA Line offices
     { id: "NOS", longName: "National Ocean Serice (NOS)", group: 1 },
     { id: "NWS", longName: "National Weather Service (NWS)", group: 1 },
-    { id: "OMAO", longName: "Office of Marine and Aviation Operations & NOAA Corps", group: 1 },
+    { id: "OMAO", longName: "Office of Marine and Aviation Operations & NOAA Corps (OMAO)", group: 1 },
     //////////////////////////
     // NCEI Groups // https://docs.google.com/spreadsheets/d/1wYRAvP02BrueU2KhbVbleqBQgeNxy5PnJfb_F9uFX38/edit?gid=585617807#gid=585617807
     {
@@ -281,6 +281,7 @@ const meta_graph = {
         "NCCF (NESDIS Common Cloud Framework) is the cloud-based data architecture and infrastructure built by NOAA to securely ingest, process, and distribute environmental satellite data.",
       group: 1,
     },
+    { id: "Pura Perez", group: 0 },
     // Lift and shift
 // - Data Ingest, Migration IPT (Jason Cooper - lead) & Open Access IPT (Rich Baldwin): Brian Meyer or Kirsten Larsen
 // - Applications IPT (Jen Bowers - lead): Jen Bowers or Jen Webster
@@ -362,7 +363,7 @@ const meta_graph = {
     // AA-SI
     {
       id: "AA-SI",
-      longName: "Active Acoustics Strategic Initiative",
+      longName: "Active Acoustics Strategic Initiative (AA-SI)",
       description: "This initiative brings together the NOAA Fisheries with NCEI.",
       group: 1,
     },
@@ -400,7 +401,7 @@ const meta_graph = {
     // NCCF AWS
     { id: "Chris Mattioli", group: 0 },
     { id: "Jessica Hung", group: 0 },
-    { id: "Michael Royer", group: 0 },
+    { id: "Michael Royer", group: 0 }, // GAMA-1 Technologies, Greenbelt, United States
     { id: "Mason Carroll", group: 0 },
     { id: "Ayesha Genz", group: 0 },
     { id: "AWS", longName: "Amazon Web Services (AWS)", group: 1 },
@@ -424,7 +425,7 @@ const meta_graph = {
     { source: "Rudy Klucik", target: "Hazel", predicate: "associatedWith" },
     { source: "Rudy Klucik", target: "EchoFish", predicate: "associatedWith" },
     { source: "Bary Eakins", target: "Tharp", predicate: "associatedWith" },
-    { source: "Peemin Chen", target: "Hazel", predicate: "associatedWith" },
+    // { source: "Peemin Chen", target: "Hazel", predicate: "associatedWith" },
     {
       source: "Peemin Chen",
       target: "FishFlicks",
@@ -575,6 +576,7 @@ const meta_graph = {
     { source: "Jennifer Jencks", target: "BTeam", predicate: "associatedWith" },
     { source: "Daniel Alemayehu", target: "BTeam", predicate: "associatedWith" },
     { source: "Max Smith", target: "BTeam", predicate: "associatedWith" },
+    { source: "BTeam", target: "Mable", predicate: "associatedWith" },
     {
       source: "Vidhyadhari Gondle",
       target: "FishFlicks",
@@ -723,6 +725,16 @@ const meta_graph = {
     },
     {
       source: "Tharp",
+      target: "NESDIS Common Cloud Framework",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Pura Perez",
+      target: "NESDIS Common Cloud Framework",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Michael Royer",
       target: "NESDIS Common Cloud Framework",
       predicate: "associatedWith",
     },
@@ -1369,10 +1381,17 @@ function App() {
             const bckgDimensions = [textWidth, fontSize].map(
               (n) => n + fontSize * 0.2,
             );
-            ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+            // ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
-            ctx.fillStyle = node.color;
+            // ctx.fillStyle = node.color;
+            if (node.group === 0){ // people
+              ctx.fillStyle='RebeccaPurple';
+            } else if (node.group === 1){ // groups
+              ctx.fillStyle='orchid';
+            } else if (node.group === 2) { // projects
+              ctx.fillStyle='SkyBlue';
+            }
             ctx.fillText(label, node.x, node.y);
 
             // node.__bckgDimensions = bckgDimensions;
