@@ -319,7 +319,7 @@ const meta_graph = {
       group: 1,
     },
     { id: "CU", longName: "University of Colorado Boulder (CU)", group: 1 },
-    { id: "Computer Science Department", group: 1 },
+    { id: "Computer Science Department", longName: "CU Computer Science Department", group: 1 },
     {
       id: "NCEP",
       longName: "National Centers for Environmental Prediction (NCEP)",
@@ -576,6 +576,7 @@ const meta_graph = {
     { source: "Jennifer Jencks", target: "BTeam", predicate: "associatedWith" },
     { source: "Daniel Alemayehu", target: "BTeam", predicate: "associatedWith" },
     { source: "Max Smith", target: "BTeam", predicate: "associatedWith" },
+    { source: "Clinton Campbell", target: "BTeam", predicate: "associatedWith" },
     { source: "BTeam", target: "Mable", predicate: "associatedWith" },
     {
       source: "Vidhyadhari Gondle",
@@ -852,6 +853,11 @@ const meta_graph = {
     },
     {
       source: "Alexander Hoelzemann",
+      target: "Computer Science Department",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Daniel Alemayehu",
       target: "Computer Science Department",
       predicate: "associatedWith",
     },
@@ -1366,21 +1372,36 @@ function App() {
         /> */}
         <ForceGraph2D
           graphData={meta_graph}
-          nodeAutoColorBy="group"
+          // nodeAutoColorBy="group"
           // linkDirectionalParticles="value"
           linkDirectionalParticles={2}
           linkDirectionalParticleSpeed={() => {
-            return 1 * 0.0006;
+            return 1 * 0.0008;
           }}
+          linkCurvature={0.025}
           linkColor={(node) => {
             return "rgba(71, 165, 42, 0.18)";
           }}
+          // linkThreeObjectExtend={true}
+          // linkThreeObject={(link) => {
+          //   // extend link with text sprite
+          //   // const sprite = new SpriteText(`${link.source} > ${link.target}`);
+          //   const sprite = new SpriteText(`${link.predicate}`);
+          //   sprite.color = 'grey';
+          //   sprite.textHeight = 3;
+          //   // sprite.textHeight = 1.5;
+          //   return sprite;
+          // }}
+          linkLabel={(link) => {
+            return link.predicate;
+          }}
+          linkDirectionalParticleColor={() => "rgba(71, 165, 42, 0.10)"}
           nodeCanvasObject={(node, ctx, globalScale) => {
             let label = node.id;
             if ("longName" in node) {
               label = node.longName;
             }
-            const fontSize = 11 / globalScale;
+            const fontSize = 12 / globalScale;
             ctx.font = `${fontSize}px Sans-Serif`;
             // const textWidth = ctx.measureText(label).width;
             // const bckgDimensions = [textWidth, fontSize].map(
@@ -1399,6 +1420,12 @@ function App() {
             ctx.fillText(label, node.x, node.y);
 
             // node.__bckgDimensions = bckgDimensions;
+          }}
+          nodeLabel={(node) => {
+            if (node.description){
+              return node.description;
+            }
+            return null;
           }}
         />
       </div>
