@@ -178,9 +178,11 @@ const meta_graph = {
     { id: "Richard Baldwin", group: 0 },
     { id: "Ryan Berkheimer", group: 0 },
     { id: "Jesse Varner", group: 0 },
+    // BTeam
     { id: "Jessica Nation", group: 0 },
     { id: "Kevin Lally", group: 0 },
     { id: "Daniel Alemayehu", group: 0 },
+    { id: "BTeam", group: 0 },
     //
     { id: "RMD", longName: "Resource Management Division (RMD)", group: 2 },
     { id: "Aric Whatley", group: 0 },
@@ -369,7 +371,7 @@ const meta_graph = {
     { id: "AWS", group: 1 },
     { id: "AWS Solutions Architect", group: 1 },
     { id: "CIRES AWS", group: 1 },
-    { id: "NIH AWS", group: 1 },
+    { id: "NIH AWS", longName: "NCEI Innovation Hub (NIH)", group: 1 },
     // NDC-PATHFINDERS
     { id: "NDC-Pathfinders", group: 1 },
     { id: "NCAR", longName: "National Center for Atmospheric Research (NCAR)", group: 1 },
@@ -508,6 +510,11 @@ const meta_graph = {
       target: "Mable",
       predicate: "associatedWith",
     },
+    { source: "Jessica Nation", target: "BTeam", predicate: "associatedWith" },
+    { source: "Kevin Lally", target: "BTeam", predicate: "associatedWith" },
+    { source: "Jennifer Jencks", target: "BTeam", predicate: "associatedWith" },
+    { source: "Daniel Alemayehu", target: "BTeam", predicate: "associatedWith" },
+    { source: "Max Smith", target: "BTeam", predicate: "associatedWith" },
     {
       source: "Vidhyadhari Gondle",
       target: "FishFlicks",
