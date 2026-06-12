@@ -95,7 +95,7 @@ const meta_graph = {
       longName: "Sustainability, Energy and Environment Community (SEEC)",
       group: 1,
     },
-    { id: "Earth Lab", longName: "Earth Lab", group: 1 },
+    { id: "Earth Lab", longName: "Earth Lab", description: "Earth Lab’s mission is to leverage the big data and AI revolutions through education, analytics, research, and domain expertise to help society understand and adapt to environmental change.", group: 1 },
     {
       id: "Main Campus Research",
       longName: "CU Main Campus Research",
@@ -116,7 +116,7 @@ const meta_graph = {
       longName: "Space Weather Prediction Center (SWPC)",
       group: 1,
     },
-    { id: "CMC", longName: "CIRES Members Council (CMC)", group: 1 },
+    { id: "CMC", longName: "CIRES Members Council (CMC)", description: "The CMC is an information and policy conduit between CIRES' leadership and the institute's scientists and associates", group: 1 },
     ////////////////////////////////////////////
     // NOAA Line offices
     { id: "NOS", longName: "National Ocean Serice (NOS)", group: 1 },
@@ -127,6 +127,7 @@ const meta_graph = {
     {
       id: "NCEI",
       longName: "National Centers for Environmental Information (NCEI)",
+      description: "NCEI maintains one of the most significant archives on Earth, with comprehensive oceanic, atmospheric, and geophysical data.",
       group: 1,
     },
     {
@@ -331,7 +332,7 @@ const meta_graph = {
     { id: "Marigrams", group: 2 },
     { id: "Team Fish", group: 1 },
     { id: "Gazetteer", group: 2 },
-    { id: "EchoFish", group: 2 },
+    { id: "EchoFish", description: "Exploring Water Column Sonar Data", group: 2 },
     { id: "Trackline", group: 2 },
     { id: "Mable", group: 2 },
     { id: "Crowbar", group: 2 },
@@ -390,6 +391,7 @@ const meta_graph = {
     // echopype
     {
       id: "echopype",
+      description: "Echopype is a package built to enable interoperability and scalability in ocean sonar data processing.",
       group: 2,
     },
     {
@@ -409,7 +411,7 @@ const meta_graph = {
     { id: "CIRES AWS", group: 1 },
     { id: "NIH AWS", longName: "NESDIS Innovation Hub (NIH)", group: 1 },
     // NDC-PATHFINDERS
-    { id: "NDC-Pathfinders", group: 1 },
+    { id: "NDC-Pathfinders", description: "Advancing Earth Science and Innovating Data Access and Sharing — An NSF collaboration between 5 projects, working to innovate science-led pathways through the NSF cyberinfrastructure landscape.", group: 1 },
     { id: "NCAR", longName: "National Center for Atmospheric Research (NCAR)", group: 1 },
     // { id: "OSPool", longName: "Open Science Pool", group: 1 },
   ],
