@@ -12,7 +12,7 @@ const meta_graph = {
     { id: "Clinton Lohr", group: 0 },
     { id: "Max Smith", group: 0 },
     { id: "Payton Cain", group: 0 },
-    { id: "Peemin Chen", group: 0 },
+    // { id: "Peemin Chen", group: 0 },
     { id: "Quincy Cantu", group: 0 },
     { id: "Rachel Peterson", group: 0 },
     { id: "Vidhyadhari Gondle", group: 0 },
@@ -23,7 +23,7 @@ const meta_graph = {
     { id: "VeeVee Cai", group: 0 },
     { id: "Sonar AI", group: 2 },
     //
-    { id: "Carrie Wall Bell", group: 0 },
+    { id: "Carrie Wall Bell", longName: "Carrie Wall Bell", group: 0 },
     { id: "Nic Arcos", group: 0 },
     { id: "Aaron Sweeny", group: 0 },
     { id: "Lindsey Wright", group: 0 },
@@ -36,13 +36,27 @@ const meta_graph = {
     { id: "Zoe Anderson", group: 0 },
     { id: "Luke Pitstick", group: 0 },
     { id: "Rory OFlynn", group: 0 },
+    { id: "Michelle", group: 0 }, // B-team
+    { id: "Tate", group: 0 }, // B-Team
     { id: "Bary Eakins", group: 0 },
     { id: "Rob Redmon", group: 0 },
+    { id: "Douglas Rao", group: 0 },
+    { // https://www.esipfed.org/
+      id: "ESIP",
+      longName: "Earth Science Information Partners",
+      description: "Earth Science Information Partners (ESIP) is a community of data and information technology practitioners that come together to coordinate Earth science interoperability efforts.",
+      group: 1,
+    },
     { id: "Chuck Anderson", group: 0 },
     // NCEI
     { id: "Arnaud Chulliat", group: 0 },
     { id: "Emma Beretta", group: 0 },
-    { id: "ONMS Soundscapes", longName: "Office of National Marine Sanctuaries Sound Monitoring (Soundscapes)", group: 2 },
+    {
+      id: "ONMS Soundscapes",
+      longName:
+        "Office of National Marine Sanctuaries Sound Monitoring (Soundscapes)",
+      group: 2,
+    },
     // { id: "Finn Dahl", group: 0 },
     // { id: "Janet Machol", group: 0 },
     { id: "John Cartwright", group: 0 },
@@ -57,7 +71,11 @@ const meta_graph = {
     // { id: "Samuel Califf", group: 0 },
     // { id: "Trevor Leonard", group: 0 },
     // DEM Team
-    { id: "DEM Team", longName: "Coastal Digital Elevation Models (DEMs)", group: 1 },
+    {
+      id: "DEM Team",
+      longName: "Coastal Digital Elevation Models (DEMs)",
+      group: 1,
+    },
     { id: "Kelly Carignan", group: 0 },
     { id: "Christopher Amante", group: 0 },
     { id: "Elliot Lim", group: 0 },
@@ -78,7 +96,7 @@ const meta_graph = {
     { id: "Agnieszka Gautier", group: 0 },
     { id: "Guoqing Ge", group: 0 },
     { id: "Marty Heath", group: 0 },
-    { id: "Rudy Klucik", group: 0 },
+    { id: "Rudy Klucik", longName: "🦨Rudy Klucik", group: 0 },
     { id: "Corey Krimmer", group: 0 },
     { id: "Scott Lewis", group: 0 },
     { id: "Kim Moreland", group: 0 },
@@ -100,7 +118,13 @@ const meta_graph = {
       longName: "Sustainability, Energy and Environment Community (SEEC)",
       group: 1,
     },
-    { id: "Earth Lab", longName: "Earth Lab", description: "Earth Lab’s mission is to leverage the big data and AI revolutions through education, analytics, research, and domain expertise to help society understand and adapt to environmental change.", group: 1 },
+    {
+      id: "Earth Lab",
+      longName: "Earth Lab",
+      description:
+        "Earth Lab’s mission is to leverage the big data and AI revolutions through education, analytics, research, and domain expertise to help society understand and adapt to environmental change.",
+      group: 1,
+    },
     {
       id: "Main Campus Research",
       longName: "CU Main Campus Research",
@@ -121,18 +145,29 @@ const meta_graph = {
       longName: "Space Weather Prediction Center (SWPC)",
       group: 1,
     },
-    { id: "CMC", longName: "CIRES Members Council (CMC)", description: "The CMC is an information and policy conduit between CIRES' leadership and the institute's scientists and associates", group: 1 },
+    {
+      id: "CMC",
+      longName: "CIRES Members Council (CMC)",
+      description:
+        "The CMC is an information and policy conduit between CIRES' leadership and the institute's scientists and associates",
+      group: 1,
+    },
     ////////////////////////////////////////////
     // NOAA Line offices
     { id: "NOS", longName: "National Ocean Service (NOS)", group: 1 },
     { id: "NWS", longName: "National Weather Service (NWS)", group: 1 },
-    { id: "OMAO", longName: "Office of Marine and Aviation Operations & NOAA Corps (OMAO)", group: 1 },
+    {
+      id: "OMAO",
+      longName: "Office of Marine and Aviation Operations & NOAA Corps (OMAO)",
+      group: 1,
+    },
     //////////////////////////
     // NCEI Groups // https://docs.google.com/spreadsheets/d/1wYRAvP02BrueU2KhbVbleqBQgeNxy5PnJfb_F9uFX38/edit?gid=585617807#gid=585617807
     {
       id: "NCEI",
       longName: "National Centers for Environmental Information (NCEI)",
-      description: "NCEI maintains one of the most significant archives on Earth, with comprehensive oceanic, atmospheric, and geophysical data.",
+      description:
+        "NCEI maintains one of the most significant archives on Earth, with comprehensive oceanic, atmospheric, and geophysical data.",
       group: 1,
     },
     {
@@ -196,6 +231,9 @@ const meta_graph = {
     { id: "AB", longName: "Archive Branch (AB)", group: 1 },
     { id: "Nancy Ritchey", group: 0 },
     { id: "Sarah Menassian", group: 0 },
+    { id: "Paul Lemieux", group: 0 },
+    { id: "Lori Hager", group: 0 },
+    { id: "Ashley Beard", group: 0 },
     {
       id: "CoMET",
       longName: "Collection Metadata Editing Tool (CoMET)",
@@ -209,6 +247,8 @@ const meta_graph = {
     { id: "Ken Tanaka", group: 0 },
     { id: "DAB", longName: "Data Access Branch (DAB)", group: 1 },
     { id: "Richard Baldwin", group: 0 },
+    { id: "Jeremy Hall", group: 0 },
+    // { id: "NCEI Search, Discovery, & Data Access", group: 2 },
     { id: "Ryan Berkheimer", group: 0 },
     { id: "Jesse Varner", group: 0 },
     // BTeam
@@ -270,14 +310,17 @@ const meta_graph = {
     { id: "GSB Dev Team", group: 1 },
     {
       id: "CIRES",
-      longName: "Cooperative Institute for Research in Environmental Sciences (CIRES)",
-      description: "At CIRES, the Cooperative Institute for Research In Environmental Sciences, hundreds of scientists work to understand the dynamic Earth system, including people’s relationship with the planet.",
+      longName:
+        "Cooperative Institute for Research in Environmental Sciences (CIRES)",
+      description:
+        "At CIRES, the Cooperative Institute for Research In Environmental Sciences, hundreds of scientists work to understand the dynamic Earth system, including people’s relationship with the planet.",
       group: 1,
     },
     {
       id: "CIRES Fellows",
       longName: "CIRES Council of Fellows",
-      description: "CIRES Council of Fellows includes university faculty, researchers, and NOAA scientists who personify the institute’s cooperative spirit and guide the development of our cross-cutting research program.",
+      description:
+        "CIRES Council of Fellows includes university faculty, researchers, and NOAA scientists who personify the institute’s cooperative spirit and guide the development of our cross-cutting research program.",
       group: 1,
     },
     {
@@ -295,10 +338,10 @@ const meta_graph = {
     },
     { id: "Pura Perez", group: 0 },
     // Lift and shift
-// - Data Ingest, Migration IPT (Jason Cooper - lead) & Open Access IPT (Rich Baldwin): Brian Meyer or Kirsten Larsen
-// - Applications IPT (Jen Bowers - lead): Jen Bowers or Jen Webster
-// - Security IPT (Jason Symonds - lead) & Infrastructure IPT (Pura Perez): Stephanie Herring
-// - Workforce Readiness (Jared Rennie - lead): Jared Rennie
+    // - Data Ingest, Migration IPT (Jason Cooper - lead) & Open Access IPT (Rich Baldwin): Brian Meyer or Kirsten Larsen
+    // - Applications IPT (Jen Bowers - lead): Jen Bowers or Jen Webster
+    // - Security IPT (Jason Symonds - lead) & Infrastructure IPT (Pura Perez): Stephanie Herring
+    // - Workforce Readiness (Jared Rennie - lead): Jared Rennie
     {
       id: "Consolidated Storage Service",
       longName: "Consolidated Storage Service (CSS)",
@@ -331,7 +374,11 @@ const meta_graph = {
       group: 1,
     },
     { id: "CU", longName: "University of Colorado Boulder (CU)", group: 1 },
-    { id: "Computer Science Department", longName: "CU Computer Science Department", group: 1 },
+    {
+      id: "Computer Science Department",
+      longName: "CU Computer Science Department",
+      group: 1,
+    },
     {
       id: "NCEP",
       longName: "National Centers for Environmental Prediction (NCEP)",
@@ -339,11 +386,31 @@ const meta_graph = {
     },
     { id: "US Air Force", group: 1 },
     // groups for dev team
-    { id: "Hazel", description: "NCEI archives and assimilates tsunami, earthquake, and volcano data to support research, planning, response, and mitigation.", group: 2 },
+    {
+      id: "Hazel",
+      description:
+        "NCEI archives and assimilates tsunami, earthquake, and volcano data to support research, planning, response, and mitigation.",
+      group: 2,
+    },
     { id: "Marigrams", group: 2 },
     { id: "Team Fish", group: 1 },
-    { id: "Gazetteer", description: "The NOAA-supported GEBCO Undersea Feature Names Gazetteer provides a comprehensive, searchable database for the official names and geographic locations of features on the seafloor (e.g., seamounts, trenches, and ridges).", group: 2 },
-    { id: "EchoFish", description: "Exploring Water Column Sonar Data", group: 2 },
+    {
+      id: "Gazetteer",
+      description:
+        "The NOAA-supported GEBCO Undersea Feature Names Gazetteer provides a comprehensive, searchable database for the official names and geographic locations of features on the seafloor (e.g., seamounts, trenches, and ridges).",
+      group: 2,
+    },
+    {
+      id: "IHO DCDB",
+      longName: "International Hydrographic Organization (IHO) Data Center for Digital Bathymetry (DCDB)",
+      description: "The International Hydrographic Organization (IHO) Data Centre for Digital Bathymetry (DCDB) was established in 1990 to steward the global collection of bathymetric data.",
+      group: 2,
+    },
+    {
+      id: "EchoFish",
+      description: "Exploring Water Column Sonar Data",
+      group: 2,
+    },
     { id: "Trackline", group: 2 },
     { id: "Mable", group: 2 },
     { id: "Crowbar", group: 2 },
@@ -352,7 +419,7 @@ const meta_graph = {
     { id: "Pace", group: 2 },
     { id: "Tharp", group: 2 },
     { id: "WOD", longName: "World Ocean Database (WOD)", group: 2 },
-    
+
     { id: "TugBoat", group: 2 },
     { id: "Argonaut", group: 2 },
     { id: "Zhankun Wang", group: 0 },
@@ -360,24 +427,65 @@ const meta_graph = {
     {
       id: "ESIIL",
       longName: "Environmental Data Science Innovation & Impact Lab (ESIIL)",
-      description: "The Environmental Data Science Innovation & Impact Lab (ESIIL) is a next-generation NSF data synthesis center that enables a global community of environmental data scientists to leverage emerging analytics to develop science-based solutions to pressing environmental challenges.",
+      description:
+        "The Environmental Data Science Innovation & Impact Lab (ESIIL) is a next-generation NSF data synthesis center that enables a global community of environmental data scientists to leverage emerging analytics to develop science-based solutions to pressing environmental challenges.",
       group: 1,
     },
     // Fisheries — https://www.fisheries.noaa.gov/about-us/who-we-are
     // ...is this correct though? https://www.noaa.gov/about/organization/noaa-organization-chart
-    { id: "NOAA Fisheries", longName: "NOAA Fisheries Science Center", group: 1 },
-    { id: "Alaska Fisheries Science Center", longName: "NOAA Alaska Fisheries Science Center", group: 1 },
-    { id: "Northeast Fisheries Science Center", longName: "NOAA Northeast Fisheries Science Center", group: 1 },
-    { id: "Pacific Islands Fisheries Science Center", longName: "NOAA Pacific Fisheries Science Center", group: 1 },
-    { id: "Southeast Fisheries Science Center", longName: "NOAA Southeast Fisheries Science Center", group: 1 },
-    { id: "Southwest Fisheries Science Center", longName: "NOAA Southwest Fisheries Science Center", group: 1 },
-    { id: "Northwest Fisheries Science Center", longName: "NOAA Northwest Fisheries Science Center", group: 1 },
-    { id: "Office of Sustainable Fisheries", longName: "NOAA Office of Sustainable Fisheries", group: 1 },
+    {
+      id: "NOAA Fisheries",
+      longName: "NOAA Fisheries Science Center",
+      group: 1,
+    },
+    // Office of the Chief Information Officer (OCIO) 
+    {
+      id: "OCIO",
+      longName: "Office of the Chief Information Officer (OCIO)",
+      description: "The Office of the Chief Information Officer (OCIO) provides leadership to NOAA Fisheries and its Regions and Science Centers in all areas of information management and technology.",
+      group: 1,
+    },
+    {
+      id: "Alaska Fisheries Science Center",
+      longName: "NOAA Alaska Fisheries Science Center",
+      group: 1,
+    },
+    {
+      id: "Northeast Fisheries Science Center",
+      longName: "NOAA Northeast Fisheries Science Center",
+      group: 1,
+    },
+    {
+      id: "Pacific Islands Fisheries Science Center",
+      longName: "NOAA Pacific Fisheries Science Center",
+      group: 1,
+    },
+    {
+      id: "Southeast Fisheries Science Center",
+      longName: "NOAA Southeast Fisheries Science Center",
+      group: 1,
+    },
+    {
+      id: "Southwest Fisheries Science Center",
+      longName: "NOAA Southwest Fisheries Science Center",
+      group: 1,
+    },
+    {
+      id: "Northwest Fisheries Science Center",
+      longName: "NOAA Northwest Fisheries Science Center",
+      group: 1,
+    },
+    {
+      id: "Office of Sustainable Fisheries",
+      longName: "NOAA Office of Sustainable Fisheries",
+      group: 1,
+    },
     // AA-SI
     {
       id: "AA-SI",
       longName: "Active Acoustics Strategic Initiative (AA-SI)",
-      description: "This initiative brings together the NOAA Fisheries with NCEI.",
+      description:
+        "This initiative brings together the NOAA Fisheries with NCEI.",
       group: 1,
     },
     { id: "Mike Jech", group: 0 },
@@ -403,7 +511,8 @@ const meta_graph = {
     // echopype
     {
       id: "echopype",
-      description: "Echopype is a package built to enable interoperability and scalability in ocean sonar data processing.",
+      description:
+        "Echopype is a package built to enable interoperability and scalability in ocean sonar data processing.",
       group: 2,
     },
     {
@@ -419,12 +528,26 @@ const meta_graph = {
     { id: "Mason Carroll", group: 0 },
     // { id: "Ayesha Genz", group: 0 },
     { id: "AWS", longName: "Amazon Web Services (AWS)", group: 1 },
-    { id: "AWS Solutions Architect", longName: "AWS Solutions Architects", group: 1 },
+    {
+      id: "AWS Solutions Architect",
+      longName: "AWS Solutions Architects",
+      group: 1,
+    },
     { id: "CIRES AWS", group: 1 },
     { id: "NIH AWS", longName: "NESDIS Innovation Hub (NIH)", group: 1 },
+    { id: "Gian Dilawari", group: 0 },
     // NDC-PATHFINDERS
-    { id: "NDC-Pathfinders", description: "Advancing Earth Science and Innovating Data Access and Sharing — An NSF collaboration between 5 projects, working to innovate science-led pathways through the NSF cyberinfrastructure landscape.", group: 1 },
-    { id: "NCAR", longName: "National Center for Atmospheric Research (NCAR)", group: 1 },
+    {
+      id: "NDC-Pathfinders",
+      description:
+        "Advancing Earth Science and Innovating Data Access and Sharing — An NSF collaboration between 5 projects, working to innovate science-led pathways through the NSF cyberinfrastructure landscape.",
+      group: 1,
+    },
+    {
+      id: "NCAR",
+      longName: "National Center for Atmospheric Research (NCAR)",
+      group: 1,
+    },
     // { id: "OSPool", longName: "Open Science Pool", group: 1 },
   ],
   //////////////////////////////////////////////////////////////
@@ -440,12 +563,16 @@ const meta_graph = {
     { source: "Rudy Klucik", target: "EchoFish", predicate: "associatedWith" },
     { source: "Bary Eakins", target: "Tharp", predicate: "associatedWith" },
     // { source: "Peemin Chen", target: "Hazel", predicate: "associatedWith" },
+    // {
+    //   source: "Peemin Chen",
+    //   target: "FishFlicks",
+    //   predicate: "associatedWith",
+    // },
     {
-      source: "Peemin Chen",
-      target: "FishFlicks",
+      source: "John Cartwright",
+      target: "Crowbar",
       predicate: "associatedWith",
     },
-    { source: "John Cartwright", target: "Crowbar", predicate: "associatedWith" },
     { source: "Payton Cain", target: "Crowbar", predicate: "associatedWith" },
     { source: "Payton Cain", target: "TugBoat", predicate: "associatedWith" },
     {
@@ -543,11 +670,23 @@ const meta_graph = {
     },
     // DEM Team
     // DEM Team
-    { source: "Kelly Carignan", target: "DEM Team", predicate: "associatedWith" },
-    { source: "Christopher Amante", target: "DEM Team", predicate: "associatedWith" },
+    {
+      source: "Kelly Carignan",
+      target: "DEM Team",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Christopher Amante",
+      target: "DEM Team",
+      predicate: "associatedWith",
+    },
     { source: "Elliot Lim", target: "DEM Team", predicate: "associatedWith" },
     { source: "Matthew Love", target: "DEM Team", predicate: "associatedWith" },
-    { source: "Michael MacFerrin", target: "DEM Team", predicate: "associatedWith" },
+    {
+      source: "Michael MacFerrin",
+      target: "DEM Team",
+      predicate: "associatedWith",
+    },
     { source: "DEM Team", target: "MGGS", predicate: "associatedWith" },
     //
     { source: "Rachel Peterson", target: "Tharp", predicate: "associatedWith" },
@@ -588,9 +727,19 @@ const meta_graph = {
     { source: "Jessica Nation", target: "BTeam", predicate: "associatedWith" },
     { source: "Kevin Lally", target: "BTeam", predicate: "associatedWith" },
     { source: "Jennifer Jencks", target: "BTeam", predicate: "associatedWith" },
-    { source: "Daniel Alemayehu", target: "BTeam", predicate: "associatedWith" },
+    { source: "Michelle", target: "BTeam", predicate: "associatedWith" },
+    { source: "Tate", target: "BTeam", predicate: "associatedWith" },
+    {
+      source: "Daniel Alemayehu",
+      target: "BTeam",
+      predicate: "associatedWith",
+    },
     { source: "Max Smith", target: "BTeam", predicate: "associatedWith" },
-    { source: "Clinton Campbell", target: "BTeam", predicate: "associatedWith" },
+    {
+      source: "Clinton Campbell",
+      target: "BTeam",
+      predicate: "associatedWith",
+    },
     { source: "BTeam", target: "Mable", predicate: "associatedWith" },
     {
       source: "Vidhyadhari Gondle",
@@ -620,7 +769,11 @@ const meta_graph = {
     { source: "Nathan Malarich", target: "CMC", predicate: "associatedWith" },
     { source: "Nathan Malarich", target: "CSL", predicate: "associatedWith" },
     { source: "Aly Krimmer", target: "CMC", predicate: "associatedWith" },
-    { source: "Aly Krimmer", target: "CIRES ADMIN", predicate: "associatedWith" },
+    {
+      source: "Aly Krimmer",
+      target: "CIRES ADMIN",
+      predicate: "associatedWith",
+    },
     { source: "Alison Post", target: "CMC", predicate: "associatedWith" },
     { source: "Alison Post", target: "SEEC", predicate: "associatedWith" },
     { source: "Alison Post", target: "Earth Lab", predicate: "associatedWith" },
@@ -710,11 +863,11 @@ const meta_graph = {
       target: "GSB Dev Team",
       predicate: "associatedWith",
     },
-    {
-      source: "Peemin Chen",
-      target: "GSB Dev Team",
-      predicate: "associatedWith",
-    },
+    // {
+    //   source: "Peemin Chen",
+    //   target: "GSB Dev Team",
+    //   predicate: "associatedWith",
+    // },
     {
       source: "Quincy Cantu",
       target: "GSB Dev Team",
@@ -778,10 +931,26 @@ const meta_graph = {
       target: "NESDIS Common Cloud Framework",
       predicate: "associatedWith",
     },
-    { source: "Chris Mattioli", target: "Consolidated Storage Service", predicate: "associatedWith" },
-    { source: "Chris Mattioli", target: "NESDIS Common Cloud Framework", predicate: "associatedWith" },
-    { source: "Jessica Hung", target: "AWS Solutions Architect", predicate: "associatedWith" },
-    { source: "Jessica Hung", target: "NESDIS Common Cloud Framework", predicate: "associatedWith" },
+    {
+      source: "Chris Mattioli",
+      target: "Consolidated Storage Service",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Chris Mattioli",
+      target: "NESDIS Common Cloud Framework",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Jessica Hung",
+      target: "AWS Solutions Architect",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Jessica Hung",
+      target: "NESDIS Common Cloud Framework",
+      predicate: "associatedWith",
+    },
     {
       source: "Chris Mattioli",
       target: "AWS Solutions Architect",
@@ -810,6 +979,11 @@ const meta_graph = {
     {
       source: "NIH AWS",
       target: "AWS",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Gian Dilawari",
+      target: "NIH AWS",
       predicate: "associatedWith",
     },
     {
@@ -848,12 +1022,20 @@ const meta_graph = {
     { source: "SEEC", target: "CU", predicate: "associatedWith" },
     { source: "ESIIL", target: "CIRES", predicate: "associatedWith" },
     { source: "CIRES", target: "CU", predicate: "associatedWith" },
-    { source: "Arnaud Chulliat", target: "CIRES Fellows", predicate: "ciresFellow" },
+    {
+      source: "Arnaud Chulliat",
+      target: "CIRES Fellows",
+      predicate: "ciresFellow",
+    },
     { source: "CIRES Fellows", target: "CIRES", predicate: "associatedWith" },
     { source: "SWPC", target: "NCEP", predicate: "associatedWith" },
     { source: "SWPC", target: "US Air Force", predicate: "associatedWith" },
     { source: "NCEP", target: "NWS", predicate: "associatedWith" },
     { source: "Rob Redmon", target: "NCAI", predicate: "associatedWith" },
+    { source: "Douglas Rao", target: "NCAI", predicate: "associatedWith" },
+    { source: "Douglas Rao", target: "ESIP", predicate: "associatedWith" },
+    { source: "NCAI", target: "OCIO", predicate: "associatedWith" },
+    { source: "OCIO", target: "NOAA Fisheries", predicate: "associatedWith" },
     {
       source: "Stephanie Herring",
       target: "NCAI",
@@ -970,7 +1152,11 @@ const meta_graph = {
     { source: "COGS", target: "NCEI", predicate: "associatedWith" },
     { source: "STPS", target: "GSB", predicate: "associatedWith" },
     { source: "STP DPMF", target: "STPS", predicate: "associatedWith" },
-    { source: "STP DPMF", target: "NESDIS Common Cloud Framework", predicate: "associatedWith" },
+    {
+      source: "STP DPMF",
+      target: "NESDIS Common Cloud Framework",
+      predicate: "associatedWith",
+    },
     {
       source: "Josh Riley",
       target: "STP DPMF",
@@ -1043,6 +1229,8 @@ const meta_graph = {
     { source: "Steven Rutz", target: "DOB", predicate: "associatedWith" },
     { source: "AB", target: "DSD", predicate: "associatedWith" },
     { source: "Nancy Ritchey", target: "AB", predicate: "associatedWith" },
+    { source: "Paul Lemieux", target: "AB", predicate: "associatedWith" },
+    { source: "Paul Lemieux", target: "CoMET", predicate: "associatedWith" },
     {
       source: "Sarah Menassian",
       target: "AB",
@@ -1053,6 +1241,10 @@ const meta_graph = {
       target: "CoMET",
       predicate: "associatedWith",
     },
+    { source: "Lori Hager", target: "AB", predicate: "associatedWith" },
+    { source: "Lori Hager", target: "CoMET", predicate: "associatedWith" },
+    { source: "Ashley Beard", target: "AB", predicate: "associatedWith" },
+    { source: "Ashley Beard", target: "CoMET", predicate: "associatedWith" },
     { source: "SDB", target: "DSD", predicate: "associatedWith" },
     { source: "Daniel Lloyd", target: "SDB", predicate: "associatedWith" },
     {
@@ -1080,6 +1272,11 @@ const meta_graph = {
     { source: "DAB", target: "DSD", predicate: "associatedWith" },
     {
       source: "Richard Baldwin",
+      target: "DAB",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Jeremy Hall",
       target: "DAB",
       predicate: "associatedWith",
     },
@@ -1140,6 +1337,11 @@ const meta_graph = {
     {
       source: "Lee Shoemaker",
       target: "NOS",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Lee Shoemaker",
+      target: "IHO DCDB",
       predicate: "associatedWith",
     },
     {
@@ -1214,16 +1416,16 @@ const meta_graph = {
       target: "Database Administrators",
       predicate: "associatedWith",
     },
-    {
-      source: "Database Administrators",
-      target: "Mable",
-      predicate: "associatedWith",
-    },
-    {
-      source: "Linux System Administrators",
-      target: "Mable",
-      predicate: "associatedWith",
-    },
+    // {
+    //   source: "Database Administrators",
+    //   target: "Mable",
+    //   predicate: "associatedWith",
+    // },
+    // {
+    //   source: "Linux System Administrators",
+    //   target: "Mable",
+    //   predicate: "associatedWith",
+    // },
     { source: "Eric Porter", target: "ITOB", predicate: "associatedWith" },
     {
       source: "James Pritchitt",
@@ -1288,49 +1490,161 @@ const meta_graph = {
     // TODO: https://www.fisheries.noaa.gov/about-us/who-we-are
     //
     { source: "NOAA Fisheries", target: "NOAA", predicate: "associatedWith" },
-    { source: "Alaska Fisheries Science Center", target: "NOAA Fisheries", predicate: "associatedWith" },
-    { source: "Northeast Fisheries Science Center", target: "NOAA Fisheries", predicate: "associatedWith" },
-    { source: "Pacific Islands Fisheries Science Center", target: "NOAA Fisheries", predicate: "associatedWith" },
-    { source: "Southeast Fisheries Science Center", target: "NOAA Fisheries", predicate: "associatedWith" },
-    { source: "Southwest Fisheries Science Center", target: "NOAA Fisheries", predicate: "associatedWith" },
-    { source: "Northwest Fisheries Science Center", target: "NOAA Fisheries", predicate: "associatedWith" },
-    { source: "Office of Sustainable Fisheries", target: "NOAA Fisheries", predicate: "associatedWith" },
+    {
+      source: "Alaska Fisheries Science Center",
+      target: "NOAA Fisheries",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Northeast Fisheries Science Center",
+      target: "NOAA Fisheries",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Pacific Islands Fisheries Science Center",
+      target: "NOAA Fisheries",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Southeast Fisheries Science Center",
+      target: "NOAA Fisheries",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Southwest Fisheries Science Center",
+      target: "NOAA Fisheries",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Northwest Fisheries Science Center",
+      target: "NOAA Fisheries",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Office of Sustainable Fisheries",
+      target: "NOAA Fisheries",
+      predicate: "associatedWith",
+    },
     //
-    { source: "Carrie Wall Bell", target: "AA-SI", predicate: "associatedWith" },
+    {
+      source: "Carrie Wall Bell",
+      target: "AA-SI",
+      predicate: "associatedWith",
+    },
     { source: "Rudy Klucik", target: "AA-SI", predicate: "associatedWith" },
     { source: "Mike Jech", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Mike Jech", target: "Northeast Fisheries Science Center", predicate: "associatedWith" },
+    {
+      source: "Mike Jech",
+      target: "Northeast Fisheries Science Center",
+      predicate: "associatedWith",
+    },
     { source: "Allison White", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Allison White", target: "Southeast Fisheries Science Center", predicate: "associatedWith" },
+    {
+      source: "Allison White",
+      target: "Southeast Fisheries Science Center",
+      predicate: "associatedWith",
+    },
     { source: "Tim Rowell", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Tim Rowell", target: "Southeast Fisheries Science Center", predicate: "associatedWith" },
+    {
+      source: "Tim Rowell",
+      target: "Southeast Fisheries Science Center",
+      predicate: "associatedWith",
+    },
     { source: "Patrick Ressler", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Patrick Ressler", target: "Alaska Fisheries Science Center", predicate: "associatedWith" },
+    {
+      source: "Patrick Ressler",
+      target: "Alaska Fisheries Science Center",
+      predicate: "associatedWith",
+    },
     { source: "Brett Layman", target: "AA-SI", predicate: "associatedWith" },
     { source: "Camilo Roa", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Camilo Roa", target: "Southwest Fisheries Science Center", predicate: "associatedWith" },
-    { source: "Elizabeth Phillips", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Elizabeth Phillips", target: "Northwest Fisheries Science Center", predicate: "associatedWith" },
-    { source: "Dominic Bashford", target: "Northwest Fisheries Science Center", predicate: "associatedWith" },
-    { source: "Rebecca Thomas", target: "Office of Sustainable Fisheries", predicate: "associatedWith" },
+    {
+      source: "Camilo Roa",
+      target: "Southwest Fisheries Science Center",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Elizabeth Phillips",
+      target: "AA-SI",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Elizabeth Phillips",
+      target: "Northwest Fisheries Science Center",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Dominic Bashford",
+      target: "Northwest Fisheries Science Center",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Rebecca Thomas",
+      target: "Office of Sustainable Fisheries",
+      predicate: "associatedWith",
+    },
     { source: "Josiah Renfree", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Josiah Renfree", target: "Southwest Fisheries Science Center", predicate: "associatedWith" },
+    {
+      source: "Josiah Renfree",
+      target: "Southwest Fisheries Science Center",
+      predicate: "associatedWith",
+    },
     { source: "Derek Bolser", target: "AA-SI", predicate: "associatedWith" },
     { source: "Elias Capriles", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Elias Capriles", target: "Southwest Fisheries Science Center", predicate: "associatedWith" },
-    { source: "Dominic Bashford", target: "AA-SI", predicate: "associatedWith" },
+    {
+      source: "Elias Capriles",
+      target: "Southwest Fisheries Science Center",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Dominic Bashford",
+      target: "AA-SI",
+      predicate: "associatedWith",
+    },
     { source: "Michael Ryan", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Michael Ryan", target: "Northeast Fisheries Science Center", predicate: "associatedWith" },
-    { source: "Hannan Khan", target: "Northeast Fisheries Science Center", predicate: "associatedWith" },
+    {
+      source: "Michael Ryan",
+      target: "Northeast Fisheries Science Center",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Hannan Khan",
+      target: "Northeast Fisheries Science Center",
+      predicate: "associatedWith",
+    },
     { source: "Reka Domokos", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Reka Domokos", target: "Pacific Islands Fisheries Science Center", predicate: "associatedWith" },
-    { source: "Nikki Dabaghchian", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Nikki Dabaghchian", target: "Northeast Fisheries Science Center", predicate: "associatedWith" },
+    {
+      source: "Reka Domokos",
+      target: "Pacific Islands Fisheries Science Center",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Nikki Dabaghchian",
+      target: "AA-SI",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Nikki Dabaghchian",
+      target: "Northeast Fisheries Science Center",
+      predicate: "associatedWith",
+    },
     { source: "Dave Demer", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Dave Demer", target: "Southwest Fisheries Science Center", predicate: "associatedWith" },
+    {
+      source: "Dave Demer",
+      target: "Southwest Fisheries Science Center",
+      predicate: "associatedWith",
+    },
     { source: "Hannan Khan", target: "AA-SI", predicate: "associatedWith" },
-    { source: "Robert Levine", target: "Alaska Fisheries Science Center", predicate: "associatedWith" },
-    { source: "Robert Levine", target: "pyEcholab", predicate: "associatedWith" },
+    {
+      source: "Robert Levine",
+      target: "Alaska Fisheries Science Center",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Robert Levine",
+      target: "pyEcholab",
+      predicate: "associatedWith",
+    },
     //
     { source: "Lloyd Izard", target: "AA-SI", predicate: "associatedWith" },
     { source: "Wu-Jung Lee", target: "AA-SI", predicate: "associatedWith" },
@@ -1351,14 +1665,15 @@ const meta_graph = {
 function App() {
   const containerRef = useRef(null);
 
-  // const parentDiv = document.getElementById("parentDiv");
-  // const width = parentDiv?.clientWidth;
-  // const height = parentDiv?.clientHeight;
-
   return (
     <div className="App" id="parentDiv">
       <div id="title">
-        <h1 className="bitcount-prop-single-custom">CIRES & NCEI Functional Graph</h1>
+        {/* <h1 className="bitcount-prop-single-custom">
+          CIRES / NCEI Knowledge Graph
+        </h1> */}
+        <h1 className="bitcount-prop-single-custom noselect">
+          [Almost] Everything [Almost] Everywhere All At Once
+        </h1>
       </div>
       <div ref={containerRef}>
         {/* <ForceGraph3D
@@ -1396,6 +1711,7 @@ function App() {
             return sprite;
           }}
         /> */}
+
         <ForceGraph2D
           graphData={meta_graph}
           // nodeAutoColorBy="group"
@@ -1404,26 +1720,26 @@ function App() {
           linkDirectionalParticleSpeed={() => {
             return 1 * 0.0005;
           }}
-          linkDirectionalParticleWidth={2}
-          linkCurvature={0.15}
+          linkDirectionalParticleWidth={3}
+          linkCurvature={0.125}
           linkLineDash={() => {
             return [1, 1];
           }}
           linkColor={(node) => {
-            return "rgba(71, 165, 42, 0.3)";
+            return "rgba(71, 165, 42, 0.17)";
           }}
           linkWidth={1.5}
           linkLabel={(link) => {
             return link.predicate;
           }}
-          // linkDirectionalParticleColor={() => "rgba(71, 165, 42, 0.10)"}
           linkDirectionalParticleColor={() => "rgba(0,206,209, 0.25)"}
           nodeCanvasObject={(node, ctx, globalScale) => {
             let label = node.id;
             if ("longName" in node) {
               label = node.longName;
             }
-            const fontSize = 12 / globalScale;
+            const fontSize = 11 / globalScale;
+            // debugger;
             ctx.font = `${fontSize}px Sans-Serif`;
             // const textWidth = ctx.measureText(label).width;
             // const bckgDimensions = [textWidth, fontSize].map(
@@ -1431,13 +1747,16 @@ function App() {
             // );
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
-            if (node.group === 0){ // people
-              ctx.fillStyle='RebeccaPurple';
-              ctx.fillStyle="YellowGreen";
-            } else if (node.group === 1){ // groups
-              ctx.fillStyle='ForestGreen';
-            } else if (node.group === 2) { // projects
-              ctx.fillStyle='SkyBlue';
+            if (node.group === 0) {
+              // people
+              ctx.fillStyle = "RebeccaPurple";
+              ctx.fillStyle = "YellowGreen";
+            } else if (node.group === 1) {
+              // groups
+              ctx.fillStyle = "ForestGreen";
+            } else if (node.group === 2) {
+              // projects
+              ctx.fillStyle = "SkyBlue";
             }
             // ctx.font='8px "Bitcount Prop Single"';
             ctx.letterSpacing = "0.05em";
@@ -1446,16 +1765,16 @@ function App() {
             // node.__bckgDimensions = bckgDimensions;
           }}
           nodeLabel={(node) => {
-            if (node.description){
+            if (node.description) {
               return node.description;
             }
-            return null;
+            return "";
           }}
-          d3VelocityDecay={0.25}
-          d3AlphaDecay={0.01}
+          d3VelocityDecay={0.5}
+          d3AlphaDecay={0.001}
           // d3AlphaMin={0.001}
-          minZoom={0.5}
-          maxZoom={4}
+          minZoom={0.9}
+          maxZoom={6}
         />
       </div>
 
