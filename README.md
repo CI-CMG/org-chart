@@ -25,3 +25,5 @@ https://www.stmweather.com/blog/profiles/what-is-noaa-and-what-is-its-mission
 ## TODO
 - get the cicd working
 - add validation with python on check-in
+
+https://github.com/gitname/react-gh-pages

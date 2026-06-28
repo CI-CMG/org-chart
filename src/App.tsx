@@ -1725,7 +1725,7 @@ function App() {
           linkLineDash={() => {
             return [1, 1];
           }}
-          linkColor={(node) => {
+          linkColor={() => {
             return "rgba(71, 165, 42, 0.17)";
           }}
           linkWidth={1.5}
@@ -1736,7 +1736,7 @@ function App() {
           nodeCanvasObject={(node, ctx, globalScale) => {
             let label = node.id;
             if ("longName" in node) {
-              label = node.longName;
+              label = node.longName!;
             }
             const fontSize = 11 / globalScale;
             // debugger;
@@ -1760,7 +1760,9 @@ function App() {
             }
             // ctx.font='8px "Bitcount Prop Single"';
             ctx.letterSpacing = "0.05em";
-            ctx.fillText(label, node.x, node.y);
+            // if ("x" in node && "y" in node) {
+            ctx.fillText(label, node.x!, node.y!);
+            // }
 
             // node.__bckgDimensions = bckgDimensions;
           }}
