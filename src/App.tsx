@@ -96,7 +96,7 @@ const meta_graph = {
     { id: "Agnieszka Gautier", group: 0 },
     { id: "Guoqing Ge", group: 0 },
     { id: "Marty Heath", group: 0 },
-    { id: "Rudy Klucik", longName: "🦨Rudy Klucik", group: 0 },
+    { id: "Rudy Klucik", longName: "☆Rudy Klucik", group: 0 }, // 🦨
     { id: "Corey Krimmer", group: 0 },
     { id: "Scott Lewis", group: 0 },
     { id: "Kim Moreland", group: 0 },
@@ -1668,12 +1668,18 @@ function App() {
   return (
     <div className="App" id="parentDiv">
       <div id="title">
-        {/* <h1 className="bitcount-prop-single-custom">
-          CIRES / NCEI Knowledge Graph
-        </h1> */}
-        <h1 className="bitcount-prop-single-custom noselect">
-          [Almost] Everything [Almost] Everywhere All At Once
+        <h1 className="bitcount-prop-single-custom">
+          CIRES / MGG Functional Knowledge Graph
+          {' '}
+          <span
+            style={{ fontFamily: "Arial", fontSize: "0.7em", color: "black", letterSpacing: "0.125em" }}
+          >
+            {`v${import.meta.env.VITE_REACT_APP_VERSION}`}
+          </span>
         </h1>
+        {/* <h1 className="bitcount-prop-single-custom noselect">
+          [Almost] Everything [Almost] Everywhere All At Once
+        </h1> */}
       </div>
       <div ref={containerRef}>
         {/* <ForceGraph3D

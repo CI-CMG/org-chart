@@ -1,7 +1,7 @@
 {
   "name": "org-chart",
   "private": true,
-  "version": "26.5.0",
+  "version": "26.6.1",
   "type": "module",
   "homepage": "https://CI-CMG.github.io/org-chart",
   "repository": {
