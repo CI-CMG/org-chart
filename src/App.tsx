@@ -37,7 +37,7 @@ const meta_graph = {
     { id: "Luke Pitstick", group: 0 },
     { id: "Rory OFlynn", group: 0 },
     { id: "Michelle", group: 0 }, // B-team
-    { id: "Tate Voeller", group: 0 }, // B-Team
+    { id: "Tate Voeller", description: "Hello! I am Tate Voeller. I'm excited to join CIRES as a junior data manager on the Multibeam Bathymetry team. I am at CU Boulder studying Atmosphere and Oceanic Science with a minor in Geography. I am looking forward to getting some valuable experience in the industry. I have passions to pursue a PhD in Oceanography or Climate sciences. I am from Louisville, CO and in my free time I play CU club Ultimate Frisbee, climb, bike, ski, and hike Colorado's 14ers.", group: 0 }, // B-Team
     { id: "Bary Eakins", group: 0 },
     { id: "Rob Redmon", group: 0 },
     { id: "Douglas Rao", group: 0 },
@@ -268,6 +268,7 @@ const meta_graph = {
     { id: "Ming-Wai Merschat", group: 0 },
     { id: "Nicole Fernandes", group: 0 },
     { id: "Katrina Combs", group: 0 },
+    { id: "Jay Nunenkamp", group: 0 },
     { id: "Mindful NOAA", group: 1 }, // Mindful NOAA
     { id: "SEB", longName: "Standards and Evaluation Branch (SEB)", group: 1 },
     { id: "Jon Kidder", group: 0 },
@@ -1310,6 +1311,11 @@ const meta_graph = {
       predicate: "associatedWith",
     },
     {
+      source: "Jay Nunenkamp",
+      target: "Mindful NOAA",
+      predicate: "associatedWith",
+    },
+    {
       source: "Nicole Fernandes",
       target: "Mindful NOAA",
       predicate: "associatedWith",
@@ -1327,6 +1333,16 @@ const meta_graph = {
     {
       source: "NWS",
       target: "NOAA",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Jay Nunenkamp",
+      target: "NOS",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Lee Shoemaker",
+      target: "NOS",
       predicate: "associatedWith",
     },
     {
