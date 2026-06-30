@@ -12,7 +12,6 @@ const meta_graph = {
     { id: "Clinton Lohr", group: 0 },
     { id: "Max Smith", group: 0 },
     { id: "Payton Cain", group: 0 },
-    // { id: "Peemin Chen", group: 0 },
     { id: "Quincy Cantu", group: 0 },
     { id: "Rachel Peterson", group: 0 },
     { id: "Vidhyadhari Gondle", group: 0 },
@@ -96,7 +95,7 @@ const meta_graph = {
     { id: "Agnieszka Gautier", group: 0 },
     { id: "Guoqing Ge", group: 0 },
     { id: "Marty Heath", group: 0 },
-    { id: "Rudy Klucik", longName: "☆Rudy Klucik", group: 0 }, // 🦨
+    { id: "Rudy Klucik", longName: "Rudy Klucik", group: 0 },
     { id: "Corey Krimmer", group: 0 },
     { id: "Scott Lewis", group: 0 },
     { id: "Kim Moreland", group: 0 },
