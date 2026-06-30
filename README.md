@@ -61,7 +61,7 @@ Upon saving and committing your code the github action will automatically build 
 ## Core concepts
 The goal is to highlight the WHO and the WHAT, so connecting people to groups and projects. Not focused on infrastructure.
 
-And we are not focused on what you have worked on in the past — this is not a CV. The goal is to illuminate the groups-and-projects people are involved in on the near horizon.
+We are not focused on what you have worked on in the past — this is not a CV. The goal is to illuminate what people are working on and involved in now and in the near future.
 
 
 ## Difference Between Org Structure & an Org Chart
