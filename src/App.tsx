@@ -37,7 +37,7 @@ const meta_graph = {
     { id: "Luke Pitstick", group: 0 },
     { id: "Rory OFlynn", group: 0 },
     { id: "Michelle", group: 0 }, // B-team
-    { id: "Tate", group: 0 }, // B-Team
+    { id: "Tate Voeller", group: 0 }, // B-Team
     { id: "Bary Eakins", group: 0 },
     { id: "Rob Redmon", group: 0 },
     { id: "Douglas Rao", group: 0 },
@@ -728,7 +728,7 @@ const meta_graph = {
     { source: "Kevin Lally", target: "BTeam", predicate: "associatedWith" },
     { source: "Jennifer Jencks", target: "BTeam", predicate: "associatedWith" },
     { source: "Michelle", target: "BTeam", predicate: "associatedWith" },
-    { source: "Tate", target: "BTeam", predicate: "associatedWith" },
+    { source: "Tate Voeller", target: "BTeam", predicate: "associatedWith" },
     {
       source: "Daniel Alemayehu",
       target: "BTeam",
