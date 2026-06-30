@@ -1669,12 +1669,12 @@ function App() {
     <div className="App" id="parentDiv">
       <div id="title">
         <h1 className="bitcount-prop-single-custom">
-          CIRES / MGG Functional Knowledge Graph
+          CIRES, Marine Geology and Geophysics
           {' '}
           <span
             style={{ fontFamily: "Arial", fontSize: "0.7em", color: "black", letterSpacing: "0.125em" }}
           >
-            {`v${import.meta.env.VITE_REACT_APP_VERSION}`}
+            [ {`v${import.meta.env.VITE_REACT_APP_VERSION}`} ]
           </span>
         </h1>
         {/* <h1 className="bitcount-prop-single-custom noselect">

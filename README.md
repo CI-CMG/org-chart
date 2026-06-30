@@ -5,9 +5,9 @@ Knowledge Graph showing the intersection of CIRES & MGG organizations, its peopl
 ## Entities
 
 There are three types of entities:
-1. people (e.g. 'rudy klucik')
-2. groups (e.g. 'marine geology & geophysics developers')
-3. project (e.g. 'EchoFish')
+1. people (e.g. 'rudy klucik', group: 0,)
+2. groups (e.g. 'marine geology & geophysics developers', group: 1)
+3. project (e.g. 'EchoFish', group: 2)
 
 ## Contributing
 
@@ -25,7 +25,13 @@ https://organizationalphysics.com/2015/02/09/organizational-design-the-differenc
 
 ## TODO
 - get the cicd working
+  - ~~create credentials [done]~~
+  - ~~cloudfront & route53 [done]~~
+  - ~~create s3 bucket~~
 - add validation with python on check-in to nodes/edges
+- add resize handler
+- get others to contribute
+- create api
 
 ## Future Research
 https://www.stmweather.com/blog/profiles/what-is-noaa-and-what-is-its-mission
