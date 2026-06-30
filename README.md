@@ -45,6 +45,8 @@ Adding an edge just requires two node ids added under the 'links', e.g.:
 ```
 connects the node, 'Rudy Klucik' to the node 'EchoFish'. The predicate is generically 'associatedWith' for now but will change in future iterations.
 
+To keep the graph more clean, try and connect people to the lowest denomination group you can. E.g. I could connect 'Rudy Klucik' to {'NOAA', 'NESDIS', 'NCEI', 'MGG', 'GSB Dev Team', 'CU', 'CIRES', 'CMC', etc.} but instead we opt to connect just {'GSB Dev Team', 'CMC'}.
+
 The convention for direction is generally:
  - person --> project
  - person --> group
