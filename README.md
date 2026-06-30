@@ -43,6 +43,13 @@ Adding an edge just requires two node ids added under the 'links', e.g.:
 ```
 connects the node, 'Rudy Klucik' to the node 'EchoFish'. The predicate is generically 'associatedWith' for now but will change in future iterations.
 
+The convention for direction is generally:
+ - person --> project
+ - person --> group
+ - group --> group
+
+And so when the UI renders the dots move in the direction the arrow would point.
+
 Upon saving and committing your code the github action will automatically build and deploy the code to https://org-chart.ciresocean.org/.
 
 ## Core concepts
