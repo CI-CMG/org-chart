@@ -48,9 +48,8 @@ Upon saving and committing your code the github action will automatically build 
 ## Core concepts
 The goal is to highlight the WHO and the WHAT, so connecting people to groups and projects. Not focused on infrastructure.
 
-And we are not focused on what you have worked on in the past — this is not a CV.
+And we are not focused on what you have worked on in the past — this is not a CV. The goal is to illuminate the groups-and-projects people are involved in on the near horizon.
 
-It is not "who" you are but "what" you are working on that matters here.
 
 ## Difference Between Org Structure & an Org Chart
 
@@ -58,7 +57,7 @@ https://organizationalphysics.com/2015/02/09/organizational-design-the-differenc
 
 
 ## TODO
-- get the cicd working
+- ~~get the cicd working~~
   - ~~create credentials [done]~~
   - ~~cloudfront & route53 [done]~~
   - ~~create s3 bucket~~
@@ -66,6 +65,7 @@ https://organizationalphysics.com/2015/02/09/organizational-design-the-differenc
 - add resize handler
 - get others to contribute
 - create api
+
 
 ## Future Research
 https://www.stmweather.com/blog/profiles/what-is-noaa-and-what-is-its-mission
