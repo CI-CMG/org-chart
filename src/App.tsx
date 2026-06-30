@@ -1668,7 +1668,7 @@ function App() {
   return (
     <div className="App" id="parentDiv">
       <div id="title">
-        <h1 className="bitcount-prop-single-custom">
+        <h1>
           CIRES, Marine Geology and Geophysics
           {' '}
           <span
