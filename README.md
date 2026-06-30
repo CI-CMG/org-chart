@@ -14,6 +14,8 @@ There are three types of entities:
 ## Contributing
 To contribute you can edit the "App.tsx" file.
 
+Entries aren't in any order, so things will be chaotic as you add.
+
 ### Adding an Entity
 In the meta_graph constant you can add a new node.
 
