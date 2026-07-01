@@ -1116,6 +1116,11 @@ const meta_graph = {
       predicate: "associatedWith",
     },
     {
+      source: "CMDI",
+      target: "CU",
+      predicate: "associatedWith",
+    },
+    {
       source: "Qin Lv",
       target: "Computer Science Department",
       predicate: "associatedWith",
