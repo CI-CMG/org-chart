@@ -413,7 +413,7 @@ const meta_graph = {
     },
     {
       id: "EchoFish",
-      description: "Exploring Water Column Sonar Data",
+      description: '<a href="https://echo.fish" target="_blank">EchoFish</a>, Exploring Water Column Sonar Data',
       group: 2,
     },
     { id: "Trackline", group: 2 },
@@ -1376,6 +1376,11 @@ const meta_graph = {
     },
     {
       source: "Rudy Klucik",
+      target: "NDC-Pathfinders",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Carrie Wall Bell",
       target: "NDC-Pathfinders",
       predicate: "associatedWith",
     },
