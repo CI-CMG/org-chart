@@ -380,6 +380,11 @@ const meta_graph = {
       group: 1,
     },
     {
+      id: "CMDI",
+      longName: "CU College of Communication, Media, Design and Information",
+      group: 1,
+    },
+    {
       id: "NCEP",
       longName: "National Centers for Environmental Prediction (NCEP)",
       group: 1,
@@ -1071,7 +1076,7 @@ const meta_graph = {
     },
     {
       source: "Rachel Peterson",
-      target: "Computer Science Department",
+      target: "CMDI",
       predicate: "associatedWith",
     },
     {
