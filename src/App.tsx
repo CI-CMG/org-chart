@@ -1692,12 +1692,30 @@ const meta_graph = {
 //  OMB
 //  NCAR/CISL
 
+function processClick(e) {
+  console.log(`toggled: ${e.target.checked}`)
+}
+
 function App() {
   const containerRef = useRef(null);
 
   return (
     <div className="App" id="parentDiv">
       <div id="title">
+        <div style={{textAlign: "right"}}>
+          <label>
+            People:<input type="checkbox" name="checkboxPeople" defaultChecked={true} onChange={(e) => processClick(e)} disabled />
+          </label>
+          {' / '}
+          <label>
+            Groups:<input type="checkbox" name="checkboxGroups" defaultChecked={true} onChange={(e) => processClick(e)} disabled />
+          </label>
+          {' / '}
+          <label>
+            Projects:<input type="checkbox" name="checkboxProjects" defaultChecked={true} onChange={(e) => processClick(e)} disabled />
+          </label>
+        </div>
+
         <h1>
           CIRES, Marine Geology and Geophysics
           {' '}
@@ -1707,47 +1725,8 @@ function App() {
             [ {`v${import.meta.env.VITE_REACT_APP_VERSION}`} ]
           </span>
         </h1>
-        {/* <h1 className="bitcount-prop-single-custom noselect">
-          [Almost] Everything [Almost] Everywhere All At Once
-        </h1> */}
       </div>
       <div ref={containerRef}>
-        {/* <ForceGraph3D
-          graphData={meta_graph}
-          nodeThreeObjectExtend={true}
-          width={width}
-          height={height}
-          backgroundColor={"rgb(11,11,11)"}
-          // backgroundColor={"white"}
-          nodeColor={"pink"}
-          nodeAutoColorBy="id"
-          nodeLabel="id"
-          // linkDirectionalParticles={"value"}
-          // linkDirectionalParticleSpeed={(d) => d.value * 0.001}
-          nodeRelSize={2}
-          linkDirectionalArrowLength={5}
-          linkDirectionalArrowRelPos={1}
-          linkWidth={1.1}
-          linkCurvature={0.025}
-          nodeThreeObject={
-              (node) => {
-              const sprite = new SpriteText(node.id);
-              sprite.color = "white";
-              sprite.textHeight = 6;
-              return sprite;
-            }
-          }
-          threeObjectExtend={true}
-          //
-          linkThreeObjectExtend={true}
-          linkThreeObject={(link) => {
-            const sprite = new SpriteText(`${link.predicate}`);
-            sprite.color = 'grey';
-            sprite.textHeight = 3;
-            return sprite;
-          }}
-        /> */}
-
         <ForceGraph2D
           graphData={meta_graph}
           // nodeAutoColorBy="group"
@@ -1809,7 +1788,7 @@ function App() {
             return "";
           }}
           d3VelocityDecay={0.5}
-          d3AlphaDecay={0.001}
+          d3AlphaDecay={0.01}
           // d3AlphaMin={0.001}
           minZoom={0.9}
           maxZoom={6}
