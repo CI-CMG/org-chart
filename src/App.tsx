@@ -1709,14 +1709,14 @@ function App() {
     <div className="App" id="parentDiv">
       <div id="title">
         <div style={{textAlign: "right"}}>
-          <label style={{ color: "yellowgreen" }}>
-            people
-            {/* <input type="checkbox" name="checkboxPeople" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
-          </label>
-          {' / '}
           <label style={{ color: "forestgreen" }}>
             groups
             {/* <input type="checkbox" name="checkboxGroups" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
+          </label>
+          {' / '}
+          <label style={{ color: "yellowgreen" }}>
+            people
+            {/* <input type="checkbox" name="checkboxPeople" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
           </label>
           {' / '}
           <label style={{ color: "skyblue" }}>
@@ -1762,7 +1762,8 @@ function App() {
             if ("longName" in node) {
               label = node.longName!;
             }
-            const fontSize = 11 / globalScale;
+            // const fontSize = 14 / globalScale;
+            const fontSize = 6  / (globalScale*0.5);
             // debugger;
             ctx.font = `${fontSize}px Sans-Serif`;
             // const textWidth = ctx.measureText(label).width;
@@ -1797,7 +1798,7 @@ function App() {
             return "";
           }}
           d3VelocityDecay={0.5}
-          d3AlphaDecay={0.01}
+          d3AlphaDecay={0.001}
           // d3AlphaMin={0.001}
           minZoom={0.9}
           maxZoom={6}

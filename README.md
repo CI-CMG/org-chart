@@ -9,14 +9,14 @@ Data derived from [here](https://docs.google.com/spreadsheets/d/1wYRAvP02BrueU2K
 ## Entities
 
 There are three types of entities:
-1. people (e.g. 'rudy klucik', group: 0,)
-2. groups (e.g. 'marine geology & geophysics developers', group: 1)
-3. projects (e.g. 'EchoFish', group: 2)
+ - people (e.g. 'rudy klucik', group: 0,)
+ - groups (e.g. 'marine geology & geophysics developers', group: 1)
+ - projects (e.g. 'EchoFish', group: 2)
 
 ## Contributing
 To contribute you can edit the "App.tsx" file.
 
-Entries aren't in any order, so things will be chaotic as you add.
+Entries aren't in any order, so things will be chaotic as you add. Use CTRL+F to find any existing entries.
 
 ### Adding an Entity
 In the meta_graph constant you can add a new node.
