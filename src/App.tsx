@@ -1703,27 +1703,30 @@ function App() {
     <div className="App" id="parentDiv">
       <div id="title">
         <div style={{textAlign: "right"}}>
-          <label>
-            People:<input type="checkbox" name="checkboxPeople" defaultChecked={true} onChange={(e) => processClick(e)} disabled />
+          <label style={{ color: "yellowgreen" }}>
+            people
+            {/* <input type="checkbox" name="checkboxPeople" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
           </label>
           {' / '}
-          <label>
-            Groups:<input type="checkbox" name="checkboxGroups" defaultChecked={true} onChange={(e) => processClick(e)} disabled />
+          <label style={{ color: "forestgreen" }}>
+            groups
+            {/* <input type="checkbox" name="checkboxGroups" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
           </label>
           {' / '}
-          <label>
-            Projects:<input type="checkbox" name="checkboxProjects" defaultChecked={true} onChange={(e) => processClick(e)} disabled />
+          <label style={{ color: "skyblue" }}>
+            projects
+            {/* <input type="checkbox" name="checkboxProjects" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
           </label>
         </div>
 
         <h1>
-          CIRES, Marine Geology and Geophysics
-          {' '}
           <span
-            style={{ fontFamily: "Arial", fontSize: "0.7em", color: "black", letterSpacing: "0.125em" }}
+            style={{ fontFamily: "Arial", fontSize: "0.7em", color: "yellowgreen", letterSpacing: "0.125em" }}
           >
             [ {`v${import.meta.env.VITE_REACT_APP_VERSION}`} ]
           </span>
+          {' '}
+          CIRES, Marine Geology and Geophysics
         </h1>
       </div>
       <div ref={containerRef}>

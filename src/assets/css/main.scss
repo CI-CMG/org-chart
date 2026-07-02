@@ -22,7 +22,7 @@ body {
   // background-color: AliceBlue;
   background-color: OldLace;
   background: #2A7B9B;
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); // Cucumber Water
 
   .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
@@ -38,16 +38,18 @@ body {
     bottom: 5px;
     right: 10px;
     z-index: 9999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 
     h1 {
-      border: 1px solid teal;
-      color: teal;
+      // border: 1px solid grey;
+      color: forestgreen;
       font-size: 12px;
       // font-family: 'Courier New', Courier, monospace;
       font-family: Arial, Helvetica, sans-serif;
       letter-spacing: 0.2em;
       padding: 5px 8px 4px 8px;
-      background-color: rgba(255, 255, 255, 0.75);
+      background-color: rgba(255, 255, 255, 0.25);
     }
   }
 }
