@@ -539,6 +539,7 @@ const meta_graph = {
       group: 1,
     },
     { id: "CIRES AWS", group: 1 },
+    { id: "Josh Caplan", group: 0 },
     { id: "NIH AWS", longName: "NESDIS Innovation Hub (NIH)", group: 1 },
     { id: "Gian Dilawari", group: 0 },
     // NDC-PATHFINDERS
@@ -969,6 +970,11 @@ const meta_graph = {
     {
       source: "CIRES AWS",
       target: "AWS",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Josh Caplan",
+      target: "CIRES AWS",
       predicate: "associatedWith",
     },
     {
@@ -1692,9 +1698,9 @@ const meta_graph = {
 //  OMB
 //  NCAR/CISL
 
-function processClick(e: React.ChangeEvent<HTMLInputElement>) {
-  console.log(`toggled: ${e.target.checked}`)
-}
+// function processClick(e: React.ChangeEvent<HTMLInputElement>) {
+//   console.log(`toggled: ${e.target.checked}`)
+// }
 
 function App() {
   const containerRef = useRef(null);
