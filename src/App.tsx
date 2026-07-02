@@ -1692,7 +1692,7 @@ const meta_graph = {
 //  OMB
 //  NCAR/CISL
 
-function processClick(e) {
+function processClick(e: React.ChangeEvent<HTMLInputElement>) {
   console.log(`toggled: ${e.target.checked}`)
 }
 
