@@ -1,8 +1,6 @@
 import { useRef } from "react";
-// import ForceGraph3D from "react-force-graph-3d";
 import ForceGraph2D from "react-force-graph-2d";
-// import SpriteText from "three-spritetext";
-// import "./App.css";
+import { FaGithub } from "react-icons/fa";
 
 // Entity Types: [0] Person, [1] Group, [2] Project
 const meta_graph = {
@@ -1693,8 +1691,6 @@ const meta_graph = {
 
 // TODO: add
 //  CIRES Fellows
-//  Student Relationships to CU
-//  Pathfinders project
 //  OMB
 //  NCAR/CISL
 
@@ -1707,18 +1703,18 @@ function App() {
 
   return (
     <div className="App" id="parentDiv">
-      <div id="title">
+      <div id="bottomRight">
         <div style={{textAlign: "right"}}>
           <label style={{ color: "forestgreen" }}>
             groups
             {/* <input type="checkbox" name="checkboxGroups" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
           </label>
-          {' / '}
+          <span style={{ color: "yellowgreen" }}>{' / '}</span>
           <label style={{ color: "yellowgreen" }}>
             people
             {/* <input type="checkbox" name="checkboxPeople" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
           </label>
-          {' / '}
+          <span style={{ color: "yellowgreen" }}>{' / '}</span>
           <label style={{ color: "skyblue" }}>
             projects
             {/* <input type="checkbox" name="checkboxProjects" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
@@ -1726,15 +1722,22 @@ function App() {
         </div>
 
         <h1>
-          <span
-            style={{ fontFamily: "Arial", fontSize: "0.7em", color: "yellowgreen", letterSpacing: "0.125em" }}
-          >
-            [ {`v${import.meta.env.VITE_REACT_APP_VERSION}`} ]
-          </span>
-          {' '}
           CIRES, Marine Geology and Geophysics
         </h1>
       </div>
+
+      <div id="topLeft">
+        <span
+          style={{ fontFamily: "Arial", fontSize: "0.7em", color: "yellowgreen", letterSpacing: "0.125em" }}
+        >
+          {`v${import.meta.env.VITE_REACT_APP_VERSION}`}
+        </span>
+      </div>
+
+      <div id="bottomLeft">
+        <a href="https://github.com/CI-CMG/org-chart/" target="_blank"><FaGithub /></a>
+      </div>
+
       <div ref={containerRef}>
         <ForceGraph2D
           graphData={meta_graph}
@@ -1804,8 +1807,6 @@ function App() {
           maxZoom={6}
         />
       </div>
-
-      {/* <section id="spacer"></section> */}
     </div>
   );
 }

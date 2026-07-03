@@ -33,7 +33,27 @@ body {
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
   }
 
-  #title {
+  #topLeft {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 9999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+  }
+
+  #bottomLeft {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    z-index: 9999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+  }
+
+  #bottomRight {
     position: absolute;
     bottom: 5px;
     right: 10px;
@@ -41,6 +61,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     letter-spacing: 0.2em;
+    background-color: rgba(217, 231, 255, 0.5);
 
     h1 {
       // border: 1px solid grey;
@@ -50,7 +71,7 @@ body {
       font-family: Arial, Helvetica, sans-serif;
       letter-spacing: 0.25em;
       padding: 5px 8px 4px 8px;
-      background-color: rgba(255, 255, 255, 0.25);
+      background-color: rgba(217, 231, 255, 0.5);
     }
   }
 }

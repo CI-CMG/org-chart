@@ -1,7 +1,7 @@
 {
   "name": "org-chart",
   "private": true,
-  "version": "26.7.2",
+  "version": "26.7.3",
   "type": "module",
   "homepage": "https://CI-CMG.github.io/org-chart",
   "repository": {
@@ -18,9 +18,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.3.0",
+    "@fortawesome/free-solid-svg-icons": "^7.3.0",
+    "@fortawesome/react-fontawesome": "^3.3.1",
     "prop-types": "^15.8.1",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-icons": "^5.7.0",
     "sass": "^1.100.0"
   },
   "devDependencies": {
