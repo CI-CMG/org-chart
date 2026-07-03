@@ -867,24 +867,17 @@ const meta_graph = {
       target: "GSB Dev Team",
       predicate: "associatedWith",
     },
-    // {
-    //   source: "Peemin Chen",
-    //   target: "GSB Dev Team",
-    //   predicate: "associatedWith",
-    // },
     {
       source: "Quincy Cantu",
       target: "GSB Dev Team",
       predicate: "associatedWith",
     },
     // { source: "Quincy Cantu", target: "NCEI", predicate: "memberOf", value: 1  },
-    // {"source": "Rachel Peterson", "target": "CIRES", "predicate": "memberOf"},
     {
       source: "Rachel Peterson",
       target: "GSB Dev Team",
       predicate: "associatedWith",
     },
-    // { source: "Rachel Peterson", target: "NCEI", predicate: "memberOf", value: 1  },
     // {"source": "Vidhyadhari Gondle", "target": "CIRES", "predicate": "memberOf"},
     {
       source: "Vidhyadhari Gondle",
@@ -1076,11 +1069,6 @@ const meta_graph = {
     {
       source: "Clinton Lohr",
       target: "Computer Science Department",
-      predicate: "associatedWith",
-    },
-    {
-      source: "Rachel Peterson",
-      target: "CMDI",
       predicate: "associatedWith",
     },
     {
@@ -1704,17 +1692,17 @@ function App() {
   return (
     <div className="App" id="parentDiv">
       <div id="bottomRight">
-        <div style={{textAlign: "right"}}>
+        <div>
           <label style={{ color: "forestgreen" }}>
             groups
             {/* <input type="checkbox" name="checkboxGroups" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
           </label>
-          <span style={{ color: "yellowgreen" }}>{' / '}</span>
+          <span style={{ color: "cyan" }}>{' / '}</span>
           <label style={{ color: "yellowgreen" }}>
             people
             {/* <input type="checkbox" name="checkboxPeople" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
           </label>
-          <span style={{ color: "yellowgreen" }}>{' / '}</span>
+          <span style={{ color: "cyan" }}>{' / '}</span>
           <label style={{ color: "skyblue" }}>
             projects
             {/* <input type="checkbox" name="checkboxProjects" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
@@ -1728,7 +1716,7 @@ function App() {
 
       <div id="topLeft">
         <span
-          style={{ fontFamily: "Arial", fontSize: "0.7em", color: "yellowgreen", letterSpacing: "0.125em" }}
+          style={{ fontFamily: "Arial", fontSize: "0.7em", color: "cyan", opacity: "0.75", letterSpacing: "0.125em" }}
         >
           {`v${import.meta.env.VITE_REACT_APP_VERSION}`}
         </span>

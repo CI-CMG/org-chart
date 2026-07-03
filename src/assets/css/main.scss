@@ -56,13 +56,16 @@ body {
   #bottomRight {
     position: absolute;
     bottom: 5px;
-    right: 10px;
+    right: 15px;
     z-index: 9999;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     letter-spacing: 0.2em;
-    background-color: rgba(217, 231, 255, 0.5);
+    background-color: rgba(217, 231, 255, 0.75);
+    // border: 1px solid grey;
+    padding: 5px 8px 4px 8px;
 
+    text-align: right;
     h1 {
       // border: 1px solid grey;
       color: forestgreen;
@@ -70,8 +73,8 @@ body {
       // font-family: 'Courier New', Courier, monospace;
       font-family: Arial, Helvetica, sans-serif;
       letter-spacing: 0.25em;
-      padding: 5px 8px 4px 8px;
-      background-color: rgba(217, 231, 255, 0.5);
+      // padding: 5px 8px 4px 8px;
+      background-color: rgba(217, 231, 255, 0.75);
     }
   }
 }
