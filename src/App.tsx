@@ -1062,22 +1062,6 @@ const meta_graph = {
       predicate: "associatedWith",
     },
     {
-      source: "Daniel Alemayehu",
-      target: "Computer Science Department",
-      predicate: "associatedWith",
-    },
-    {
-      source: "Clinton Lohr",
-      target: "Computer Science Department",
-      predicate: "associatedWith",
-    },
-    {
-      source: "Quincy Cantu",
-      target: "Computer Science Department",
-      predicate: "associatedWith",
-    },
-    // { source: "Rudy Klucik", target: "Sonar AI", predicate: "contributesTo", value: 1 },
-    {
       source: "Qin Lv",
       target: "Sonar AI",
       predicate: "associatedWith",
@@ -1710,7 +1694,7 @@ function App() {
         </div>
 
         <h1>
-          CIRES, Marine Geology and Geophysics
+          Marine Geology & Geophysics
         </h1>
       </div>
 
