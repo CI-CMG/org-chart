@@ -424,7 +424,7 @@ const meta_graph = {
     { id: "WOD", longName: "World Ocean Database (WOD)", group: 2 },
 
     { id: "TugBoat", group: 2 },
-    { id: "Argonaut", group: 2 },
+    { id: "Argonaut", description: "Argo is a fundamental dataset and input for the World Ocean Database. It serves as a critical global observing system, providing essential subsurface ocean measurements that underpin accurate earth-system, weather, and hurricane intensity forecasting.", group: 2 },
     { id: "Zhankun Wang", group: 0 },
     // { id: "OASIS", group: 1 },
     {
