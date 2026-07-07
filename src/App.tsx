@@ -291,6 +291,7 @@ const meta_graph = {
     { id: "Gary Osowski", group: 0 },
     { id: "Issa Perry", group: 0 }, // DB Admin
     { id: "Rontgen Isaac", group: 0 },
+    { id: "Stephen Cummings", description: "CO Windows Sysadmin", group: 0 }, // Windows admin
     { id: "Database Administrators", group: 1 },
     { id: "Eric Porter", group: 0 },
     { id: "James Pritchitt", group: 0 },
@@ -1775,7 +1776,7 @@ function App() {
           d3VelocityDecay={0.5}
           d3AlphaDecay={0.001}
           // d3AlphaMin={0.001}
-          minZoom={0.9}
+          minZoom={0.4}
           maxZoom={6}
         />
       </div>
