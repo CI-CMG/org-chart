@@ -298,6 +298,7 @@ const meta_graph = {
     { id: "Joel Rodriguez Chacon", group: 0 },
     { id: "Jesse Williams", group: 0 },
     { id: "Linux System Administrators", group: 1 },
+    { id: "Windows System Administrators", group: 1 },
     //
     { id: "LSB", longName: "Logistics Support Branch (LSB)", group: 1 },
     { id: "Shane Wise", group: 0 },
@@ -1399,17 +1400,9 @@ const meta_graph = {
       target: "ITOB",
       predicate: "associatedWith",
     },
-
-    {
-      source: "Caleb Dorsett",
-      target: "ITOB",
-      predicate: "associatedWith",
-    },
     { source: "Ernie Joynt", target: "ITOB", predicate: "associatedWith" },
-    { source: "Gary Osowski", target: "ITOB", predicate: "associatedWith" },
-    { source: "Issa Perry", target: "ITOB", predicate: "associatedWith" },
     {
-      source: "Rontgen Isaac",
+      source: "Database Administrators",
       target: "ITOB",
       predicate: "associatedWith",
     },
@@ -1423,16 +1416,6 @@ const meta_graph = {
       target: "Database Administrators",
       predicate: "associatedWith",
     },
-    // {
-    //   source: "Database Administrators",
-    //   target: "Mable",
-    //   predicate: "associatedWith",
-    // },
-    // {
-    //   source: "Linux System Administrators",
-    //   target: "Mable",
-    //   predicate: "associatedWith",
-    // },
     { source: "Eric Porter", target: "ITOB", predicate: "associatedWith" },
     {
       source: "James Pritchitt",
@@ -1440,16 +1423,20 @@ const meta_graph = {
       predicate: "associatedWith",
     },
     {
-      source: "Joel Rodriguez Chacon",
+      source: "Linux System Administrators",
       target: "ITOB",
       predicate: "associatedWith",
     },
     {
-      source: "Jesse Williams",
+      source: "Windows System Administrators",
       target: "ITOB",
       predicate: "associatedWith",
     },
-
+    {
+      source: "Stephen Cummings",
+      target: "Windows System Administrators",
+      predicate: "associatedWith",
+    },
     {
       source: "Caleb Dorsett",
       target: "Linux System Administrators",
