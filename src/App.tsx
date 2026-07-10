@@ -219,7 +219,7 @@ const meta_graph = {
     { id: "Laurel Rachmeler", group: 0 },
     { id: "Josh Riley", group: 0 },
     { id: "CSB", longName: "Coastal Science Branch (CSB)", group: 1 },
-    { id: "Jennifer Bowers", group: 0 },
+    { id: "Jennifer Bowers", description: "Jennifer Bowers supports NCEI’s Coastal Sciences Branch, leading the management of critical data that fuels marine science, policy, and resource management. A NOAA member since 2021, Jennifer brings 20 years of Naval oceanography experience, spanning tactical environmental support to long-term strategic planning. Today, she is driving NOAA's future-forward data efforts—spearheading the development of Uncrewed Systems (UxS) data management, championing an Enterprise data approach, and enabling the migration of NCEI data to the NESDIS Cloud initiatives. She also represents NESDIS on the NOAA/UxS Executive Oversight Board and oversees key NOAA/Navy data initiatives under the CENOTE Act of 2018. Jennifer holds a master’s degree in Marine Science from the University of Southern Mississippi (specializing in marine bio-optics) and proudly ties a bowline knot in seconds.", group: 0 },
     //
     { id: "DSD", longName: "Data Stewardship Division (DSD)", group: 1 },
     { id: "Ken Casey", group: 0 },
@@ -268,7 +268,7 @@ const meta_graph = {
     { id: "Jay Nunenkamp", group: 0 },
     { id: "Mindful NOAA", group: 1 }, // Mindful NOAA
     { id: "SEB", longName: "Standards and Evaluation Branch (SEB)", group: 1 },
-    { id: "Jon Kidder", group: 0 },
+    { id: "Jon Kidder", description: "Deputy Program Manager for the NCEI Cloud Migration", group: 0 },
     { id: "Denise Sylvester", group: 0 },
     {
       id: "COB",
