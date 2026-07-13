@@ -218,6 +218,7 @@ const meta_graph = {
     { id: "Kelly Stroker", group: 0 },
     { id: "Laurel Rachmeler", group: 0 },
     { id: "Josh Riley", group: 0 },
+    { id: "Jack McKinstry", group: 0 },
     { id: "CSB", longName: "Coastal Science Branch (CSB)", group: 1 },
     { id: "Jennifer Bowers", description: "Jennifer Bowers supports NCEI’s Coastal Sciences Branch, leading the management of critical data that fuels marine science, policy, and resource management. A NOAA member since 2021, Jennifer brings 20 years of Naval oceanography experience, spanning tactical environmental support to long-term strategic planning. Today, she is driving NOAA's future-forward data efforts—spearheading the development of Uncrewed Systems (UxS) data management, championing an Enterprise data approach, and enabling the migration of NCEI data to the NESDIS Cloud initiatives. She also represents NESDIS on the NOAA/UxS Executive Oversight Board and oversees key NOAA/Navy data initiatives under the CENOTE Act of 2018. Jennifer holds a master’s degree in Marine Science from the University of Southern Mississippi (specializing in marine bio-optics) and proudly ties a bowline knot in seconds.", group: 0 },
     //
@@ -529,6 +530,7 @@ const meta_graph = {
     // NCCF AWS
     { id: "Chris Mattioli", group: 0 },
     { id: "Jessica Hung", group: 0 },
+    { id: "Mike Friedenthal", description: "Senior Cloud Infrastructure Architect at AWS with over 20 years of IT experience. He's led high-visibility projects across federal agencies including the Census Bureau, NSF, NOAA, SBA, and the FAA — because apparently one agency at a time wasn't stressful enough. Most recently, he secured the Trump Golden Visa application at trumpcard.gov and led the cloud strategy technical deep dive for the Administrator of the FAA, proving that no amount of government acronyms can scare him off.", group: 0 },
     { id: "Michael Royer", group: 0 }, // GAMA-1 Technologies, Greenbelt, United States
     { id: "Mason Carroll", group: 0 },
     // { id: "Ayesha Genz", group: 0 },
@@ -946,6 +948,11 @@ const meta_graph = {
       predicate: "associatedWith",
     },
     {
+      source: "Mike Friedenthal",
+      target: "AWS Solutions Architect",
+      predicate: "associatedWith",
+    },
+    {
       source: "Jessica Hung",
       target: "NESDIS Common Cloud Framework",
       predicate: "associatedWith",
@@ -1151,6 +1158,11 @@ const meta_graph = {
       predicate: "associatedWith",
     },
     { source: "Josh Riley", target: "STPS", predicate: "associatedWith" },
+    {
+      source: "Jack McKinstry",
+      target: "STP DPMF",
+      predicate: "associatedWith",
+    },
     { source: "MGGS", target: "GSB", predicate: "associatedWith" },
     { source: "CSB", target: "COGS", predicate: "associatedWith" },
     { source: "OSB", target: "COGS", predicate: "associatedWith" },
