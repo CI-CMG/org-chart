@@ -25,7 +25,7 @@ const meta_graph = {
     { id: "Aaron Sweeny", group: 0 },
     { id: "Lindsey Wright", group: 0 },
     { id: "Jennifer Jencks", group: 0 },
-    { id: "Bryan Meyer", group: 0 },
+    { id: "Brian Meyer", group: 0 },
     { id: "Jordan Schweizer", group: 0 },
     { id: "Teodora Mitroi", group: 0 },
     { id: "Michael Richtsmeier", group: 0 },
@@ -621,8 +621,8 @@ const meta_graph = {
       predicate: "associatedWith",
     },
     { source: "Quincy Cantu", target: "Pace", predicate: "associatedWith" },
-    { source: "Bryan Meyer", target: "Tharp", predicate: "associatedWith" },
-    { source: "Bryan Meyer", target: "Trackline", predicate: "associatedWith" },
+    { source: "Brian Meyer", target: "Tharp", predicate: "associatedWith" },
+    { source: "Brian Meyer", target: "Trackline", predicate: "associatedWith" },
     { source: "Clinton Lohr", target: "TugBoat", predicate: "associatedWith" },
     {
       source: "Clinton Lohr",
@@ -1052,7 +1052,7 @@ const meta_graph = {
       target: "NCAI",
       predicate: "associatedWith",
     },
-    { source: "Bryan Meyer", target: "NCAI", predicate: "associatedWith" },
+    { source: "Brian Meyer", target: "NCAI", predicate: "associatedWith" },
     {
       source: "EchoFish",
       target: "NCAI",
