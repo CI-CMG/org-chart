@@ -1,10 +1,12 @@
+Note: This repo is public!
+
 # CIRES MGG Org Chart
 
 https://org-chart.ciresocean.org/
 
 Knowledge Graph showing the intersection of CIRES & MGG organizations, its people and projects.
 
-Data derived from [here](https://docs.google.com/spreadsheets/d/1wYRAvP02BrueU2KhbVbleqBQgeNxy5PnJfb_F9uFX38/edit?gid=585617807#gid=585617807).
+Data derived from [NCEI Org Chart](https://docs.google.com/spreadsheets/d/1wYRAvP02BrueU2KhbVbleqBQgeNxy5PnJfb_F9uFX38/edit?gid=585617807#gid=585617807).
 
 ## Entities
 
