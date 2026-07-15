@@ -47,6 +47,13 @@ const meta_graph = {
     { id: "Chuck Anderson", group: 0 },
     // NCEI
     { id: "Arnaud Chulliat", group: 0 },
+    { id: "Collin Kadlecek", group: 0 },
+    { id: "Nir Boneh", group: 0 },
+    { id: "Lily Young", group: 0 },
+    { id: "Liam Kilcommons", group: 0 },
+    { id: "Manoj Nair", group: 0 },
+    { id: "STP Software", group: 1 },
+
     { id: "Emma Beretta", group: 0 },
     {
       id: "ONMS Soundscapes",
@@ -60,8 +67,6 @@ const meta_graph = {
     // { id: "Juan Rodriguez", group: 0 },
     { id: "Lee Shoemaker", group: 0 },
     // { id: "Li-yin Young", group: 0 },
-    // { id: "Liam Kilcommons", group: 0 },
-    // { id: "Manoj Nair", group: 0 },
     // { id: "Matthew Bochain", group: 0 },
     // { id: "Nir Boneh", group: 0 },
     // { id: "Richard Saltus", group: 0 },
@@ -1038,6 +1043,49 @@ const meta_graph = {
       target: "CIRES Fellows",
       predicate: "ciresFellow",
     },
+
+    {
+      source: "Arnaud Chulliat",
+      target: "STPS",
+      predicate: "ciresFellow",
+    },
+
+    {
+      source: "Arnaud Chulliat",
+      target: "STP Software",
+      predicate: "ciresFellow",
+    },
+    {
+      source: "Lily Young",
+      target: "STP Software",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Collin Kadlecek",
+      target: "STP Software",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Nir Boneh",
+      target: "STP Software",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Liam Kilcommons",
+      target: "STP Software",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Manoj Nair",
+      target: "STP Software",
+      predicate: "associatedWith",
+    },
+    {
+      source: "STP Software",
+      target: "STPS",
+      predicate: "associatedWith",
+    },
+
     { source: "CIRES Fellows", target: "CIRES", predicate: "associatedWith" },
     { source: "SWPC", target: "NCEP", predicate: "associatedWith" },
     { source: "SWPC", target: "US Air Force", predicate: "associatedWith" },
