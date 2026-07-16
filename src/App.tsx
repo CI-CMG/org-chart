@@ -224,6 +224,7 @@ const meta_graph = {
     { id: "Laurel Rachmeler", group: 0 },
     { id: "Josh Riley", group: 0 },
     { id: "Jack McKinstry", group: 0 },
+    { id: "Robert Allsopp", group: 0 },
     { id: "CSB", longName: "Coastal Science Branch (CSB)", group: 1 },
     { id: "Jennifer Bowers", description: "Jennifer Bowers supports NCEI’s Coastal Sciences Branch, leading the management of critical data that fuels marine science, policy, and resource management. A NOAA member since 2021, Jennifer brings 20 years of Naval oceanography experience, spanning tactical environmental support to long-term strategic planning. Today, she is driving NOAA's future-forward data efforts—spearheading the development of Uncrewed Systems (UxS) data management, championing an Enterprise data approach, and enabling the migration of NCEI data to the NESDIS Cloud initiatives. She also represents NESDIS on the NOAA/UxS Executive Oversight Board and oversees key NOAA/Navy data initiatives under the CENOTE Act of 2018. Jennifer holds a master’s degree in Marine Science from the University of Southern Mississippi (specializing in marine bio-optics) and proudly ties a bowline knot in seconds.", group: 0 },
     //
@@ -1205,6 +1206,11 @@ const meta_graph = {
       target: "STP DPMF",
       predicate: "associatedWith",
     },
+    {
+      source: "Robert Allsopp",
+      target: "STP DPMF",
+      predicate: "associatedWith",
+    },
     { source: "Josh Riley", target: "STPS", predicate: "associatedWith" },
     {
       source: "Jack McKinstry",
@@ -1725,14 +1731,14 @@ function App() {
     <div className="App" id="parentDiv">
       <div id="bottomRight">
         <div>
-          <label style={{ color: "forestgreen" }}>
-            groups
-            {/* <input type="checkbox" name="checkboxGroups" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
-          </label>
-          <span style={{ color: "cyan" }}>{' / '}</span>
           <label style={{ color: "yellowgreen" }}>
             people
             {/* <input type="checkbox" name="checkboxPeople" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
+          </label>
+          <span style={{ color: "cyan" }}>{' / '}</span>
+          <label style={{ color: "forestgreen" }}>
+            groups
+            {/* <input type="checkbox" name="checkboxGroups" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
           </label>
           <span style={{ color: "cyan" }}>{' / '}</span>
           <label style={{ color: "skyblue" }}>
