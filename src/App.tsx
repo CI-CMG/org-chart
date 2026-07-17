@@ -38,6 +38,8 @@ const meta_graph = {
     { id: "Bary Eakins", group: 0 },
     { id: "Rob Redmon", group: 0 },
     { id: "Douglas Rao", group: 0 },
+    { id: "Marissa Jones", group: 0 },
+
     { // https://www.esipfed.org/
       id: "ESIP",
       longName: "Earth Science Information Partners",
@@ -272,6 +274,7 @@ const meta_graph = {
     { id: "Ming-Wai Merschat", group: 0 },
     { id: "Nicole Fernandes", group: 0 },
     { id: "Katrina Combs", group: 0 },
+    { id: "Megan Cromwell", group: 0 },
     { id: "Jay Nunenkamp", group: 0 },
     { id: "Mindful NOAA", group: 1 }, // Mindful NOAA
     { id: "SEB", longName: "Standards and Evaluation Branch (SEB)", group: 1 },
@@ -1092,6 +1095,7 @@ const meta_graph = {
     { source: "SWPC", target: "US Air Force", predicate: "associatedWith" },
     { source: "NCEP", target: "NWS", predicate: "associatedWith" },
     { source: "Rob Redmon", target: "NCAI", predicate: "associatedWith" },
+    { source: "Marissa Jones", target: "NCAI", predicate: "associatedWith" },
     { source: "Douglas Rao", target: "NCAI", predicate: "associatedWith" },
     { source: "Douglas Rao", target: "ESIP", predicate: "associatedWith" },
     { source: "NCAI", target: "OCIO", predicate: "associatedWith" },
@@ -1386,6 +1390,11 @@ const meta_graph = {
     {
       source: "NWS",
       target: "NOAA",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Megan Cromwell",
+      target: "NOS",
       predicate: "associatedWith",
     },
     {
