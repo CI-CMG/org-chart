@@ -94,6 +94,7 @@ const meta_graph = {
     { id: "Nathan Malarich", group: 0 },
     { id: "Aly Krimmer", group: 0 },
     { id: "Alison Post", group: 0 },
+    { id: "Nate Hofford", group: 0 },
     { id: "Nels Bjarke", group: 0 },
     { id: "Scott Clingan", group: 0 },
     { id: "Mara Coe", group: 0 },
@@ -158,7 +159,7 @@ const meta_graph = {
     },
     ////////////////////////////////////////////
     // NOAA Line offices
-    { id: "NOS", longName: "National Ocean Service (NOS)", group: 1 },
+    { id: "NOS", longName: "National Ocean Service (NOS)", description: "America’s leader in coastal and ocean science, technology, and management.", group: 1 },
     { id: "NWS", longName: "National Weather Service (NWS)", group: 1 },
     {
       id: "OMAO",
@@ -793,7 +794,10 @@ const meta_graph = {
     },
     { source: "Alison Post", target: "CMC", predicate: "associatedWith" },
     { source: "Alison Post", target: "SEEC", predicate: "associatedWith" },
+    { source: "Nate Hofford", target: "CMC", predicate: "associatedWith" },
+    { source: "Nate Hofford", target: "SEEC", predicate: "associatedWith" },
     { source: "Alison Post", target: "Earth Lab", predicate: "associatedWith" },
+    { source: "Nate Hofford", target: "Earth Lab", predicate: "associatedWith" },
     { source: "Nels Bjarke", target: "CMC", predicate: "associatedWith" },
     {
       source: "Nels Bjarke",
