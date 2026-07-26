@@ -437,6 +437,8 @@ const meta_graph = {
     { id: "WOD", longName: "World Ocean Database (WOD)", group: 2 },
 
     { id: "TugBoat", group: 2 },
+    { id: "Becca Van Hoeck", group: 0 },
+    { id: "Genevieve Davis", group: 0 },
     { id: "Argonaut", description: "Argo is a fundamental dataset and input for the World Ocean Database. It serves as a critical global observing system, providing essential subsurface ocean measurements that underpin accurate earth-system, weather, and hurricane intensity forecasting.", group: 2 },
     { id: "Zhankun Wang", group: 0 },
     // { id: "OASIS", group: 1 },
@@ -593,6 +595,10 @@ const meta_graph = {
     },
     { source: "Payton Cain", target: "Crowbar", predicate: "associatedWith" },
     { source: "Payton Cain", target: "TugBoat", predicate: "associatedWith" },
+    { source: "Becca Van Hoeck", target: "TugBoat", predicate: "associatedWith" },
+    { source: "Genevieve Davis", target: "TugBoat", predicate: "associatedWith" },
+    { source: "Becca Van Hoeck", target: "Northeast Fisheries Science Center", predicate: "associatedWith" },
+    { source: "Genevieve Davis", target: "Northeast Fisheries Science Center", predicate: "associatedWith" },
     {
       source: "Carrie Wall Bell",
       target: "EchoFish",
