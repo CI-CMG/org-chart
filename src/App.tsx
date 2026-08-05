@@ -107,8 +107,10 @@ const meta_graph = {
     { id: "Kim Moreland", group: 0 },
     { id: "Adam Schneider", group: 0 },
     //
-    { id: "", group: 0 },
-    // Waleed Abdalati
+    // { id: "", group: 0 },
+    // 
+    { id: "Waleed Abdalati", description: "CIRES Director", group: 0 },
+    { id: "Eric Anderson", description: "Associate Director for Science at CIRES", group: 0 },
     // Lornay Hansen
     // Maggie Tolbert
     //
@@ -582,12 +584,6 @@ const meta_graph = {
     { source: "Rudy Klucik", target: "Hazel", predicate: "associatedWith" },
     { source: "Rudy Klucik", target: "EchoFish", predicate: "associatedWith" },
     { source: "Bary Eakins", target: "Tharp", predicate: "associatedWith" },
-    // { source: "Peemin Chen", target: "Hazel", predicate: "associatedWith" },
-    // {
-    //   source: "Peemin Chen",
-    //   target: "FishFlicks",
-    //   predicate: "associatedWith",
-    // },
     {
       source: "John Cartwright",
       target: "Crowbar",
@@ -851,6 +847,17 @@ const meta_graph = {
     {
       source: "Adam Schneider",
       target: "PSL",
+      predicate: "associatedWith",
+    },
+    //
+    {
+      source: "Waleed Abdalati",
+      target: "CIRES",
+      predicate: "associatedWith",
+    },
+    {
+      source: "Eric Anderson",
+      target: "CIRES",
       predicate: "associatedWith",
     },
     // cires
