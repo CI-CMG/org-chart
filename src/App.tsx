@@ -853,7 +853,7 @@ const meta_graph = {
     {
       source: "Waleed Abdalati",
       target: "CIRES",
-      predicate: "associatedWith",
+      predicate: "directorOf",
     },
     {
       source: "Eric Anderson",
@@ -1508,7 +1508,12 @@ const meta_graph = {
       target: "Database Administrators",
       predicate: "associatedWith",
     },
-    { source: "Eric Porter", target: "ITOB", predicate: "associatedWith" },
+    {
+      source: "Eric Porter",
+      target: "ITOB",
+      predicate: "associatedWith",
+      description: "Provided help with NCEI gitlab runner"
+    },
     {
       source: "James Pritchitt",
       target: "ITOB",
