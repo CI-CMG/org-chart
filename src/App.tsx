@@ -441,7 +441,7 @@ const meta_graph = {
     { id: "TugBoat", group: 2 },
     { id: "Becca Van Hoeck", group: 0 },
     { id: "Genevieve Davis", group: 0 },
-    { id: "Argonaut", description: "Argo is a fundamental dataset and input for the World Ocean Database. It serves as a critical global observing system, providing essential subsurface ocean measurements that underpin accurate earth-system, weather, and hurricane intensity forecasting.", group: 2 },
+    { id: "Argonaut", description: "Argo GDAC is a fundamental dataset and input for the World Ocean Database. It serves as a critical global observing system, providing essential subsurface ocean measurements that underpin accurate earth-system, weather, and hurricane intensity forecasting.", group: 2 },
     { id: "Zhankun Wang", group: 0 },
     // { id: "OASIS", group: 1 },
     {
@@ -581,7 +581,7 @@ const meta_graph = {
       target: "GSB Dev Team",
       predicate: "associatedWith",
     },
-    { source: "Rudy Klucik", target: "Hazel", predicate: "associatedWith" },
+    //{ source: "Rudy Klucik", target: "Hazel", predicate: "associatedWith" },
     { source: "Rudy Klucik", target: "EchoFish", predicate: "associatedWith" },
     { source: "Bary Eakins", target: "Tharp", predicate: "associatedWith" },
     {
@@ -1245,6 +1245,8 @@ const meta_graph = {
     { source: "Zhankun Wang", target: "WOD", predicate: "associatedWith" },
     { source: "Zhankun Wang", target: "Argonaut", predicate: "associatedWith" },
     { source: "Patrick Hogan", target: "OSB", predicate: "associatedWith" },
+    { source: "Patrick Hogan", target: "Argonaut", predicate: "associatedWith" },
+    { source: "Rudy Klucik", target: "Argonaut", predicate: "associatedWith" },
     {
       source: "Kirsten Larsen",
       target: "OSB",
