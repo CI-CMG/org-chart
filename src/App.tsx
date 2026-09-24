@@ -22,8 +22,9 @@ const meta_graph = {
     //
     { id: "Carrie Wall Bell", longName: "Carrie Wall Bell", group: 0 },
     { id: "Nic Arcos", group: 0 },
-    { id: "Aaron Sweeny", group: 0 },
+    { id: "Aaron Sweeney", group: 0 },
     { id: "Lindsey Wright", group: 0 },
+    { id: "Ayesha Genz", group: 0 },
     { id: "Jennifer Jencks", group: 0 },
     { id: "Brian Meyer", group: 0 },
     { id: "Jordan Schweizer", group: 0 },
@@ -420,12 +421,18 @@ const meta_graph = {
       group: 1,
     },
     { id: "US Air Force", group: 1 },
+    { id: "US Navy", group: 1 },
     // groups for dev team
     {
       id: "Hazel",
       description:
         "NCEI archives and assimilates tsunami, earthquake, and volcano data to support research, planning, response, and mitigation.",
       group: 2,
+    },
+    {
+      id: "Hazards Team",
+      description: "",
+      group: 1,
     },
     { id: "Marigrams", group: 2 },
     { id: "Team Fish", group: 1 },
@@ -786,8 +793,16 @@ const meta_graph = {
     { source: "Lindsey Wright", target: "Hazel", predicate: "associatedWith" },
     { source: "Nic Arcos", target: "Hazel", predicate: "associatedWith" },
     { source: "Marigrams", target: "Hazel", predicate: "associatedWith" },
+    { source: "Nic Arcos", target: "Hazards Team", predicate: "associatedWith" },
+    { source: "Aaron Sweeney", target: "Hazards Team", predicate: "associatedWith" },
+    { source: "Kelly Stroker", target: "Hazards Team", predicate: "associatedWith" },
+    { source: "Lindsey Wright", target: "Hazards Team", predicate: "associatedWith" },
+    { source: "Christopher Amante", target: "Hazards Team", predicate: "associatedWith" },
+    { source: "Ayesha Genz", target: "Hazards Team", predicate: "associatedWith" },
+    { source: "Chris Slater", target: "Hazards Team", predicate: "associatedWith" },
+    { source: "Hazel", target: "Hazards Team", predicate: "associatedWith" },
     {
-      source: "Aaron Sweeny",
+      source: "Aaron Sweeney",
       target: "Marigrams",
       predicate: "associatedWith",
     },
@@ -890,6 +905,11 @@ const meta_graph = {
     },
     {
       source: "Chris Slater",
+      target: "Argonaut",
+      predicate: "associatedWith",
+    },
+    {
+      source: "US Navy",
       target: "Argonaut",
       predicate: "associatedWith",
     },
@@ -1806,9 +1826,8 @@ function App() {
             {/* <input type="checkbox" name="checkboxProjects" defaultChecked={true} onChange={(e) => processClick(e)} disabled /> */}
           </label>
         </div>
-
         <h1>
-          National Oceanic and Atmospheric Administration
+          Marine Geology & Geophysics
         </h1>
       </div>
 
