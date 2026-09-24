@@ -1808,8 +1808,7 @@ function App() {
         </div>
 
         <h1>
-          {/* Marine Geology & Beyond */}
-          Organizational Structure
+          National Oceanic and Atmospheric Administration
         </h1>
       </div>
 
