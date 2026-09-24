@@ -36,7 +36,7 @@ const meta_graph = {
     { id: "Rory OFlynn", group: 0 },
     { id: "Michelle", group: 0 }, // B-team
     { id: "Tate Voeller", description: "Hello! I am Tate Voeller. I'm excited to join CIRES as a junior data manager on the Multibeam Bathymetry team. I am at CU Boulder studying Atmosphere and Oceanic Science with a minor in Geography. I am looking forward to getting some valuable experience in the industry. I have passions to pursue a PhD in Oceanography or Climate sciences. I am from Louisville, CO and in my free time I play CU club Ultimate Frisbee, climb, bike, ski, and hike Colorado's 14ers.", group: 0 }, // B-Team
-    { id: "Bary Eakins", group: 0 },
+    // { id: "Bary Eakins", group: 0 },
     { id: "Rob Redmon", group: 0 },
     { id: "Douglas Rao", group: 0 },
     { id: "Marissa Jones", group: 0 },
@@ -607,7 +607,7 @@ const meta_graph = {
     },
     //{ source: "Rudy Klucik", target: "Hazel", predicate: "associatedWith" },
     { source: "Rudy Klucik", target: "EchoFish", predicate: "associatedWith" },
-    { source: "Bary Eakins", target: "Tharp", predicate: "associatedWith" },
+    // { source: "Bary Eakins", target: "Tharp", predicate: "associatedWith" },
     {
       source: "John Cartwright",
       target: "Crowbar",
@@ -1296,11 +1296,11 @@ const meta_graph = {
       target: "FishFlicks",
       predicate: "associatedWith",
     },
-    {
-      source: "Bary Eakins",
-      target: "FishFlicks",
-      predicate: "associatedWith",
-    },
+    // {
+    //   source: "Bary Eakins",
+    //   target: "FishFlicks",
+    //   predicate: "associatedWith",
+    // },
     { source: "Anna Lienesch", target: "OSB", predicate: "associatedWith" },
     { source: "Kate Rose", target: "OSB", predicate: "associatedWith" },
     { source: "Boyin Huang", target: "OSB", predicate: "associatedWith" },
