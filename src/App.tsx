@@ -248,9 +248,26 @@ const meta_graph = {
       longName: "Collection Metadata Editing Tool (CoMET)",
       group: 2,
     },
+    // James Primrose
+    {
+      id: "Send2NCEI",
+      longName: "Send2NCEI",
+      group: 2,
+    },
+    {
+      id: "ATRAC",
+      longName: "Advanced Tracking and Resource tool for Archive Collections (ATRAC)",
+      description: "The Advanced Tracking and Resource tool for Archive Collections (ATRAC) provides a common interface for users to enter and display information on archiving projects at the NOAA National Centers for Environmental Information (NCEI).",
+      group: 2,
+    },
+    {
+      id: "NextGenS2N",
+      longName: "NextGenS2N",
+      group: 2,
+    },
     { id: "SDB", longName: "Software Development Branch (SDB)", group: 1 },
     { id: "Daniel Lloyd", group: 0 },
-    { id: "James Primrose", group: 0 },
+    { id: "James Primrose", longName: "James Primrose", group: 0 },
     { id: "Charles Burris", group: 0 },
     { id: "John Relph", group: 0 },
     { id: "Ken Tanaka", group: 0 },
@@ -300,7 +317,7 @@ const meta_graph = {
     { id: "Jason Symonds", group: 0 },
     //
     { id: "Caleb Dorsett", group: 0 },
-    { id: "Ernie Joynt", group: 0 },
+    // { id: "Ernie Joynt", group: 0 },
     { id: "Gary Osowski", group: 0 },
     { id: "Issa Perry", group: 0 }, // DB Admin
     { id: "Rontgen Isaac", group: 0 },
@@ -1340,8 +1357,18 @@ const meta_graph = {
       predicate: "associatedWith",
     },
     {
+      source: "Send2NCEI",
+      target: "NextGenS2N",
+      predicate: "associatedWith",
+    },
+    {
+      source: "ATRAC",
+      target: "NextGenS2N",
+      predicate: "associatedWith",
+    },
+    {
       source: "James Primrose",
-      target: "CoMET",
+      target: "NextGenS2N",
       predicate: "associatedWith",
     },
     { source: "John Relph", target: "SDB", predicate: "associatedWith" },
@@ -1494,7 +1521,7 @@ const meta_graph = {
       target: "ITOB",
       predicate: "associatedWith",
     },
-    { source: "Ernie Joynt", target: "ITOB", predicate: "associatedWith" },
+    // { source: "Ernie Joynt", target: "ITOB", predicate: "associatedWith" },
     {
       source: "Database Administrators",
       target: "ITOB",
@@ -1781,7 +1808,8 @@ function App() {
         </div>
 
         <h1>
-          Marine Geology & Geophysics
+          {/* Marine Geology & Beyond */}
+          Organizational Structure
         </h1>
       </div>
 
